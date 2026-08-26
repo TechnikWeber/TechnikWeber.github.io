@@ -1,15 +1,19 @@
-     title: Philipps Blog
-     description: Gedanken, Projekte und alles dazwischen · @TechnikWeber
-     author: Philipp Weber
-     url: https://TechnikWeber.github.io    # kanonische Adresse der Seite
-     theme: minima
-     show_excerpts: true
-     plugins:
-       - jekyll-feed      # erzeugt automatisch einen RSS-Feed
-       - jekyll-seo-tag   # SEO-Metadaten
-       
-     # Minima zeigt Seiten mit diesem Eintrag in der Navigation
-     header_pages:
-     - ueber-mich.md
-     - impressum.md
-     - datenschutz.md
+title: Philipps Blog
+description: Gedanken, Projekte und alles dazwischen · @TechnikWeber
+author: Philipp Weber
+url: https://TechnikWeber.github.io
+lang: de
+timezone: Europe/Berlin
+permalink: /:year/:title/
+show_excerpts: true
+theme: minima
+
+header_pages:
+  - ueber-mich.md
+  - impressum.md
+  - datenschutz.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
