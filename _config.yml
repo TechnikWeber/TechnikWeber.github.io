@@ -6,3 +6,8 @@
      plugins:
        - jekyll-feed      # erzeugt automatisch einen RSS-Feed
        - jekyll-seo-tag   # SEO-Metadaten
+       
+     # Minima zeigt Seiten mit diesem Eintrag in der Navigation
+     header_pages:
+     - impressum.md
+     - datenschutz.md
