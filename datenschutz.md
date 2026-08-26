@@ -9,10 +9,10 @@ permalink: /datenschutz/
 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
 
 Philipp Weber
-[STRASSE UND HAUSNUMMER]
-[PLZ ORT]
+Goldersbergstraße 15
+72336 Balingen
 Deutschland
-E-Mail: [DEINE-EMAIL@BEISPIEL.DE]
+E-Mail: philipp@online-weber.de
 
 ## 2. Allgemeines zur Datenverarbeitung
 
