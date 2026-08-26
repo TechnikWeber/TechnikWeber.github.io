@@ -3,6 +3,7 @@
      author: Philipp Weber
      url: https://TechnikWeber.github.io    # kanonische Adresse der Seite
      theme: minima
+     show_excerpts: true
      plugins:
        - jekyll-feed      # erzeugt automatisch einen RSS-Feed
        - jekyll-seo-tag   # SEO-Metadaten
