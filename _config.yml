@@ -1,0 +1,8 @@
+     title: online-weber
+     description: Ideen, Code und Anleitungen von Philipp Weber
+     author: Philipp Weber
+     url: https://TechnikWeber.github.io    # kanonische Adresse der Seite
+     theme: minima
+     plugins:
+       - jekyll-feed      # erzeugt automatisch einen RSS-Feed
+       - jekyll-seo-tag   # SEO-Metadaten
