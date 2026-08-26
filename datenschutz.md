@@ -8,10 +8,10 @@ permalink: /datenschutz/
 
 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
 
-Philipp Weber
-Goldersbergstraße 15
-72336 Balingen
-Deutschland
+Philipp Weber<br>
+Goldersbergstraße 15<br>
+72336 Balingen<br>
+Deutschland<br>
 E-Mail: philipp@online-weber.de
 
 ## 2. Allgemeines zur Datenverarbeitung
