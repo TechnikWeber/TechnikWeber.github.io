@@ -6,9 +6,9 @@ permalink: /impressum/
 
 ## Angaben gemäß § 5 DDG
 
-Philipp Weber
-Goldersbergstraße 15
-72336 Balingen
+Philipp Weber<br>
+Goldersbergstraße 15<br>
+72336 Balingen<br>
 Deutschland
 
 ## Kontakt
@@ -17,9 +17,10 @@ E-Mail: philipp@online-weber.de
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Philipp Weber
-[STRASSE UND HAUSNUMMER]
-[PLZ ORT]
+Philipp Weber<br>
+Goldersbergstraße 15<br>
+72336 Balingen<br>
+Deutschland
 
 ## Haftung für Inhalte
 
