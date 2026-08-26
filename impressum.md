@@ -7,14 +7,13 @@ permalink: /impressum/
 ## Angaben gemäß § 5 DDG
 
 Philipp Weber
-[STRASSE UND HAUSNUMMER]
-[PLZ ORT]
+Goldersbergstraße 15
+72336 Balingen
 Deutschland
 
 ## Kontakt
 
-E-Mail: [DEINE-EMAIL@BEISPIEL.DE]
-Telefon: [TELEFONNUMMER – optional, sonst diese Zeile entfernen]
+E-Mail: philipp@online-weber.de
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
