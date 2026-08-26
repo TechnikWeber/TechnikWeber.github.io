@@ -9,5 +9,6 @@
        
      # Minima zeigt Seiten mit diesem Eintrag in der Navigation
      header_pages:
+     - ueber-mich.md
      - impressum.md
      - datenschutz.md
