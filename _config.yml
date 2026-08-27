@@ -9,6 +9,7 @@ show_excerpts: true
 theme: minima
 
 header_pages:
+  - index.md
   - themen.md
   - ueber-mich.md
   - impressum.md
