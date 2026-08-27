@@ -1,6 +1,92 @@
 ---
 layout: post
 ---
+<style>
+  /* ── Bilder und Diagramme mit Rahmen und Bildunterschrift ──────────
+     Benutzung im Beitrag:
+
+       <figure class="abb">
+         <a href="/assets/BEITRAG/01-bild.jpg">
+           <img src="/assets/BEITRAG/01-bild.jpg" alt="Alternativtext">
+         </a>
+         <figcaption>Beschreibung des Bildes.</figcaption>
+       </figure>
+
+     Die Nummer "Abb. 1", "Abb. 2" … setzt der Browser automatisch davor
+     und zaehlt sie durch. Also NICHT selbst mit hineinschreiben – beim
+     Umsortieren stimmt sie sonst nicht mehr.                          */
+
+  .post-content { counter-reset: abb; }
+
+  .abb { margin: 2.2em 0; }
+
+  .abb > a,
+  .abb > .rahmen {
+    display: block;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0dd;
+    border-radius: 6px;
+  }
+  .abb > a { line-height: 0; }
+
+  .abb img,
+  .abb svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  .abb figcaption {
+    margin-top: .75em;
+    font-size: .88em;
+    line-height: 1.5;
+    color: #828282;
+    text-align: center;
+  }
+  .abb figcaption::before {
+    counter-increment: abb;
+    content: "Abb. " counter(abb) " · ";
+    font-weight: 600;
+    color: #424242;
+  }
+
+  /* Ein Diagramm im Rahmen wuerde auf dem Handy unlesbar klein
+     skalieren – dort behaelt es seine Breite und laesst sich stattdessen
+     seitlich schieben.                                               */
+  @media screen and (max-width: 640px) {
+    .abb > .rahmen { overflow-x: auto; }
+    .abb > .rahmen svg { width: 580px; max-width: none; }
+  }
+
+  /* ── Messwert-Tabellen ────────────────────────────────────────────
+     Im Beitrag  {: .messwerte}  direkt unter die Tabelle schreiben.
+     Sie wird dann nur so breit wie noetig, bricht Zahlen nicht um und
+     laesst sich auf schmalen Bildschirmen seitlich scrollen.        */
+
+  .post-content .messwerte {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: .92em;
+  }
+  .messwerte td,
+  .messwerte th { white-space: nowrap; }
+  .messwerte td + td,
+  .messwerte th + th { text-align: right; }
+
+  /* Kleingedruckte Zeile unter einer Tabelle:  {: .legende}          */
+  .post-content .legende {
+    margin-top: -1.4em;
+    font-size: .88em;
+    line-height: 1.5;
+    color: #828282;
+  }
+
+</style>
+
 {{ content }}
 
 {%- if page.tags.size > 0 %}
