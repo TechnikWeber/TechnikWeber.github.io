@@ -5,7 +5,7 @@ title: "Anleitung: Wie ich einen Beitrag veröffentliche"
 Interne Notiz für mich selbst. Liegt in `_drafts/`, wird also **nie**
 veröffentlicht – Jekyll baut Entwürfe nur mit `--drafts`.
 
-## Die drei Begriffe
+## Die wichtigsten Begriffe
 
 | Befehl       | Bedeutung                                                    |
 |--------------|--------------------------------------------------------------|

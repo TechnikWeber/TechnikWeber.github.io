@@ -20,8 +20,9 @@ Hier den Beitrag schreiben.
 
   ── BILDER EINBINDEN ──────────────────────────────────────────────
 
-  1. Bild nach assets/ kopieren, z. B. assets/lötstation.jpg
-     (Dateinamen klein und ohne Leerzeichen halten: loetstation.jpg)
+  1. Bild nach assets/ kopieren, z. B. assets/loetstation.jpg
+     (Dateinamen klein, ohne Leerzeichen und ohne Umlaute halten –
+     also loetstation.jpg statt "Lötstation Bild.JPG")
   2. Im Text so einbinden – der Pfad beginnt mit einem Schrägstrich:
 
          ![Kurze Bildbeschreibung](/assets/loetstation.jpg)
@@ -69,7 +70,7 @@ Hier den Beitrag schreiben.
 
   Bei vielen Medien lohnen sich Unterordner, der Pfad wächst dann mit:
 
-      assets/2026-08-lötstation/bild1.jpg
+      assets/2026-08-loetstation/bild1.jpg
       →  ![Beschreibung](/assets/2026-08-loetstation/bild1.jpg)
 -->
 
