@@ -36,5 +36,6 @@ for kanal in range(1, 5):
 An dieser Stelle stünde ein Bild aus `assets/2026-08-25-demo-beitrag/`.
 Wie das abgelegt und eingebunden wird, steht in `_drafts/vorlage.md`.
 
-Unten am Beitrag stehen die Tags – dieser hier hängt an *Elektronik* und
-*Werkstatt* und taucht damit auf der Themenseite unter beiden auf.
+Dieser Beitrag ist mit *Elektronik* und *Werkstatt* getaggt und taucht damit
+auf der [Themenseite](/themen/) unter beiden auf. Am Beitrag selbst sind die
+Tags allerdings nicht zu sehen – das Theme zeigt sie hier nicht an.

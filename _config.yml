@@ -8,6 +8,10 @@ permalink: /:year/:title/
 show_excerpts: true
 theme: minima
 
+# Datumsformat deutsch statt "Aug 25, 2026"
+minima:
+  date_format: "%d.%m.%Y"
+
 header_pages:
   - index.md
   - themen.md
