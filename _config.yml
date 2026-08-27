@@ -14,6 +14,12 @@ header_pages:
   - impressum.md
   - datenschutz.md
 
+# Dateien, die nur fürs Repo gedacht sind und nicht auf die Seite gehören
+exclude:
+  - CLAUDE.md
+  - README.md
+  - _eingang/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
