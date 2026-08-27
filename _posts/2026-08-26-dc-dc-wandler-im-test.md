@@ -5,15 +5,11 @@ date: 2026-08-26 19:30:00 +0200
 tags: [Elektronik, Messtechnik]
 ---
 
-Fünf Volt aus einem Akku zu machen, klingt nach einem gelösten Problem. Drei
-Module lagen vergangenes Wochenende auf meinem Tisch, alle beworben mit **5 V**
-und **5 A**. Mich hat dabei nicht interessiert, ob exakt 5,00 V herauskommen –
-4,7 V wären für die meisten Verbraucher völlig in Ordnung. Mich hat
-interessiert, ob überhaupt stimmt, was in der Artikelbeschreibung steht.
-
-Zwei der Module sind **UBECs**, also reine Abwärtswandler: Sie können eine
-Spannung nur herunterregeln, niemals hinauf. Das dritte ist ein
-**Buck-Boost-Wandler** und kann beides.
+Drei Module lagen vergangenes Wochenende auf meinem Tisch, alle beworben mit
+**5 V** und **5 A**. Ob exakt 5,00 V herauskommen, war mir dabei egal – 4,7 V
+täten es auch. Mich interessierte, ob stimmt, was in der Artikelbeschreibung
+steht. Zwei davon sind **UBECs**, also reine Abwärtswandler; das dritte ist ein
+**Buck-Boost-Wandler** und kann auch hinaufregeln.
 
 ## Der Prüfstand
 
@@ -58,6 +54,11 @@ Millivolt braucht, misst am Verbraucher.
 | 3 A | 2,50 V \* | 3,20 V \* | 3,60 V \* | 4,75 V | 4,75 V |
 {: .messwerte}
 
+Weitere Angaben, die ich nicht nachgeprüft habe: vollständige Abschirmung und
+„niedrigstes RF-Rauschen“, Restwelligkeit unter 50 mV<sub>pp</sub> bei 2 A und
+12 V, 51 × 16,6 × 8,5 mm, 11,5 g. Die AliExpress-Seite nennt abweichend
+43 × 17 × 7 mm und 11 g.
+
 Ab 7,4 V Eingang und bis etwa 2 A ist das ein ordentlicher Regler. Er ist nur
 eben ein 2-A-Regler.
 
@@ -87,6 +88,11 @@ eben ein 2-A-Regler.
 | 3 A | 2,80 V | 3,88 V | 4,07 V | 4,34 V | 4,44 V |
 | 5 A | ✕ | ✕ | ✕ | ✕ | ✕ |
 {: .messwerte}
+
+Ungeprüft bleiben auch hier die Abschirmung und das „niedrigste HF-Rauschen“;
+eine Zahl zur Welligkeit nennt der Verkäufer nicht. Als Maße gibt er
+43 × 21 × 1 mm bei 11 g an – der Millimeter Bauhöhe kommt schon rechnerisch
+nicht hin.
 
 Der Aufdruck auf dem IC erklärt das Ganze: Ein **LM2596S** ist laut Datenblatt
 ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
@@ -118,24 +124,25 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
 | 5 A | ✕ | ✕ | 4,63 V | 4,62 V | 4,62 V |
 {: .messwerte}
 
+Nicht nachgeprüft: „geringe Welligkeit“ (ohne Zahl), Kurzschluss- und
+Übertemperaturschutz, TVS-Diode am Eingang, Betrieb von −40 bis +125 °C. Maße
+nennt der Verkäufer nicht.
+
 Die Beschreibung schränkt selbst ein: Die 5 A gelten im Boost-Betrieb für den
 *Eingangs*strom, nicht für den Ausgang. Genau am unteren Ende wird es eng – bei
 5,5 V bricht das Modul schon unter 2 A nach Sekunden ein.
 
 ## Fazit
 
-Nur **Modul 3** hält im Wesentlichen, was seine Beschreibung verspricht – der
-einzige mit echten 5 V und der einzige, der 5 A überhaupt liefert. Ab 6,6 V
-Eingang ohne Einschränkung brauchbar. Wer aus 2S oder 3S ordentlich Strom bei
-5 V braucht, nimmt den.
+**Modul 3** hält im Wesentlichen, was draufsteht, und ist als einziges bei 5 A
+überhaupt zu gebrauchen. Wer aus 2S oder 3S ordentlich Strom bei 5 V braucht,
+nimmt den.
 
-**Modul 1** ist solide gebaut und ab 7,4 V für kleine Lasten brauchbar; die 5 A
-auf dem Aufkleber sind Fiktion. Ich behalte es trotzdem: Es ist das einzige mit
-Blechgehäuse und Ferritringkern, und für einen Empfänger direkt daneben kann
-das mehr wert sein als das letzte halbe Volt. Ob es wirklich leiser ist, weiß
-ich allerdings nicht – gemessen habe ich hier nur Spannungen, keine Störungen.
+**Modul 1** taugt ab 7,4 V für kleine Lasten; die 5 A auf dem Aufkleber sind
+Fiktion. Ich behalte es trotzdem – wegen Blechgehäuse und Ferritringkern, was
+neben einem Empfänger mehr wert sein kann als das letzte halbe Volt.
 
-**Modul 2** verfehlt jede seiner drei Kernangaben. Ich werde es nicht einbauen.
+**Modul 2** verfehlt jede seiner drei Kernangaben und kommt nicht zum Einsatz.
 
 ---
 
