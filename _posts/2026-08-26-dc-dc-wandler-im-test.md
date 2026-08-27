@@ -27,8 +27,21 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
               Leitungen und einem grünen Ferritringkern im Ausgangskabel">
   </a>
   <figcaption>„5V/6V 3A … MAX 5A“. Als einziges im Blechgehäuse, mit
-  Ferritringkern im Kabel. Welcher Regler darin steckt, bleibt
-  verborgen.</figcaption>
+  Ferritringkern im Kabel.</figcaption>
+</figure>
+
+<figure class="abb klein">
+  <a href="/assets/2026-08-26-dc-dc-wandler-im-test/04-hobbywing-geoeffnet.jpg">
+    <img src="/assets/2026-08-26-dc-dc-wandler-im-test/04-hobbywing-geoeffnet.jpg"
+         alt="Geöffneter Hobbywing UBEC: grüne Platine mit der Aufschrift
+              HW212V1.2, einem SOIC-8 mit der Beschriftung MP1593DN, zwei
+              Schottky-Dioden SS34, einer Drossel mit Aufdruck 150 und einem
+              blauen Jumper auf einer Stiftleiste">
+  </a>
+  <figcaption>Dasselbe Modul geöffnet. In der Mitte der
+  <strong>MP1593DN</strong>, daneben zwei Schottky-Dioden SS34 und eine
+  15-µH-Drossel. Der blaue Jumper links schaltet zwischen 5 V und 6 V
+  um.</figcaption>
 </figure>
 
 | Aus der Artikelbeschreibung | Gemessen |
@@ -52,8 +65,11 @@ Weitere Angaben, die ich nicht nachgeprüft habe: vollständige Abschirmung und
 12 V, 51 × 16,6 × 8,5 mm, 11,5 g. Die AliExpress-Seite nennt abweichend
 43 × 17 × 7 mm und 11 g.
 
-Ab 7,4 V Eingang und bis etwa 2 A ist das ein ordentlicher Regler. Er ist nur
-eben ein 2-A-Regler.
+Ab 7,4 V Eingang und bis etwa 2 A ist das ein ordentlicher Regler. Warum nicht
+mehr, steht auf dem Chip: Ein **MP1593DN** von Monolithic Power Systems liefert
+laut Datenblatt 3 A und verträgt 4,75 bis 28 V am Eingang. Er bringt außerdem
+eine Übertemperaturabschaltung mit – genau die, die bei 3 A nach Sekunden
+zuschlägt. „MAX 5A“ steht also auf dem Gehäuse, aber in keinem Datenblatt.
 
 ## Modul 2 – UBEC-Platine 5 A
 
