@@ -50,60 +50,123 @@ Hier den Beitrag schreiben.
   einfach nur Tags benutzen.
 
 
+  ── BILDER: WOHIN UND WIE BENENNEN ────────────────────────────────
+
+  REGEL: Pro Beitrag ein eigener Ordner unter assets/, benannt exakt
+  wie die Beitragsdatei (ohne .md).
+
+      _posts/2026-09-14-antenne-fuer-2m.md      <- der Beitrag
+      assets/2026-09-14-antenne-fuer-2m/        <- seine Bilder
+          01-material.jpg
+          02-aufbau-strahler.jpg
+          03-swr-messung.jpg
+          04-fertig-am-mast.jpg
+
+  Warum Ordner und nicht alles in assets/ mit langen Namen: nach
+  dreißig Beiträgen liegen sonst dreihundert Dateien nebeneinander.
+  So gehört zu jedem Beitrag genau ein Ordner – Beitrag gelöscht,
+  Ordner gelöscht, fertig, nichts bleibt übrig.
+
+  Zur Frage vorne oder hinten anhängen: bei einem Ordner erübrigt sich
+  das. Innerhalb des Ordners kommt die NUMMER nach VORNE (01-, 02-, ...),
+  dann stehen die Bilder im Dateimanager schon in der Reihenfolge, in
+  der sie im Beitrag vorkommen.
+
+  Für Dateinamen gilt:
+    - klein schreiben, keine Leerzeichen, keine Umlaute
+      also 02-loetstation.jpg statt "02 Lötstation.JPG"
+    - sagen, was drauf ist: 03-swr-messung.jpg statt 03-img4711.jpg
+      (der Name hilft später beim Wiederfinden – und mir, wenn ich
+       aus deinen Bildern einen Beitrag zusammenbauen soll)
+
+  Bilder, die zu keinem einzelnen Beitrag gehören (Logo, Profilbild),
+  kommen nach assets/allgemein/.
+
+
   ── BILDER EINBINDEN ──────────────────────────────────────────────
 
-  1. Bild nach assets/ kopieren, z. B. assets/loetstation.jpg
-     (Dateinamen klein, ohne Leerzeichen und ohne Umlaute halten –
-     also loetstation.jpg statt "Lötstation Bild.JPG")
-  2. Im Text so einbinden – der Pfad beginnt mit einem Schrägstrich:
+  Pfad beginnt immer mit einem Schrägstrich:
 
-         ![Kurze Bildbeschreibung](/assets/loetstation.jpg)
+      ![Fertige Antenne am Mast](/assets/2026-09-14-antenne-fuer-2m/04-fertig-am-mast.jpg)
 
-     Der Text in den eckigen Klammern ist der Alternativtext. Den bitte
-     immer ausfüllen: Screenreader lesen ihn vor, und er erscheint, falls
-     das Bild nicht lädt.
+  Der Text in den eckigen Klammern ist der Alternativtext. Den bitte
+  immer ausfüllen: Screenreader lesen ihn vor, und er erscheint, falls
+  das Bild nicht lädt.
 
-  3. Nicht vergessen, das Bild mit einzuchecken:
+  Nicht vergessen, die Bilder mit einzuchecken – am einfachsten der
+  ganze Ordner auf einmal:
 
-         git add assets/loetstation.jpg
+      git add assets/2026-09-14-antenne-fuer-2m/
 
 
   ── BILD MIT BILDUNTERSCHRIFT ─────────────────────────────────────
 
       <figure>
-        <img src="/assets/loetstation.jpg" alt="Kurze Bildbeschreibung">
-        <figcaption>Die Unterschrift unter dem Bild.</figcaption>
+        <img src="/assets/2026-09-14-antenne-fuer-2m/03-swr-messung.jpg"
+             alt="SWR-Messung am Antennenanalysator">
+        <figcaption>SWR bei 145,5 MHz – nah genug an 1:1.</figcaption>
       </figure>
 
 
   ── BILD ALS LINK / KLEINER DARGESTELLT ───────────────────────────
 
-      [![Beschreibung](/assets/loetstation.jpg)](/assets/loetstation.jpg)
+  Klick öffnet das Bild in voller Größe:
 
-      <img src="/assets/loetstation.jpg" alt="Beschreibung" width="400">
+      [![Beschreibung](/assets/BEITRAG/02-aufbau.jpg)](/assets/BEITRAG/02-aufbau.jpg)
+
+  Feste Breite in Pixeln:
+
+      <img src="/assets/BEITRAG/02-aufbau.jpg" alt="Beschreibung" width="400">
+
+
+  ── GRÖSSE UND FORMAT ─────────────────────────────────────────────
+
+  Fotos direkt aus der Kamera sind für eine Website viel zu groß.
+  Vor dem Ablegen auf etwa 1600 Pixel Breite verkleinern, Ziel sind
+  ungefähr 300 KB pro Bild.
+
+      Fotos              -> .jpg
+      Screenshots,       -> .png
+      Zeichnungen, Logos
+
+  Wichtig: Was einmal committet ist, bleibt für immer in der
+  Repo-Historie – auch nach dem Löschen. Also lieber vorher
+  verkleinern als nachher ärgern.
+
+  Verkleinern auf der Kommandozeile (ImageMagick):
+
+      magick original.jpg -resize 1600x -quality 82 01-aufbau.jpg
 
 
   ── PDF ODER ANDERE DATEI ZUM DOWNLOAD ────────────────────────────
 
-      [Schaltplan als PDF](/assets/schaltplan.pdf)
+      [Schaltplan als PDF](/assets/BEITRAG/schaltplan.pdf)
 
 
   ── VIDEO ─────────────────────────────────────────────────────────
 
-  Eigenes Video (Achtung: große Dateien blähen das Repo auf,
-  ab ca. 20 MB besser bei YouTube o. ä. hochladen):
+  Achtung: große Dateien blähen das Repo dauerhaft auf.
+  Ab ca. 20 MB besser bei YouTube o. ä. hochladen und verlinken.
 
       <video controls width="600">
-        <source src="/assets/aufbau.mp4" type="video/mp4">
+        <source src="/assets/BEITRAG/aufbau.mp4" type="video/mp4">
       </video>
 
 
-  ── UNTERORDNER ───────────────────────────────────────────────────
+  ── WENN ICH (CLAUDE) DEN BEITRAG SCHREIBEN SOLL ──────────────────
 
-  Bei vielen Medien lohnen sich Unterordner, der Pfad wächst dann mit:
+  Am besten so vorbereiten:
 
-      assets/2026-08-loetstation/bild1.jpg
-      →  ![Beschreibung](/assets/2026-08-loetstation/bild1.jpg)
+    1. Ordner assets/JJJJ-MM-TT-thema/ anlegen
+    2. Bilder in der gewünschten Reihenfolge hineinlegen (01-, 02-, ...)
+       mit sprechenden Namen
+    3. Stichpunkte dazuschreiben – entweder im Chat oder als
+       notizen.txt in denselben Ordner
+
+  Aus Reihenfolge, Namen und Stichpunkten baue ich den Beitrag und
+  setze die Bilder an die passenden Stellen. Die notizen.txt lösche
+  ich am Ende wieder.
+
 -->
 
 ## Zwischenüberschrift

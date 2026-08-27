@@ -1,6 +1,11 @@
 # Ordner für Medien: Bilder, PDFs, Downloads – alles, was in Beiträgen
 # eingebunden wird. Einbindung siehe _drafts/vorlage.md
 #
+# AUFBAU: pro Beitrag ein Unterordner, benannt wie die Beitragsdatei:
+#     assets/2026-09-14-antenne-fuer-2m/01-material.jpg
+# Bilder ohne Bezug zu einem Beitrag (Logo, Profilbild):
+#     assets/allgemein/
+#
 # Diese Datei sorgt nebenbei dafür, dass der Ordner auch dann in Git bleibt,
 # wenn noch nichts drin liegt (leere Ordner kennt Git sonst nicht).
 

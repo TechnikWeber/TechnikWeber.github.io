@@ -77,6 +77,32 @@ Die Liste der bewährten Tags steht in `_drafts/vorlage.md` – bitte von dort
 abschreiben, denn Groß-/Kleinschreibung zählt: `Amateurfunk` und `amateurfunk`
 werden zu zwei getrennten Schubladen.
 
+## Bilder
+
+Pro Beitrag ein Ordner unter `assets/`, benannt **exakt wie die Beitragsdatei**
+ohne `.md`. Bilder darin durchnummerieren:
+
+```
+_posts/2026-09-14-antenne-fuer-2m.md
+assets/2026-09-14-antenne-fuer-2m/01-material.jpg
+assets/2026-09-14-antenne-fuer-2m/02-aufbau-strahler.jpg
+```
+
+Einbinden mit führendem Schrägstrich:
+
+```markdown
+![Fertige Antenne am Mast](/assets/2026-09-14-antenne-fuer-2m/04-fertig-am-mast.jpg)
+```
+
+Vor dem Committen auf ca. 1600 px verkleinern – was einmal drin ist, bleibt für
+immer in der Historie:
+
+```bash
+magick original.jpg -resize 1600x -quality 82 01-aufbau.jpg
+```
+
+Details und weitere Beispiele stehen im Kommentarblock von `_drafts/vorlage.md`.
+
 ## Zwischendurch nachsehen
 
 ```bash
@@ -107,7 +133,8 @@ In dieser Reihenfolge prüfen:
 ```
 _posts/       veröffentlichte Beiträge (JJJJ-MM-TT-titel.md)
 _drafts/      Entwürfe + diese Anleitung – wird NICHT veröffentlicht
-assets/       Bilder, PDFs und andere Medien
+assets/       Medien – ein Unterordner je Beitrag, gleicher Name
+              wie die Beitragsdatei; assets/allgemein/ für den Rest
 themen.md     Übersicht aller Tags – füllt sich von selbst
 _includes/    Bausteine des Themes, z. B. footer.html
 _config.yml   Grundeinstellungen der Seite
