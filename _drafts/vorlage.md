@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: beitrag
 title: "TITEL HIER EINTRAGEN"
 date: 2026-08-27 09:00:00 +0200
 tags: [Elektronik]
@@ -23,6 +23,14 @@ Hier den Beitrag schreiben.
   Tags sind die Themen-Schubladen. Jeder Beitrag kann in mehreren
   gleichzeitig liegen – anders als bei echten Ordnern. Alle Tags samt
   ihrer Beiträge erscheinen automatisch auf der Seite /themen/.
+
+  Unter jedem Beitrag steht außerdem eine Zeile mit seinen Tags, die
+  auf die passende Stelle der Themenseite verlinkt:
+
+      Themen: Amateurfunk · Antennenbau
+
+  Dafür sorgt "layout: beitrag" oben im Kopf – das ist das normale
+  Beitragslayout plus diese Zeile. Bitte so stehen lassen.
 
       tags: [Amateurfunk]
       tags: [Amateurfunk, Antennenbau]

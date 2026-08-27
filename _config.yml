@@ -25,6 +25,15 @@ exclude:
   - README.md
   - _eingang/
 
+# Beiträge nutzen automatisch das Layout "beitrag" – das ist minimas
+# Beitragslayout plus der Tag-Zeile am Ende
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: beitrag
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

@@ -73,6 +73,8 @@ tags: [Amateurfunk, Antennenbau]
 ```
 
 Alles Getaggte erscheint automatisch unter <https://technikweber.github.io/themen/>.
+Unter jedem Beitrag steht zusätzlich eine Zeile `Themen: …`, die dorthin
+zurückverlinkt – dafür sorgt `layout: beitrag` im Kopf des Beitrags.
 Die Liste der bewährten Tags steht in `_drafts/vorlage.md` – bitte von dort
 abschreiben, denn Groß-/Kleinschreibung zählt: `Amateurfunk` und `amateurfunk`
 werden zu zwei getrennten Schubladen.
@@ -153,6 +155,7 @@ _eingang/     Arbeitsordner für den nächsten Beitrag – nicht in Git
 assets/       Medien – ein Unterordner je Beitrag, gleicher Name
               wie die Beitragsdatei; assets/allgemein/ für den Rest
 themen.md     Übersicht aller Tags – füllt sich von selbst
+_layouts/     beitrag.html = Beitragslayout inkl. Tag-Zeile am Ende
 _includes/    Bausteine des Themes, z. B. footer.html
 _config.yml   Grundeinstellungen der Seite
 ```

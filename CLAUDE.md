@@ -23,6 +23,8 @@ fertigen Beitrag bauen. Ablauf:
 2. Titel und Slug selbst aus dem Inhalt ableiten – Philipp erwartet
    ausdrücklich einen eigenen, ansprechenden Vorschlag, keine Rückfrage
 3. Beitrag anlegen: `_posts/JJJJ-MM-TT-slug.md`
+   - `layout: beitrag` (nicht `post`) – das ist minimas Beitragslayout
+     plus der Tag-Zeile am Ende, die auf /themen/ zurückverlinkt
    - Datum **muss in der Vergangenheit liegen**, sonst baut Jekyll ihn
      stillschweigend nicht mit (häufigste Fehlerquelle)
    - `tags:` setzen – Liste bewährter Tags steht in `_drafts/vorlage.md`,
@@ -41,6 +43,7 @@ fertigen Beitrag bauen. Ablauf:
 
 ```
 _posts/       veröffentlichte Beiträge (JJJJ-MM-TT-titel.md)
+_layouts/     beitrag.html – Beitragslayout inkl. Tag-Zeile
 _drafts/      ANLEITUNG.md (Philipps Nachschlagewerk) + vorlage.md
 _eingang/     Arbeitsordner, per .gitignore NICHT in Git (Originalfotos)
 assets/       ein Unterordner je Beitrag, benannt wie die Beitragsdatei
