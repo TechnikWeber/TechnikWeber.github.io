@@ -48,6 +48,31 @@ eigene Verantwortung und eigenes Risiko. Für etwaige Schäden, die aus der Nutz
 oder Nichtnutzung der dargestellten Informationen entstehen, wird keine Haftung
 übernommen.
 
+## Arbeiten an elektrischen Anlagen
+
+Ein Teil der auf dieser Website veröffentlichten Beiträge behandelt Elektronik,
+elektrische Schaltungen und den Umgang mit elektrischer Energie. Arbeiten an
+elektrischen Anlagen und Betriebsmitteln sind mit erheblichen Gefahren
+verbunden. Sie können zu schweren Verletzungen, Bränden, Sachschäden sowie zu
+lebensgefährlichen oder tödlichen Unfällen führen.
+
+Solche Arbeiten – insbesondere Arbeiten an Netzspannung – dürfen ausschließlich
+durch Elektrofachkräfte im Sinne der einschlägigen Normen und
+Unfallverhütungsvorschriften ausgeführt werden oder durch elektrotechnisch
+unterwiesene Personen unter Aufsicht und Leitung einer Elektrofachkraft. Die
+jeweils geltenden gesetzlichen Bestimmungen, technischen Regeln und
+Sicherheitsvorschriften sind einzuhalten.
+
+Die Beiträge dokumentieren eigene Projekte und Versuche. Sie stellen weder eine
+fachliche Anleitung noch eine Handlungsempfehlung dar und ersetzen weder eine
+elektrotechnische Ausbildung noch die fachkundige Prüfung des Einzelfalls.
+Nachbau und Umsetzung erfolgen ausschließlich auf eigene Gefahr und in eigener
+Verantwortung.
+
+Für Personen-, Sach- und Vermögensschäden, die aus der Umsetzung, dem Nachbau
+oder der sonstigen Nutzung der dargestellten Informationen entstehen, wird –
+soweit gesetzlich zulässig – keine Haftung übernommen.
+
 ## Urheberrecht
 
 Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten

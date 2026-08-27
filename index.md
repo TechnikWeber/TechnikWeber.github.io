@@ -5,9 +5,10 @@ list_title: Beiträge
 ---
 
 <style>
-  /* Auf der Startseite die beiden Überschriften ausblenden – der Reiter
-     "Beiträge" in der Navigation sagt bereits, worum es hier geht.
-     Wirkt nur auf dieser Seite, das übrige Layout bleibt unberührt. */
-  .home > .page-heading,
+  /* Das Theme setzt auf der Startseite zwei Überschriften: die Seiten-
+     überschrift ("Beiträge") und darunter noch einmal dieselbe über der
+     Liste. Die zweite wird ausgeblendet, die erste bleibt sichtbar –
+     so sieht die Seite aus wie Themen, Über mich und die übrigen.
+     Wirkt nur hier, das übrige Layout bleibt unberührt. */
   .home > .post-list-heading { display: none; }
 </style>
