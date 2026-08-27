@@ -56,7 +56,7 @@ einer einzelnen Li-Ion-Zelle.
 
 <figure class="abb">
   <div class="rahmen">
-<svg viewBox="0 0 760 850" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagTitel diagDesc" class="messdiagramm">
+<svg viewBox="0 0 760 889" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagTitel diagDesc" class="messdiagramm">
     <title id="diagTitel">Ausgangsspannung der drei Wandler über der Eingangsspannung, je Laststrom eine Linie</title>
     <desc id="diagDesc">Dieselben Zahlen stehen in der Tabelle weiter unten im Beitrag.</desc>
     <style>.messdiagramm{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.messdiagramm text{fill:#52514e}.d-legtext{font-size:12.5px}.d-muted{fill:#7c7b77;font-size:12px}.d-ptitel{font-size:13.5px;font-weight:600;fill:#1a1a19}.d-grid{stroke:#e6e6e3;stroke-width:1}.d-soll{stroke:#a9a8a3;stroke-width:1.5;stroke-dasharray:6 4}.d-vgrid{stroke:#f1f1ee;stroke-width:1}.d-axis{stroke:#c4c3bf;stroke-width:1}.d-ytext{font-size:11px;fill:#8a8985;text-anchor:end}.d-xtext{font-size:11.5px;text-anchor:middle}.d-fuss{font-size:11.5px;fill:#7c7b77}.d-open{fill:#ffffff;stroke-width:2.5}.messdiagramm g[data-p]{cursor:help}.messdiagramm g[data-p]:hover circle,.messdiagramm g[data-p]:hover path{opacity:.55}</style>
@@ -83,168 +83,174 @@ einer einzelnen Li-Ion-Zelle.
     <text x="560" y="46" class="d-legtext">kein Ausgang</text>
     <g>
     <text x="68" y="92" class="d-ptitel">Modul 1 · Hobbywing UBEC 3 A (max. 5 A)</text>
-    <line x1="76" y1="252.0" x2="676" y2="252.0" class="d-grid"/>
-    <text x="67" y="256.0" class="d-ytext">0</text>
-    <line x1="76" y1="225.1" x2="676" y2="225.1" class="d-grid"/>
-    <text x="67" y="229.1" class="d-ytext">1</text>
-    <line x1="76" y1="198.2" x2="676" y2="198.2" class="d-grid"/>
-    <text x="67" y="202.2" class="d-ytext">2</text>
-    <line x1="76" y1="171.3" x2="676" y2="171.3" class="d-grid"/>
-    <text x="67" y="175.3" class="d-ytext">3</text>
-    <line x1="76" y1="144.4" x2="676" y2="144.4" class="d-grid"/>
-    <text x="67" y="148.4" class="d-ytext">4</text>
-    <line x1="76" y1="117.5" x2="676" y2="117.5" class="d-soll"/>
-    <text x="67" y="121.5" class="d-ytext">5</text>
-    <line x1="76.0" y1="104.0" x2="76.0" y2="252.0" class="d-vgrid"/>
-    <text x="76.0" y="273" class="d-xtext">5,5 V</text>
-    <line x1="226.0" y1="104.0" x2="226.0" y2="252.0" class="d-vgrid"/>
-    <text x="226.0" y="273" class="d-xtext">6,6 V</text>
-    <line x1="376.0" y1="104.0" x2="376.0" y2="252.0" class="d-vgrid"/>
-    <text x="376.0" y="273" class="d-xtext">7,4 V</text>
-    <line x1="526.0" y1="104.0" x2="526.0" y2="252.0" class="d-vgrid"/>
-    <text x="526.0" y="273" class="d-xtext">11,1 V</text>
-    <line x1="676.0" y1="104.0" x2="676.0" y2="252.0" class="d-vgrid"/>
-    <text x="676.0" y="273" class="d-xtext">26 V</text>
-    <line x1="76" y1="252.0" x2="676" y2="252.0" class="d-axis"/>
-    <line x1="76.0" y1="150.6" x2="226.0" y2="122.8" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="122.8" x2="376.0" y2="114.2" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="114.2" x2="526.0" y2="114.2" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="526.0" y1="114.2" x2="676.0" y2="114.2" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 1 A: 3,77 V</title><circle cx="76.0" cy="150.6" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 1 A: 4,80 V</title><circle cx="226.0" cy="122.8" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 1 A: 5,12 V</title><circle cx="376.0" cy="114.2" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 1 A: 5,12 V</title><circle cx="526.0" cy="114.2" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>26 V bei 1 A: 5,12 V</title><circle cx="676.0" cy="114.2" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="169.9" x2="226.0" y2="141.7" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="141.7" x2="376.0" y2="122.8" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="122.8" x2="526.0" y2="119.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="526.0" y1="119.3" x2="676.0" y2="119.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 2 A: 3,05 V</title><circle cx="76.0" cy="169.9" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 2 A: 4,10 V</title><circle cx="226.0" cy="141.7" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 2 A: 4,80 V</title><circle cx="376.0" cy="122.8" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 2 A: 4,93 V</title><circle cx="526.0" cy="119.3" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>26 V bei 2 A: 4,93 V</title><circle cx="676.0" cy="119.3" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="184.7" x2="226.0" y2="165.9" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="226.0" y1="165.9" x2="376.0" y2="155.1" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="376.0" y1="155.1" x2="526.0" y2="124.2" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="526.0" y1="124.2" x2="676.0" y2="124.2" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 3 A: 2,50 V, fällt nach Sekunden ab</title><circle cx="76.0" cy="184.7" r="4.5" class="d-open" stroke="#1c5cab"/></g>
-    <g data-p="1"><title>6,6 V bei 3 A: 3,20 V, fällt nach Sekunden ab</title><circle cx="226.0" cy="165.9" r="4.5" class="d-open" stroke="#1c5cab"/></g>
-    <g data-p="1"><title>7,4 V bei 3 A: 3,60 V, fällt nach Sekunden ab</title><circle cx="376.0" cy="155.1" r="4.5" class="d-open" stroke="#1c5cab"/></g>
-    <g data-p="1"><title>11,1 V bei 3 A: 4,75 V</title><circle cx="526.0" cy="124.2" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>26 V bei 3 A: 4,75 V</title><circle cx="676.0" cy="124.2" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76" y1="265.0" x2="676" y2="265.0" class="d-grid"/>
+    <text x="67" y="269.0" class="d-ytext">0</text>
+    <line x1="76" y1="238.2" x2="676" y2="238.2" class="d-grid"/>
+    <text x="67" y="242.2" class="d-ytext">1</text>
+    <line x1="76" y1="211.3" x2="676" y2="211.3" class="d-grid"/>
+    <text x="67" y="215.3" class="d-ytext">2</text>
+    <line x1="76" y1="184.5" x2="676" y2="184.5" class="d-grid"/>
+    <text x="67" y="188.5" class="d-ytext">3</text>
+    <line x1="76" y1="157.7" x2="676" y2="157.7" class="d-grid"/>
+    <text x="67" y="161.7" class="d-ytext">4</text>
+    <line x1="76" y1="130.8" x2="676" y2="130.8" class="d-soll"/>
+    <text x="67" y="134.8" class="d-ytext">5</text>
+    <line x1="76" y1="104.0" x2="676" y2="104.0" class="d-grid"/>
+    <text x="67" y="108.0" class="d-ytext">6</text>
+    <line x1="76.0" y1="104.0" x2="76.0" y2="265.0" class="d-vgrid"/>
+    <text x="76.0" y="286" class="d-xtext">5,5 V</text>
+    <line x1="226.0" y1="104.0" x2="226.0" y2="265.0" class="d-vgrid"/>
+    <text x="226.0" y="286" class="d-xtext">6,6 V</text>
+    <line x1="376.0" y1="104.0" x2="376.0" y2="265.0" class="d-vgrid"/>
+    <text x="376.0" y="286" class="d-xtext">7,4 V</text>
+    <line x1="526.0" y1="104.0" x2="526.0" y2="265.0" class="d-vgrid"/>
+    <text x="526.0" y="286" class="d-xtext">11,1 V</text>
+    <line x1="676.0" y1="104.0" x2="676.0" y2="265.0" class="d-vgrid"/>
+    <text x="676.0" y="286" class="d-xtext">26 V</text>
+    <line x1="76" y1="265.0" x2="676" y2="265.0" class="d-axis"/>
+    <line x1="76.0" y1="163.8" x2="226.0" y2="136.2" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="136.2" x2="376.0" y2="127.6" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="127.6" x2="526.0" y2="127.6" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="526.0" y1="127.6" x2="676.0" y2="127.6" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 1 A: 3,77 V</title><circle cx="76.0" cy="163.8" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 1 A: 4,80 V</title><circle cx="226.0" cy="136.2" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 1 A: 5,12 V</title><circle cx="376.0" cy="127.6" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 1 A: 5,12 V</title><circle cx="526.0" cy="127.6" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>26 V bei 1 A: 5,12 V</title><circle cx="676.0" cy="127.6" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="183.2" x2="226.0" y2="155.0" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="155.0" x2="376.0" y2="136.2" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="136.2" x2="526.0" y2="132.7" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="526.0" y1="132.7" x2="676.0" y2="132.7" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 2 A: 3,05 V</title><circle cx="76.0" cy="183.2" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 2 A: 4,10 V</title><circle cx="226.0" cy="155.0" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 2 A: 4,80 V</title><circle cx="376.0" cy="136.2" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 2 A: 4,93 V</title><circle cx="526.0" cy="132.7" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>26 V bei 2 A: 4,93 V</title><circle cx="676.0" cy="132.7" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="197.9" x2="226.0" y2="179.1" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="226.0" y1="179.1" x2="376.0" y2="168.4" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="376.0" y1="168.4" x2="526.0" y2="137.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="526.0" y1="137.5" x2="676.0" y2="137.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 3 A: 2,50 V, fällt nach Sekunden ab</title><circle cx="76.0" cy="197.9" r="4.5" class="d-open" stroke="#1c5cab"/></g>
+    <g data-p="1"><title>6,6 V bei 3 A: 3,20 V, fällt nach Sekunden ab</title><circle cx="226.0" cy="179.1" r="4.5" class="d-open" stroke="#1c5cab"/></g>
+    <g data-p="1"><title>7,4 V bei 3 A: 3,60 V, fällt nach Sekunden ab</title><circle cx="376.0" cy="168.4" r="4.5" class="d-open" stroke="#1c5cab"/></g>
+    <g data-p="1"><title>11,1 V bei 3 A: 4,75 V</title><circle cx="526.0" cy="137.5" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>26 V bei 3 A: 4,75 V</title><circle cx="676.0" cy="137.5" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
     </g>
     <g>
-    <text x="68" y="334" class="d-ptitel">Modul 2 · UBEC-Platine 5 A</text>
-    <line x1="76" y1="494.0" x2="676" y2="494.0" class="d-grid"/>
-    <text x="67" y="498.0" class="d-ytext">0</text>
-    <line x1="76" y1="467.1" x2="676" y2="467.1" class="d-grid"/>
-    <text x="67" y="471.1" class="d-ytext">1</text>
-    <line x1="76" y1="440.2" x2="676" y2="440.2" class="d-grid"/>
-    <text x="67" y="444.2" class="d-ytext">2</text>
-    <line x1="76" y1="413.3" x2="676" y2="413.3" class="d-grid"/>
-    <text x="67" y="417.3" class="d-ytext">3</text>
-    <line x1="76" y1="386.4" x2="676" y2="386.4" class="d-grid"/>
-    <text x="67" y="390.4" class="d-ytext">4</text>
-    <line x1="76" y1="359.5" x2="676" y2="359.5" class="d-soll"/>
-    <text x="67" y="363.5" class="d-ytext">5</text>
-    <line x1="76.0" y1="346.0" x2="76.0" y2="494.0" class="d-vgrid"/>
-    <text x="76.0" y="515" class="d-xtext">5,5 V</text>
-    <line x1="226.0" y1="346.0" x2="226.0" y2="494.0" class="d-vgrid"/>
-    <text x="226.0" y="515" class="d-xtext">6,6 V</text>
-    <line x1="376.0" y1="346.0" x2="376.0" y2="494.0" class="d-vgrid"/>
-    <text x="376.0" y="515" class="d-xtext">7,4 V</text>
-    <line x1="526.0" y1="346.0" x2="526.0" y2="494.0" class="d-vgrid"/>
-    <text x="526.0" y="515" class="d-xtext">11,1 V</text>
-    <line x1="676.0" y1="346.0" x2="676.0" y2="494.0" class="d-vgrid"/>
-    <text x="676.0" y="515" class="d-xtext">26 V</text>
-    <line x1="76" y1="494.0" x2="676" y2="494.0" class="d-axis"/>
-    <line x1="76.0" y1="384.5" x2="226.0" y2="368.9" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="368.9" x2="376.0" y2="366.5" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="366.5" x2="526.0" y2="361.3" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 1 A: 4,07 V</title><circle cx="76.0" cy="384.5" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 1 A: 4,65 V</title><circle cx="226.0" cy="368.9" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 1 A: 4,74 V</title><circle cx="376.0" cy="366.5" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 1 A: 4,93 V</title><circle cx="526.0" cy="361.3" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="399.8" x2="226.0" y2="369.9" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="369.9" x2="376.0" y2="367.5" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="367.5" x2="526.0" y2="364.8" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 2 A: 3,50 V</title><circle cx="76.0" cy="399.8" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 2 A: 4,61 V</title><circle cx="226.0" cy="369.9" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 2 A: 4,70 V</title><circle cx="376.0" cy="367.5" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 2 A: 4,80 V</title><circle cx="526.0" cy="364.8" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="418.7" x2="226.0" y2="389.6" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="389.6" x2="376.0" y2="384.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="384.5" x2="526.0" y2="377.2" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="526.0" y1="377.2" x2="676.0" y2="374.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 3 A: 2,80 V</title><circle cx="76.0" cy="418.7" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 3 A: 3,88 V</title><circle cx="226.0" cy="389.6" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 3 A: 4,07 V</title><circle cx="376.0" cy="384.5" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 3 A: 4,34 V</title><circle cx="526.0" cy="377.2" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>26 V bei 3 A: 4,44 V</title><circle cx="676.0" cy="374.5" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>5,5 V bei 5 A: kein Ausgang</title><path d="M71.5 482.5 l9 9 M80.5 482.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>6,6 V bei 5 A: kein Ausgang</title><path d="M221.5 482.5 l9 9 M230.5 482.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>7,4 V bei 5 A: kein Ausgang</title><path d="M371.5 482.5 l9 9 M380.5 482.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>11,1 V bei 5 A: kein Ausgang</title><path d="M521.5 482.5 l9 9 M530.5 482.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>26 V bei 5 A: kein Ausgang</title><path d="M671.5 482.5 l9 9 M680.5 482.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <text x="68" y="347" class="d-ptitel">Modul 2 · UBEC-Platine 5 A</text>
+    <line x1="76" y1="520.0" x2="676" y2="520.0" class="d-grid"/>
+    <text x="67" y="524.0" class="d-ytext">0</text>
+    <line x1="76" y1="493.2" x2="676" y2="493.2" class="d-grid"/>
+    <text x="67" y="497.2" class="d-ytext">1</text>
+    <line x1="76" y1="466.3" x2="676" y2="466.3" class="d-grid"/>
+    <text x="67" y="470.3" class="d-ytext">2</text>
+    <line x1="76" y1="439.5" x2="676" y2="439.5" class="d-grid"/>
+    <text x="67" y="443.5" class="d-ytext">3</text>
+    <line x1="76" y1="412.7" x2="676" y2="412.7" class="d-grid"/>
+    <text x="67" y="416.7" class="d-ytext">4</text>
+    <line x1="76" y1="385.8" x2="676" y2="385.8" class="d-soll"/>
+    <text x="67" y="389.8" class="d-ytext">5</text>
+    <line x1="76" y1="359.0" x2="676" y2="359.0" class="d-grid"/>
+    <text x="67" y="363.0" class="d-ytext">6</text>
+    <line x1="76.0" y1="359.0" x2="76.0" y2="520.0" class="d-vgrid"/>
+    <text x="76.0" y="541" class="d-xtext">5,5 V</text>
+    <line x1="226.0" y1="359.0" x2="226.0" y2="520.0" class="d-vgrid"/>
+    <text x="226.0" y="541" class="d-xtext">6,6 V</text>
+    <line x1="376.0" y1="359.0" x2="376.0" y2="520.0" class="d-vgrid"/>
+    <text x="376.0" y="541" class="d-xtext">7,4 V</text>
+    <line x1="526.0" y1="359.0" x2="526.0" y2="520.0" class="d-vgrid"/>
+    <text x="526.0" y="541" class="d-xtext">11,1 V</text>
+    <line x1="676.0" y1="359.0" x2="676.0" y2="520.0" class="d-vgrid"/>
+    <text x="676.0" y="541" class="d-xtext">26 V</text>
+    <line x1="76" y1="520.0" x2="676" y2="520.0" class="d-axis"/>
+    <line x1="76.0" y1="410.8" x2="226.0" y2="395.2" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="395.2" x2="376.0" y2="392.8" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="392.8" x2="526.0" y2="387.7" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 1 A: 4,07 V</title><circle cx="76.0" cy="410.8" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 1 A: 4,65 V</title><circle cx="226.0" cy="395.2" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 1 A: 4,74 V</title><circle cx="376.0" cy="392.8" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 1 A: 4,93 V</title><circle cx="526.0" cy="387.7" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="426.1" x2="226.0" y2="396.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="396.3" x2="376.0" y2="393.9" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="393.9" x2="526.0" y2="391.2" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 2 A: 3,50 V</title><circle cx="76.0" cy="426.1" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 2 A: 4,61 V</title><circle cx="226.0" cy="396.3" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 2 A: 4,70 V</title><circle cx="376.0" cy="393.9" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 2 A: 4,80 V</title><circle cx="526.0" cy="391.2" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="444.9" x2="226.0" y2="415.9" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="415.9" x2="376.0" y2="410.8" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="410.8" x2="526.0" y2="403.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="526.0" y1="403.5" x2="676.0" y2="400.9" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 3 A: 2,80 V</title><circle cx="76.0" cy="444.9" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 3 A: 3,88 V</title><circle cx="226.0" cy="415.9" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 3 A: 4,07 V</title><circle cx="376.0" cy="410.8" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 3 A: 4,34 V</title><circle cx="526.0" cy="403.5" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>26 V bei 3 A: 4,44 V</title><circle cx="676.0" cy="400.9" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>5,5 V bei 5 A: kein Ausgang</title><path d="M71.5 508.5 l9 9 M80.5 508.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>6,6 V bei 5 A: kein Ausgang</title><path d="M221.5 508.5 l9 9 M230.5 508.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>7,4 V bei 5 A: kein Ausgang</title><path d="M371.5 508.5 l9 9 M380.5 508.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>11,1 V bei 5 A: kein Ausgang</title><path d="M521.5 508.5 l9 9 M530.5 508.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>26 V bei 5 A: kein Ausgang</title><path d="M671.5 508.5 l9 9 M680.5 508.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
     </g>
     <g>
-    <text x="68" y="576" class="d-ptitel">Modul 3 · Buck-Boost-Modul</text>
-    <line x1="76" y1="736.0" x2="676" y2="736.0" class="d-grid"/>
-    <text x="67" y="740.0" class="d-ytext">0</text>
-    <line x1="76" y1="709.1" x2="676" y2="709.1" class="d-grid"/>
-    <text x="67" y="713.1" class="d-ytext">1</text>
-    <line x1="76" y1="682.2" x2="676" y2="682.2" class="d-grid"/>
-    <text x="67" y="686.2" class="d-ytext">2</text>
-    <line x1="76" y1="655.3" x2="676" y2="655.3" class="d-grid"/>
-    <text x="67" y="659.3" class="d-ytext">3</text>
-    <line x1="76" y1="628.4" x2="676" y2="628.4" class="d-grid"/>
-    <text x="67" y="632.4" class="d-ytext">4</text>
-    <line x1="76" y1="601.5" x2="676" y2="601.5" class="d-soll"/>
-    <text x="67" y="605.5" class="d-ytext">5</text>
-    <line x1="76.0" y1="588.0" x2="76.0" y2="736.0" class="d-vgrid"/>
-    <text x="76.0" y="757" class="d-xtext">5,5 V</text>
-    <line x1="226.0" y1="588.0" x2="226.0" y2="736.0" class="d-vgrid"/>
-    <text x="226.0" y="757" class="d-xtext">6,6 V</text>
-    <line x1="376.0" y1="588.0" x2="376.0" y2="736.0" class="d-vgrid"/>
-    <text x="376.0" y="757" class="d-xtext">7,4 V</text>
-    <line x1="526.0" y1="588.0" x2="526.0" y2="736.0" class="d-vgrid"/>
-    <text x="526.0" y="757" class="d-xtext">11,1 V</text>
-    <line x1="676.0" y1="588.0" x2="676.0" y2="736.0" class="d-vgrid"/>
-    <text x="676.0" y="757" class="d-xtext">26 V</text>
-    <line x1="76" y1="736.0" x2="676" y2="736.0" class="d-axis"/>
-    <line x1="76.0" y1="599.0" x2="226.0" y2="599.0" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="599.0" x2="376.0" y2="599.0" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="599.0" x2="526.0" y2="599.0" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 1 A: 5,09 V</title><circle cx="76.0" cy="599.0" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>6,6 V bei 1 A: 5,09 V</title><circle cx="226.0" cy="599.0" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 1 A: 5,09 V</title><circle cx="376.0" cy="599.0" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 1 A: 5,09 V</title><circle cx="526.0" cy="599.0" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="679.5" x2="226.0" y2="602.0" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="226.0" y1="602.0" x2="376.0" y2="602.0" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="602.0" x2="526.0" y2="602.0" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 2 A: 2,10 V, fällt nach Sekunden ab</title><circle cx="76.0" cy="679.5" r="4.5" class="d-open" stroke="#3987e5"/></g>
-    <g data-p="1"><title>6,6 V bei 2 A: 4,98 V</title><circle cx="226.0" cy="602.0" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 2 A: 4,98 V</title><circle cx="376.0" cy="602.0" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 2 A: 4,98 V</title><circle cx="526.0" cy="602.0" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="76.0" y1="736.0" x2="226.0" y2="605.2" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="226.0" y1="605.2" x2="376.0" y2="605.0" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="605.0" x2="526.0" y2="605.0" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 3 A: kein Ausgang</title><path d="M71.5 724.5 l9 9 M80.5 724.5 l-9 9" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>6,6 V bei 3 A: 4,86 V</title><circle cx="226.0" cy="605.2" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 3 A: 4,87 V</title><circle cx="376.0" cy="605.0" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 3 A: 4,87 V</title><circle cx="526.0" cy="605.0" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
-    <line x1="226.0" y1="736.0" x2="376.0" y2="611.4" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
-    <line x1="376.0" y1="611.4" x2="526.0" y2="611.7" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="526.0" y1="611.7" x2="676.0" y2="611.7" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round"/>
-    <g data-p="1"><title>5,5 V bei 5 A: kein Ausgang</title><path d="M86.5 724.5 l9 9 M95.5 724.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>6,6 V bei 5 A: kein Ausgang</title><path d="M221.5 724.5 l9 9 M230.5 724.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
-    <g data-p="1"><title>7,4 V bei 5 A: 4,63 V</title><circle cx="376.0" cy="611.4" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>11,1 V bei 5 A: 4,62 V</title><circle cx="526.0" cy="611.7" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>26 V bei 5 A: 4,62 V</title><circle cx="676.0" cy="611.7" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
+    <text x="68" y="602" class="d-ptitel">Modul 3 · Buck-Boost-Modul</text>
+    <line x1="76" y1="775.0" x2="676" y2="775.0" class="d-grid"/>
+    <text x="67" y="779.0" class="d-ytext">0</text>
+    <line x1="76" y1="748.2" x2="676" y2="748.2" class="d-grid"/>
+    <text x="67" y="752.2" class="d-ytext">1</text>
+    <line x1="76" y1="721.3" x2="676" y2="721.3" class="d-grid"/>
+    <text x="67" y="725.3" class="d-ytext">2</text>
+    <line x1="76" y1="694.5" x2="676" y2="694.5" class="d-grid"/>
+    <text x="67" y="698.5" class="d-ytext">3</text>
+    <line x1="76" y1="667.7" x2="676" y2="667.7" class="d-grid"/>
+    <text x="67" y="671.7" class="d-ytext">4</text>
+    <line x1="76" y1="640.8" x2="676" y2="640.8" class="d-soll"/>
+    <text x="67" y="644.8" class="d-ytext">5</text>
+    <line x1="76" y1="614.0" x2="676" y2="614.0" class="d-grid"/>
+    <text x="67" y="618.0" class="d-ytext">6</text>
+    <line x1="76.0" y1="614.0" x2="76.0" y2="775.0" class="d-vgrid"/>
+    <text x="76.0" y="796" class="d-xtext">5,5 V</text>
+    <line x1="226.0" y1="614.0" x2="226.0" y2="775.0" class="d-vgrid"/>
+    <text x="226.0" y="796" class="d-xtext">6,6 V</text>
+    <line x1="376.0" y1="614.0" x2="376.0" y2="775.0" class="d-vgrid"/>
+    <text x="376.0" y="796" class="d-xtext">7,4 V</text>
+    <line x1="526.0" y1="614.0" x2="526.0" y2="775.0" class="d-vgrid"/>
+    <text x="526.0" y="796" class="d-xtext">11,1 V</text>
+    <line x1="676.0" y1="614.0" x2="676.0" y2="775.0" class="d-vgrid"/>
+    <text x="676.0" y="796" class="d-xtext">26 V</text>
+    <line x1="76" y1="775.0" x2="676" y2="775.0" class="d-axis"/>
+    <line x1="76.0" y1="638.4" x2="226.0" y2="638.4" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="638.4" x2="376.0" y2="638.4" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="638.4" x2="526.0" y2="638.4" stroke="#86b6ef" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 1 A: 5,09 V</title><circle cx="76.0" cy="638.4" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>6,6 V bei 1 A: 5,09 V</title><circle cx="226.0" cy="638.4" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 1 A: 5,09 V</title><circle cx="376.0" cy="638.4" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 1 A: 5,09 V</title><circle cx="526.0" cy="638.4" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="718.6" x2="226.0" y2="641.4" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="226.0" y1="641.4" x2="376.0" y2="641.4" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="641.4" x2="526.0" y2="641.4" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 2 A: 2,10 V, fällt nach Sekunden ab</title><circle cx="76.0" cy="718.6" r="4.5" class="d-open" stroke="#3987e5"/></g>
+    <g data-p="1"><title>6,6 V bei 2 A: 4,98 V</title><circle cx="226.0" cy="641.4" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 2 A: 4,98 V</title><circle cx="376.0" cy="641.4" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 2 A: 4,98 V</title><circle cx="526.0" cy="641.4" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="76.0" y1="775.0" x2="226.0" y2="644.6" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="226.0" y1="644.6" x2="376.0" y2="644.3" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="644.3" x2="526.0" y2="644.3" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 3 A: kein Ausgang</title><path d="M71.5 763.5 l9 9 M80.5 763.5 l-9 9" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>6,6 V bei 3 A: 4,86 V</title><circle cx="226.0" cy="644.6" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 3 A: 4,87 V</title><circle cx="376.0" cy="644.3" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 3 A: 4,87 V</title><circle cx="526.0" cy="644.3" r="4.5" fill="#1c5cab" stroke="#ffffff" stroke-width="2"/></g>
+    <line x1="226.0" y1="775.0" x2="376.0" y2="650.8" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4"/>
+    <line x1="376.0" y1="650.8" x2="526.0" y2="651.0" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="526.0" y1="651.0" x2="676.0" y2="651.0" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round"/>
+    <g data-p="1"><title>5,5 V bei 5 A: kein Ausgang</title><path d="M86.5 763.5 l9 9 M95.5 763.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>6,6 V bei 5 A: kein Ausgang</title><path d="M221.5 763.5 l9 9 M230.5 763.5 l-9 9" stroke="#0d366b" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+    <g data-p="1"><title>7,4 V bei 5 A: 4,63 V</title><circle cx="376.0" cy="650.8" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>11,1 V bei 5 A: 4,62 V</title><circle cx="526.0" cy="651.0" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>26 V bei 5 A: 4,62 V</title><circle cx="676.0" cy="651.0" r="4.5" fill="#0d366b" stroke="#ffffff" stroke-width="2"/></g>
     </g>
-    <text x="76" y="824" class="d-fuss">waagerecht: angelegte Eingangsspannung (Abstände nicht maßstäblich) · senkrecht: Ausgangsspannung in Volt</text>
-    <text x="76" y="842" class="d-fuss">Fehlt am rechten Rand ein Punkt, wurde dort nicht gemessen.</text>
+    <text x="76" y="863" class="d-fuss">waagerecht: angelegte Eingangsspannung (Abstände nicht maßstäblich) · senkrecht: Ausgangsspannung in Volt</text>
+    <text x="76" y="881" class="d-fuss">Fehlt am rechten Rand ein Punkt, wurde dort nicht gemessen.</text>
     </svg>
   </div>
   <figcaption>Ausgangsspannung über der Eingangsspannung, je Laststrom eine
