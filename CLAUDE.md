@@ -35,10 +35,9 @@ fertigen Beitrag bauen. Ablauf:
    - verkleinern: `magick original.jpg -resize 1600x -quality 82 01-name.jpg`
    - sprechende Namen, `01-`, `02-` … voranstellen
    - Alternativtexte im Beitrag immer ausfüllen
-5. Beitrag committen und pushen (ohne Rückfrage, siehe oben)
-6. Nach dem Push: Build abwarten und die Live-Seite prüfen
-   (`gh api repos/TechnikWeber/TechnikWeber.github.io/pages/builds/latest`)
-7. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur
+5. Beitrag committen und pushen (ohne Rückfrage, siehe oben). Nicht auf den
+   GitHub-Pages-Build warten – der läuft nach jedem Push automatisch
+6. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur
    der Beitrag liegen, an dem gerade gearbeitet wird
 
 ## Ordner
