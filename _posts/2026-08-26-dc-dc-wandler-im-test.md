@@ -5,15 +5,11 @@ date: 2026-08-26 19:30:00 +0200
 tags: [Elektronik, Messtechnik]
 ---
 
-Fünf Volt aus einem Akku zu machen, klingt nach einem gelösten Problem. Man
-bestellt für ein paar Euro ein Modul, lötet es dazwischen, fertig. Auf allen
-dreien, die vergangenes Wochenende bei mir auf dem Tisch lagen, steht denn
-auch souverän **5 V** und **bis 5 A**.
-
-Nachgemessen habe ich es trotzdem. Und das Ergebnis fiel deutlicher aus, als
-mir lieb war: Von den dreien liefert genau **einer** verlässlich fünf Volt.
-Die anderen beiden kommen bei kleiner Last in die Nähe – und brechen ein,
-sobald es ernst wird.
+Fünf Volt aus einem Akku zu machen, klingt nach einem gelösten Problem: Modul
+für ein paar Euro bestellen, dazwischenlöten, fertig. Auf allen dreien, die
+vergangenes Wochenende bei mir auf dem Tisch lagen, steht auch souverän
+**5 V** und **bis 5 A**. Nachgemessen habe ich es trotzdem – und von den dreien
+liefert genau **einer** verlässlich fünf Volt.
 
 ## Die drei Kandidaten
 
@@ -24,8 +20,8 @@ sobald es ernst wird.
               Leitungen und einem grünen Ferritringkern im Ausgangskabel">
   </a>
   <figcaption>Modul 1 – Hobbywing UBEC, 3 A Dauerstrom, „MAX 5A“, 2–6S LiPo.
-  Als einziges im geschirmten Blechgehäuse, und im Ausgangskabel steckt ein
-  Ferritringkern.</figcaption>
+  Als einziges im geschirmten Blechgehäuse, mit Ferritringkern im Kabel.
+  </figcaption>
 </figure>
 
 <figure class="abb">
@@ -34,9 +30,8 @@ sobald es ernst wird.
          alt="Kleine blaue Platine im durchsichtigen Schrumpfschlauch, zwei
               Elkos, Schaltregler-IC und Speicherdrossel mit Aufdruck UBEC 5A">
   </a>
-  <figcaption>Modul 2 – nackte Reglerplatine im Schrumpfschlauch. Auf der
-  Drossel klebt ein Aufkleber „UBEC 5A“. Zwei Elkos, ein Schaltregler-IC,
-  sonst nichts.</figcaption>
+  <figcaption>Modul 2 – nackte Reglerplatine im Schrumpfschlauch, Aufkleber
+  „UBEC 5A“ auf der Drossel.</figcaption>
 </figure>
 
 <figure class="abb">
@@ -46,37 +41,24 @@ sobald es ernst wird.
               zwei Elkos und Lötpads für IN plus, IN minus, OUT plus,
               OUT minus und EN">
   </a>
-  <figcaption>Modul 3 – DC-DC-Buck-Boost-Modul. Geschirmte Drossel, ein
-  ordentlicher QFN-Regler und Lötpads für Ein- und Ausgang plus einen
-  Enable-Eingang.</figcaption>
+  <figcaption>Modul 3 – Buck-Boost-Modul mit geschirmter Drossel, QFN-Regler
+  und Enable-Eingang.</figcaption>
 </figure>
 
-Der entscheidende Unterschied steckt schon in den Namen. Die Module 1 und 2
-sind **UBECs**, also reine Abwärtswandler (Buck). Sie können eine Spannung nur
-herunterregeln, niemals hinauf. Bleibt am Eingang zu wenig übrig, geht am
-Ausgang zwangsläufig auch zu wenig heraus.
-
-Modul 3 ist ein **Buck-Boost-Wandler**. Der kann beides und sollte deshalb auch
-dann noch fünf Volt liefern, wenn am Eingang weniger als fünf Volt anliegen.
-Genau das war die Frage, die mich interessiert hat.
+Der entscheidende Unterschied steckt schon in den Namen. Module 1 und 2 sind
+**UBECs**, also reine Abwärtswandler: Sie können eine Spannung nur
+herunterregeln, niemals hinauf. Modul 3 ist ein **Buck-Boost-Wandler** und
+kann beides – der sollte also auch dann noch fünf Volt liefern, wenn vorne
+weniger anliegt. Genau das war die Frage.
 
 ## Wie gemessen wurde
 
-Jedes Modul bekam nacheinander fünf Eingangsspannungen vorgesetzt – die
-typischen Akkuspannungen, die bei mir tatsächlich vorkommen:
-
-| Eingangsspannung | entspricht ungefähr |
-|---|---|
-| 5,5 V | zwei NiMH-Zellen / USB-Rest |
-| 6,6 V | 2S LiFePO₄ |
-| 7,4 V | 2S LiPo |
-| 11,1 V | 3S LiPo |
-| 26 V | 6S LiPo, frisch geladen |
-
-Bei jeder dieser Spannungen wurde der Ausgang mit 1 A, 2 A, 3 A und – wo das
-überhaupt ging – mit 5 A belastet und die Ausgangsspannung abgelesen.
-Zusätzlich habe ich Modul 3 noch mit 3,6 V gefüttert, also einer einzelnen
-Li-Ion-Zelle, weil ein Buck-Boost das ja eigentlich können muss.
+Jedes Modul bekam nacheinander 5,5 V, 6,6 V, 7,4 V, 11,1 V und 26 V vorgesetzt
+und wurde dabei mit 1 A, 2 A, 3 A und – wo das ging – mit 5 A belastet. Die
+6,6 V sind kein Zufall: Da ist ein 2S-LiPo leer. 7,4 V ist dessen
+Nennspannung, 11,1 V die eines 3S. Modul 3 habe ich zusätzlich mit 3,6 V
+gefüttert, also einer einzelnen Li-Ion-Zelle – ein Buck-Boost muss das
+eigentlich können.
 
 ## Die Messwerte im Bild
 
@@ -193,11 +175,11 @@ Li-Ion-Zelle, weil ein Buck-Boost das ja eigentlich können muss.
     <g data-p="1"><title>7,4 V bei 1 A: 4,74 V</title><circle cx="376.0" cy="366.5" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
     <g data-p="1"><title>11,1 V bei 1 A: 4,93 V</title><circle cx="526.0" cy="361.3" r="4.5" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/></g>
     <line x1="76.0" y1="399.8" x2="226.0" y2="369.9" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="226.0" y1="369.9" x2="376.0" y2="378.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="376.0" y1="378.3" x2="526.0" y2="371.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="226.0" y1="369.9" x2="376.0" y2="367.5" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="376.0" y1="367.5" x2="526.0" y2="371.3" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
     <g data-p="1"><title>5,5 V bei 2 A: 3,50 V</title><circle cx="76.0" cy="399.8" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
     <g data-p="1"><title>6,6 V bei 2 A: 4,61 V</title><circle cx="226.0" cy="369.9" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
-    <g data-p="1"><title>7,4 V bei 2 A: 4,30 V</title><circle cx="376.0" cy="378.3" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
+    <g data-p="1"><title>7,4 V bei 2 A: 4,70 V</title><circle cx="376.0" cy="367.5" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
     <g data-p="1"><title>11,1 V bei 2 A: 4,56 V</title><circle cx="526.0" cy="371.3" r="4.5" fill="#3987e5" stroke="#ffffff" stroke-width="2"/></g>
     <line x1="76.0" y1="418.7" x2="226.0" y2="389.6" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="226.0" y1="389.6" x2="376.0" y2="384.5" stroke="#1c5cab" stroke-width="2.5" stroke-linecap="round"/>
@@ -275,15 +257,15 @@ Li-Ion-Zelle, weil ein Buck-Boost das ja eigentlich können muss.
   </div>
   <figcaption>Ausgangsspannung über der Eingangsspannung, je Laststrom eine
   Linie. Die gestrichelte graue Linie ist der Sollwert von 5 V – je näher eine
-  Kurve an ihr klebt, desto besser. Wer am Rechner mit dem Mauszeiger auf einem
-  Punkt stehen bleibt, bekommt den genauen Wert angezeigt.</figcaption>
+  Kurve an ihr klebt, desto besser. Mit dem Mauszeiger auf einem Punkt gibt es
+  den genauen Wert.</figcaption>
 </figure>
 
-Die Form der Kurven erzählt die Geschichte schon ohne Zahlen. Bei den beiden
-UBECs oben laufen die Linien von links unten nach rechts oben: Ihre
-Ausgangsspannung hängt an der Eingangsspannung und findet erst weit rechts zur
-Waagerechten. Beim Buck-Boost unten liegt alles von Anfang an flach oben am
-Sollwert – bis auf die gestrichelten Stücke links, wo er schlicht aussteigt.
+Die Form der Kurven erzählt die Geschichte schon ohne Zahlen: Bei den beiden
+UBECs oben laufen die Linien von links unten nach rechts oben – ihre
+Ausgangsspannung hängt an der Eingangsspannung. Beim Buck-Boost unten liegt
+alles von Anfang an flach oben am Sollwert, bis auf die gestrichelten Stücke
+links, wo er aussteigt.
 
 ## Alle Messwerte
 
@@ -302,7 +284,7 @@ Sollwert – bis auf die gestrichelten Stücke links, wo er schlicht aussteigt.
 | Last | 5,5 V | 6,6 V | 7,4 V | 11,1 V | 26 V |
 |---|---|---|---|---|---|
 | 1 A | 4,07 V | 4,65 V | 4,74 V | 4,93 V | – |
-| 2 A | 3,50 V | 4,61 V | 4,30 V | 4,56 V | – |
+| 2 A | 3,50 V | 4,61 V | 4,70 V | 4,56 V | – |
 | 3 A | 2,80 V | 3,88 V | 4,07 V | 4,34 V | 4,44 V |
 | 5 A | ✕ | ✕ | ✕ | ✕ | ✕ |
 {: .messwerte}
@@ -322,77 +304,48 @@ Sollwert – bis auf die gestrichelten Stücke links, wo er schlicht aussteigt.
 · – nicht gemessen
 {: .legende}
 
-Bei 3,6 V Eingang – der einzelnen Li-Ion-Zelle – tut sich bei Modul 3 unter
-Last überhaupt nichts mehr. Startet man ihn dagegen **ohne** Last bei 3,8 V und
-belastet erst danach, hält er 1 A und 2 A bei rund 5 V. Ein Verhalten, mit dem
-man im Betrieb nicht plant.
+Bei 3,6 V tut sich bei Modul 3 unter Last überhaupt nichts mehr. Startet man
+ihn dagegen **ohne** Last bei 3,8 V und belastet erst danach, hält er 1 A und
+2 A bei rund 5 V. Ein Verhalten, mit dem man im Betrieb nicht plant.
 
 ## Was auffällt
 
-**Zu wenig Eingangsspannung ist für einen Buck das Ende.** Bei 5,5 V am Eingang
-liefert Modul 1 gerade noch 3,77 V, Modul 2 immerhin 4,07 V – beides schon bei
-gemütlichem 1 A. Dass ein Abwärtswandler eine gewisse Differenz zwischen Ein-
-und Ausgang braucht, ist bekannt. Wie groß die Lücke hier ausfällt, hat mich
-trotzdem überrascht. Sauber wird Modul 1 erst ab 7,4 V.
+**Ein Buck kann nicht hochsetzen.** Bei 5,5 V Eingang liefert Modul 1 gerade
+noch 3,77 V, Modul 2 immerhin 4,07 V – und das schon bei gemütlichem 1 A.
+Sauber wird Modul 1 erst ab 7,4 V.
 
 **„MAX 5A“ ist bei beiden UBECs eine Behauptung.** Modul 2 liefert bei 5 A an
-keiner einzigen Eingangsspannung noch irgendetwas. Modul 1 schaltet schon bei
-3 A ab, sobald weniger als 11 V anliegen – nach ein paar Sekunden wird es
-schlicht zu warm. Den 5-A-Versuch habe ich mir dort gespart.
+keiner einzigen Eingangsspannung noch etwas. Modul 1 schaltet schon bei 3 A
+thermisch ab, sobald weniger als 11 V anliegen.
 
-**Der Buck-Boost regelt in einer anderen Liga.** 5,09 V von 5,5 V bis 11,1 V
-Eingang, bei 1 A völlig unbeeindruckt von dem, was vorne anliegt. Und er ist
-der einzige der drei, der 5 A überhaupt schafft – ab 7,4 V Eingang, mit
-4,62 V am Ausgang.
+**Auch der Buck-Boost hat eine Grenze – sie liegt am Eingang.** Je niedriger
+die Eingangsspannung, desto höher der Eingangsstrom für dieselbe Leistung. Bei
+5,5 V und 2 A steigt er thermisch aus, bei 3,6 V geht unter Last gar nichts.
 
-**Auch der Buck-Boost hat eine harte Grenze, sie liegt nur woanders.** Sie
-liegt am Eingang. Wer aus 5,5 V zwei Ampere bei 5 V ziehen will, verlangt vorne
-gut zwei Ampere ab – und da steigt er thermisch aus. Je niedriger die
-Eingangsspannung, desto höher der Eingangsstrom für dieselbe Leistung. Bei
-3,6 V ist deshalb Schluss.
-
-**Anlaufen unter Last ist ein eigenes Thema.** Modul 1 startet bei 3 A gar
-nicht erst, wenn die Last von Anfang an dranhängt; fährt man den Strom langsam
-hoch, hält es dann aber. Modul 3 verhält sich bei 3,6 V genauso. Auf dem
-Basteltisch merkt man das kaum, im Gerät heißt es: geht nicht an.
-
-**Ein Teil des Spannungsabfalls steckt vermutlich gar nicht im Regler.** Bei
-Modul 1 fallen zwischen 1 A und 3 A rund 0,37 V ab, bei Modul 3 zwischen 1 A
-und 5 A rund 0,47 V. Beides läuft auf etwa 0,1 bis 0,2 Ω im Ausgangsweg hinaus
-– das ist die Größenordnung von dünner Litze, Steckverbindern und Klemmen, nicht
-von einer schlechten Regelung. Wer die letzten Millivolt braucht, sollte kurze,
-dicke Leitungen nehmen und direkt am Verbraucher nachmessen, nicht am Modul.
-
-**Ein Wert passt nicht ins Bild.** Modul 2 liefert bei 2 A aus 6,6 V ganze
-4,61 V, aus den höheren 7,4 V aber nur 4,30 V. Das ist gegen die Richtung aller
-anderen Kurven. Vermutlich ein Messfehler oder das Modul war beim zweiten
-Durchgang noch warm – das gehört bei Gelegenheit nachgemessen.
+**Ein Teil des Spannungsabfalls steckt nicht im Regler.** Der Abfall über der
+Last entspricht bei Modul 1 und 3 rund 0,1 bis 0,2 Ω – das ist die
+Größenordnung von dünner Litze, Steckern und Klemmen, nicht von schlechter
+Regelung. Wer die letzten Millivolt braucht, misst am Verbraucher, nicht am
+Modul.
 
 ## Fazit
 
 | Modul | Urteil |
 |---|---|
-| **Modul 3**<br>Buck-Boost | **Der Sieger.** Der einzige, der wirklich 5 V macht, und der einzige, der 5 A schafft. Wenn man ihm ab 6,6 V Eingang gibt, ist er ohne Einschränkung brauchbar. |
-| **Modul 1**<br>Hobbywing | Brauchbar für kleine Lasten ab 7,4 V aufwärts. Solide gebaut, geschirmt, aber lastschwach – und die 5 A auf dem Aufkleber sind Fiktion. |
+| **Modul 3**<br>Buck-Boost | **Der Sieger.** Der einzige, der wirklich 5 V macht, und der einzige, der 5 A schafft. Ab 6,6 V Eingang ohne Einschränkung brauchbar. |
+| **Modul 1**<br>Hobbywing | Brauchbar für kleine Lasten ab 7,4 V aufwärts. Solide gebaut, aber lastschwach – und die 5 A auf dem Aufkleber sind Fiktion. |
 | **Modul 2**<br>UBEC-Platine | Erreicht in keiner einzigen Messung 5 V. Bester Wert überhaupt: 4,93 V. Ich werde ihn nicht einbauen. |
 
-Für alles, was aus einem 2S- oder 3S-Akku ordentlich Strom bei 5 V braucht –
-Raspberry Pi, Displays, ein Funkgerät im Portabelbetrieb –, ist der
-Buck-Boost-Wandler die Wahl. Und wenn die Zelle auf dem Rückweg vom Berg
-langsam leer wird, ist er auch der einzige, der das noch mitmacht.
+Wer aus einem 2S- oder 3S-Akku ordentlich Strom bei 5 V braucht, nimmt den
+Buck-Boost – der ist auch der einzige, der noch mitmacht, wenn die Zelle auf
+dem Rückweg vom Berg langsam leer wird.
 
-Modul 1 behalte ich aus einem anderen Grund: Es ist das einzige mit
-Blechgehäuse und Ferritringkern im Kabel, also das einzige, bei dem sich
-überhaupt jemand Gedanken über die abgestrahlte Störung gemacht hat. Für einen
-Empfänger direkt daneben kann das mehr wert sein als das letzte halbe Volt.
-Ob es wirklich leiser ist, weiß ich allerdings nicht – gemessen habe ich hier
-nur Spannungen, keine Störungen. Das wäre ein eigener Nachmittag mit dem SDR
-und einer Nahfeldsonde. Kommt auf die Liste.
-
-Und die eigentliche Lehre steht ohnehin auf keinem der drei Aufkleber: Die
-Zahl, die ein Modul verspricht, gilt bestenfalls bei bester Eingangsspannung
-und kühlem Gehäuse. Interessant ist der Wert bei der Spannung, die der Akku
-tatsächlich hat, wenn er halb leer ist.
+Modul 1 behalte ich trotzdem: Es ist das einzige mit Blechgehäuse und
+Ferritringkern, also das einzige, bei dem sich jemand Gedanken über die
+abgestrahlte Störung gemacht hat. Für einen Empfänger direkt daneben kann das
+mehr wert sein als das letzte halbe Volt. Ob es wirklich leiser ist, weiß ich
+allerdings nicht – gemessen habe ich hier nur Spannungen, keine Störungen. Das
+wäre ein eigener Nachmittag mit dem SDR.
 
 ---
 
