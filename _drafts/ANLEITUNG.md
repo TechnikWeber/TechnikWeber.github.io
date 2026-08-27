@@ -63,6 +63,20 @@ git commit -m "Beitrag entfernt: Mein Thema"
 git push
 ```
 
+## Tags
+
+Jeder Beitrag bekommt Tags – das sind die Themen-Schubladen. Ein Beitrag kann
+in mehreren liegen:
+
+```yaml
+tags: [Amateurfunk, Antennenbau]
+```
+
+Alles Getaggte erscheint automatisch unter <https://technikweber.github.io/themen/>.
+Die Liste der bewährten Tags steht in `_drafts/vorlage.md` – bitte von dort
+abschreiben, denn Groß-/Kleinschreibung zählt: `Amateurfunk` und `amateurfunk`
+werden zu zwei getrennten Schubladen.
+
 ## Zwischendurch nachsehen
 
 ```bash
@@ -94,6 +108,7 @@ In dieser Reihenfolge prüfen:
 _posts/       veröffentlichte Beiträge (JJJJ-MM-TT-titel.md)
 _drafts/      Entwürfe + diese Anleitung – wird NICHT veröffentlicht
 assets/       Bilder, PDFs und andere Medien
+themen.md     Übersicht aller Tags – füllt sich von selbst
 _includes/    Bausteine des Themes, z. B. footer.html
 _config.yml   Grundeinstellungen der Seite
 ```

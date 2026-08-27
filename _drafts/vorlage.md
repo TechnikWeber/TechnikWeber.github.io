@@ -2,8 +2,8 @@
 layout: post
 title: "TITEL HIER EINTRAGEN"
 date: 2026-08-27 09:00:00 +0200
-# categories: [kategorie1, kategorie2]
-# tags: [tag1, tag2]
+tags: [Elektronik]
+# categories: [anleitungen]
 ---
 
 Hier den Beitrag schreiben.
@@ -16,6 +16,38 @@ Hier den Beitrag schreiben.
   Jekyll den Beitrag nicht mit. Dateiname immer JJJJ-MM-TT-titel.md
 
   Kompletter Veröffentlichungs-Ablauf: siehe _drafts/ANLEITUNG.md
+
+
+  ── TAGS ──────────────────────────────────────────────────────────
+
+  Tags sind die Themen-Schubladen. Jeder Beitrag kann in mehreren
+  gleichzeitig liegen – anders als bei echten Ordnern. Alle Tags samt
+  ihrer Beiträge erscheinen automatisch auf der Seite /themen/.
+
+      tags: [Amateurfunk]
+      tags: [Amateurfunk, Antennenbau]
+      tags: [Elektronik, "Raspberry Pi"]     <- mehrere Wörter in "..."
+
+  Bewährte Tags (bitte genau so weiterverwenden):
+
+      Amateurfunk · Antennenbau · Elektronik · Embedded · Löten
+      Messtechnik · PCB-Design · Python · C# · Werkstatt · Alltag
+
+  WICHTIG – Groß-/Kleinschreibung zählt: "Amateurfunk" und "amateurfunk"
+  landen in zwei getrennten Schubladen. Der Tag erscheint auf /themen/
+  exakt so, wie er hier geschrieben steht. Also lieber einmal oben in
+  der Liste nachsehen als neu tippen.
+
+  Zwei bis vier Tags pro Beitrag sind ein guter Schnitt. Ein Tag, den
+  nur ein einziger Beitrag benutzt, bringt niemandem etwas.
+
+
+  ── CATEGORIES ────────────────────────────────────────────────────
+
+  Braucht man hier eigentlich nicht – die Zeile ist deshalb oben
+  auskommentiert. Kategorien sind für die grobe Einteilung gedacht
+  (Anleitung / Projekt / Notiz), Tags für die Themen. Wenn Tags reichen,
+  einfach nur Tags benutzen.
 
 
   ── BILDER EINBINDEN ──────────────────────────────────────────────

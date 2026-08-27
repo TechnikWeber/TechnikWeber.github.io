@@ -1,5 +1,5 @@
 title: Philipps Blog
-description: Elektronik, Software, Amateurfunk – und alles dazwischen · @TechnikWeber · DL4PW
+description: Elektronik, Software, Amateurfunk · @TechnikWeber · DL4PW
 author: Philipp Weber
 url: https://TechnikWeber.github.io
 lang: de
@@ -9,6 +9,7 @@ show_excerpts: true
 theme: minima
 
 header_pages:
+  - themen.md
   - ueber-mich.md
   - impressum.md
   - datenschutz.md
