@@ -84,8 +84,8 @@ eben ein 2-A-Regler.
 
 Ungeprüft bleiben auch hier die Abschirmung und das „niedrigste HF-Rauschen“;
 eine Zahl zur Welligkeit nennt der Verkäufer nicht. Als Maße gibt er
-43 × 21 × 1 mm bei 11 g an – der Millimeter Bauhöhe kommt schon rechnerisch
-nicht hin.
+43 × 21 × 1 mm bei 11 g an – nachgemessen trägt das Modul 10 mm auf, das
+Zehnfache.
 
 Der Aufdruck auf dem IC erklärt das Ganze: Ein **LM2596S** ist laut Datenblatt
 ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
