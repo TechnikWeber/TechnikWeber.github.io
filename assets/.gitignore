@@ -1,0 +1,19 @@
+# Ordner für Medien: Bilder, PDFs, Downloads – alles, was in Beiträgen
+# eingebunden wird. Einbindung siehe _drafts/vorlage.md
+#
+# Diese Datei sorgt nebenbei dafür, dass der Ordner auch dann in Git bleibt,
+# wenn noch nichts drin liegt (leere Ordner kennt Git sonst nicht).
+
+# Systemmüll, der beim Kopieren gern mitwandert:
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.tmp
+
+# Große Originaldateien gehören nicht ins Web-Repo.
+# Zum Aktivieren einfach das # entfernen:
+# *.psd
+# *.xcf
+# *.raw
+# *.CR2
