@@ -18,9 +18,6 @@ Jedes Modul bekam 5,5 V, 6,6 V, 7,4 V, 11,1 V und 26 V vorgesetzt, belastet mit
 2S-LiPo leer. Als bestanden zähle ich alles ab **4,7 V** am Modulausgang; in
 Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
 
-In den Tabellen heißt **\*** „hält nur Sekunden, dann Abschaltung wegen
-Übertemperatur“, **✕** „kein Ausgang“ und **–** „nicht gemessen“.
-
 ## Modul 1 – Hobbywing UBEC
 
 <figure class="abb klein">
@@ -46,6 +43,9 @@ In den Tabellen heißt **\*** „hält nur Sekunden, dann Abschaltung wegen
 | 2 A | 3,05 V | 4,10 V | 4,80 V | 4,93 V | 4,93 V |
 | 3 A | 2,50 V \* | 3,20 V \* | 3,60 V \* | 4,75 V | 4,75 V |
 {: .messwerte}
+
+\* hält nur Sekunden, dann Abschaltung wegen Übertemperatur
+{: .legende}
 
 Weitere Angaben, die ich nicht nachgeprüft habe: vollständige Abschirmung und
 „niedrigstes RF-Rauschen“, Restwelligkeit unter 50 mV<sub>pp</sub> bei 2 A und
@@ -82,6 +82,9 @@ eben ein 2-A-Regler.
 | 5 A | ✕ | ✕ | ✕ | ✕ | ✕ |
 {: .messwerte}
 
+✕ kein Ausgang, das Modul läuft gar nicht erst an · – nicht gemessen
+{: .legende}
+
 Ungeprüft bleiben auch hier die Abschirmung und das „niedrigste HF-Rauschen“;
 eine Zahl zur Welligkeit nennt der Verkäufer nicht. Als Maße gibt er
 43 × 21 × 1 mm bei 11 g an – nachgemessen trägt das Modul 10 mm auf, das
@@ -116,6 +119,11 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
 | 3 A | ✕ | 4,86 V | 4,87 V | 4,87 V | – |
 | 5 A | ✕ | ✕ | 4,63 V | 4,62 V | 4,62 V |
 {: .messwerte}
+
+\* hält nur Sekunden, dann Abschaltung wegen Übertemperatur
+· ✕ kein Ausgang, das Modul läuft gar nicht erst an
+· – nicht gemessen
+{: .legende}
 
 Nicht nachgeprüft: „geringe Welligkeit“ (ohne Zahl), Kurzschluss- und
 Übertemperaturschutz, TVS-Diode am Eingang, Betrieb von −40 bis +125 °C. Maße
