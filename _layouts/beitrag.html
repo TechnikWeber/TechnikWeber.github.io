@@ -20,6 +20,15 @@ layout: post
 
   .abb { margin: 2.2em 0; }
 
+  /* Ein Foto muss nicht die volle Textbreite fuellen. Mit
+       <figure class="abb klein">  steht es schmaler und mittig – ein
+     Klick oeffnet es weiterhin in voller Groesse.                    */
+  .abb.klein {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .abb > a,
   .abb > .rahmen {
     display: block;

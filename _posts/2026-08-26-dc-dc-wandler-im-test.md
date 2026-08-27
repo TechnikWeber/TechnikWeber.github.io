@@ -12,7 +12,7 @@ steht auch souverän **5 V** und **bis 5 A**. Nachgemessen liefert davon genau
 
 ## Die drei Kandidaten
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-08-26-dc-dc-wandler-im-test/01-hobbywing-ubec.jpg">
     <img src="/assets/2026-08-26-dc-dc-wandler-im-test/01-hobbywing-ubec.jpg"
          alt="Hobbywing UBEC im silbernen Blechgehäuse mit angelöteten
@@ -22,7 +22,7 @@ steht auch souverän **5 V** und **bis 5 A**. Nachgemessen liefert davon genau
   im Blechgehäuse, mit Ferritringkern im Kabel.</figcaption>
 </figure>
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-08-26-dc-dc-wandler-im-test/02-ubec-5a-platine.jpg">
     <img src="/assets/2026-08-26-dc-dc-wandler-im-test/02-ubec-5a-platine.jpg"
          alt="Kleine blaue Platine im durchsichtigen Schrumpfschlauch, zwei
@@ -32,7 +32,7 @@ steht auch souverän **5 V** und **bis 5 A**. Nachgemessen liefert davon genau
   „UBEC 5A“ auf der Drossel.</figcaption>
 </figure>
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-08-26-dc-dc-wandler-im-test/03-buck-boost-modul.jpg">
     <img src="/assets/2026-08-26-dc-dc-wandler-im-test/03-buck-boost-modul.jpg"
          alt="Blaue Platine mit geschirmter Speicherdrossel, QFN-Chip,
