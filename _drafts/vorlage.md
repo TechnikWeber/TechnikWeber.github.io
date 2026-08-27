@@ -153,19 +153,19 @@ Hier den Beitrag schreiben.
       </video>
 
 
-  ── WENN ICH (CLAUDE) DEN BEITRAG SCHREIBEN SOLL ──────────────────
+  ── WENN CLAUDE DEN BEITRAG SCHREIBEN SOLL ────────────────────────
 
-  Am besten so vorbereiten:
+  Dann braucht es diese Vorlage hier gar nicht. Stattdessen:
 
-    1. Ordner assets/JJJJ-MM-TT-thema/ anlegen
-    2. Bilder in der gewünschten Reihenfolge hineinlegen (01-, 02-, ...)
-       mit sprechenden Namen
-    3. Stichpunkte dazuschreiben – entweder im Chat oder als
-       notizen.txt in denselben Ordner
+    1. Fotos nach _eingang/ legen – Originalgröße ist richtig,
+       Dateinamen egal. Zählt die Reihenfolge, einfach 01-, 02-, ...
+       voranstellen.
+    2. _eingang/notizen.txt mit Stichpunkten dazulegen
+       (Vorlage steht in _eingang/README.md)
+    3. Bescheid geben: "Im Eingang liegt was, mach einen Beitrag draus."
 
-  Aus Reihenfolge, Namen und Stichpunkten baue ich den Beitrag und
-  setze die Bilder an die passenden Stellen. Die notizen.txt lösche
-  ich am Ende wieder.
+  Titel, Dateiname, Tags, Verkleinern und Einsortieren der Bilder macht
+  dann Claude. Anschließend wird _eingang/ geleert.
 
 -->
 

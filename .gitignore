@@ -1,0 +1,17 @@
+# Arbeitsordner für den nächsten Beitrag: Originalfotos und Notizen.
+# Bewusst NICHT in Git – Originale aus der Kamera würden das Repo sonst
+# dauerhaft aufblähen. Nur die fertig verkleinerten Bilder unter assets/
+# werden eingecheckt.
+_eingang/*
+!_eingang/README.md
+
+# Von einem lokalen Jekyll erzeugt
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Systemmüll
+.DS_Store
+Thumbs.db
+desktop.ini
+*~

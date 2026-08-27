@@ -77,6 +77,22 @@ Die Liste der bewährten Tags steht in `_drafts/vorlage.md` – bitte von dort
 abschreiben, denn Groß-/Kleinschreibung zählt: `Amateurfunk` und `amateurfunk`
 werden zu zwei getrennten Schubladen.
 
+## Beitrag von Claude schreiben lassen
+
+1. Fotos nach `_eingang/` legen (Originalgröße ist richtig, Namen egal;
+   Reihenfolge per `01-`, `02-` … falls sie zählt)
+2. `_eingang/notizen.txt` mit Stichpunkten dazu – Vorlage steht in
+   `_eingang/README.md`
+3. Claude sagen: *"Im Eingang liegt was, mach einen Beitrag draus."*
+
+Titel, Dateiname, Tags und die Bildaufbereitung übernimmt Claude; committet
+und gepusht wird erst nach Rückfrage. Danach wird `_eingang/` geleert, es
+liegt also immer nur der Beitrag darin, an dem gerade gearbeitet wird.
+
+`_eingang/` ist **nicht** in Git – die Originale bleiben lokal, damit sie
+das Repo nicht dauerhaft aufblähen. Heißt aber auch: kein Backup auf GitHub,
+solange sie dort liegen.
+
 ## Bilder
 
 Pro Beitrag ein Ordner unter `assets/`, benannt **exakt wie die Beitragsdatei**
@@ -133,6 +149,7 @@ In dieser Reihenfolge prüfen:
 ```
 _posts/       veröffentlichte Beiträge (JJJJ-MM-TT-titel.md)
 _drafts/      Entwürfe + diese Anleitung – wird NICHT veröffentlicht
+_eingang/     Arbeitsordner für den nächsten Beitrag – nicht in Git
 assets/       Medien – ein Unterordner je Beitrag, gleicher Name
               wie die Beitragsdatei; assets/allgemein/ für den Rest
 themen.md     Übersicht aller Tags – füllt sich von selbst
