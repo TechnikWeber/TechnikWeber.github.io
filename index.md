@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Startseite
+title: Blog
 list_title: Beiträge
 ---
