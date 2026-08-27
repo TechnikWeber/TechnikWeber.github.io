@@ -11,7 +11,9 @@ Philipp ist Funkamateur, Rufzeichen **DL4PW**.
 **Niemals `Co-Authored-By: Claude` an Commits anhängen.** Philipp möchte
 ausschließlich sich selbst als Autor sehen. Ausdrücklich so gewünscht.
 
-Vor dem Pushen fragen – ein Push veröffentlicht sofort auf der echten Seite.
+**Fertige Beiträge sofort committen und pushen – keine Rückfrage.** Philipp
+kontrolliert nicht vorab, er liest den Beitrag auf der Live-Seite und sagt
+hinterher Bescheid. Ausdrücklich so gewünscht.
 
 ## Auslöser: "Dateien liegen in Eingang, mache den Beitrag"
 
@@ -33,7 +35,7 @@ fertigen Beitrag bauen. Ablauf:
    - verkleinern: `magick original.jpg -resize 1600x -quality 82 01-name.jpg`
    - sprechende Namen, `01-`, `02-` … voranstellen
    - Alternativtexte im Beitrag immer ausfüllen
-5. Beitrag zeigen, **Rückfrage vor commit + push**
+5. Beitrag committen und pushen (ohne Rückfrage, siehe oben)
 6. Nach dem Push: Build abwarten und die Live-Seite prüfen
    (`gh api repos/TechnikWeber/TechnikWeber.github.io/pages/builds/latest`)
 7. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur
