@@ -11,22 +11,15 @@ täten es auch. Mich interessierte, ob stimmt, was in der Artikelbeschreibung
 steht. Zwei davon sind **UBECs**, also reine Abwärtswandler; das dritte ist ein
 **Buck-Boost-Wandler** und kann auch hinaufregeln.
 
-## Der Prüfstand
+## Das Prüfverfahren
 
-Jedes Modul bekam 5,5 V, 6,6 V, 7,4 V, 11,1 V und 26 V vorgesetzt und wurde
-dabei mit 1 A, 2 A, 3 A und – wo das ging – mit 5 A belastet. Die 6,6 V sind
-kein Zufall: Da ist ein 2S-LiPo leer. Als bestanden zähle ich alles ab
-**4,7 V** am Ausgang. Das ist großzügiger als die Toleranz, die Modul 2 selbst
-angibt (5,25 V ± 0,5 V).
+Jedes Modul bekam 5,5 V, 6,6 V, 7,4 V, 11,1 V und 26 V vorgesetzt, belastet mit
+1 A, 2 A, 3 A und – wo das ging – 5 A. Die 6,6 V sind kein Zufall: Da ist ein
+2S-LiPo leer. Als bestanden zähle ich alles ab **4,7 V** am Modulausgang; in
+Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
 
-In den Messwert-Tabellen bedeutet **\*** „hält nur wenige Sekunden, dann
-schaltet das Modul wegen Übertemperatur ab“, **✕** „kein Ausgang, das Modul
-läuft gar nicht erst an“ und **–** „nicht gemessen“.
-
-Gemessen habe ich direkt am Modulausgang. Ein Teil des Spannungsabfalls steckt
-nämlich gar nicht im Regler: Der Lastabfall entspricht bei Modul 1 und 3 rund
-0,1 bis 0,2 Ω, der Größenordnung von Litze und Steckern. Wer die letzten
-Millivolt braucht, misst am Verbraucher.
+In den Tabellen heißt **\*** „hält nur Sekunden, dann Abschaltung wegen
+Übertemperatur“, **✕** „kein Ausgang“ und **–** „nicht gemessen“.
 
 ## Modul 1 – Hobbywing UBEC
 
@@ -126,7 +119,7 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
 
 Nicht nachgeprüft: „geringe Welligkeit“ (ohne Zahl), Kurzschluss- und
 Übertemperaturschutz, TVS-Diode am Eingang, Betrieb von −40 bis +125 °C. Maße
-nennt der Verkäufer nicht.
+nennt der Verkäufer keine – nachgemessen sind es 31 × 22 × 7 mm.
 
 Die Beschreibung schränkt selbst ein: Die 5 A gelten im Boost-Betrieb für den
 *Eingangs*strom, nicht für den Ausgang. Genau am unteren Ende wird es eng – bei
