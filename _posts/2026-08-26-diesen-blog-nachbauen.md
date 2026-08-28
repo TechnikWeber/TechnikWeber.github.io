@@ -2,7 +2,7 @@
 layout: beitrag
 title: "So baust du dir diesen Blog nach – kostenlos und ohne Server"
 date: 2026-08-26 09:00:00 +0200
-tags: [Alltag, Webseite]
+tags: [Allgemein]
 ---
 
 Diese Seite kostet nichts. Kein Server, keine Datenbank, kein WordPress,
