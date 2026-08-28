@@ -25,8 +25,8 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
          alt="Hobbywing UBEC im silbernen Blechgehäuse mit angelöteten
               Leitungen und einem grünen Ferritringkern im Ausgangskabel">
   </a>
-  <figcaption>„5V/6V 3A … MAX 5A“. Einziges im Blechgehäuse, mit
-  Ferritringkern im Kabel.</figcaption>
+  <figcaption>„5V/6V 3A … MAX 5A“, Blechgehäuse mit
+  Ferritringkern.</figcaption>
 </figure>
 
 <figure class="abb klein">
@@ -37,9 +37,8 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
               Schottky-Dioden SS34, einer Drossel mit Aufdruck 150 und einem
               blauen Jumper auf einer Stiftleiste">
   </a>
-  <figcaption>Geöffnet: in der Mitte der <strong>MP1593DN</strong>, daneben
-  zwei SS34 und eine 15-µH-Drossel. Der blaue Jumper schaltet 5 V/6 V
-  um.</figcaption>
+  <figcaption>Geöffnet: <strong>MP1593DN</strong>, zwei SS34, 15-µH-Drossel,
+  Jumper für 5 V/6 V.</figcaption>
 </figure>
 
 | Aus der Artikelbeschreibung | Gemessen |
@@ -78,7 +77,7 @@ zuschlägt. „MAX 5A“ steht also auf dem Gehäuse, aber in keinem Datenblatt.
               Elkos, Schaltregler-IC mit der Aufschrift LM2596S und
               Speicherdrossel mit Aufkleber UBEC 5A">
   </a>
-  <figcaption>Aufkleber „UBEC 5A“, auf dem IC steht
+  <figcaption>Aufkleber „UBEC 5A“, auf dem IC:
   <strong>LM2596S</strong>.</figcaption>
 </figure>
 
@@ -114,9 +113,8 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
               ohne Beschriftung, zwei Elkos und Lötpads für IN plus, IN minus,
               OUT plus, OUT minus und EN">
   </a>
-  <figcaption>Buck-Boost-Modul mit Enable-Eingang. Der Steuerchip ist
-  abgelasert und nicht mehr zu lesen; auf der Rückseite der Platine steht
-  <strong>CR-3050B</strong>.</figcaption>
+  <figcaption>Buck-Boost mit Enable-Eingang. Steuerchip abgelasert,
+  Rückseite: <strong>CR-3050B</strong>.</figcaption>
 </figure>
 
 | Aus der Artikelbeschreibung | Gemessen |

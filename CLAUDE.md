@@ -11,7 +11,8 @@ Philipp ist Funkamateur, Rufzeichen **DL4PW**.
 **Kurz und auf den Punkt, nicht ausschweifend.** Gilt für Beiträge,
 Anleitungen und Erklärungen gleichermaßen – Einleitung, Fließtext,
 Bildunterschriften und Erläuterungen unter Tabellen. Nichts wiederholen, was
-Bild oder Tabelle schon zeigt. Ausdrücklich so gewünscht.
+Bild oder Tabelle schon zeigt. Bildunterschriften sind Stichworte, kein
+Fließtext – ein Satz reicht. Ausdrücklich so gewünscht.
 
 ## Commits
 
