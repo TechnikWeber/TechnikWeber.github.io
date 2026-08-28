@@ -17,4 +17,5 @@ Ideen und alles, was mich gerade beschäftigt – mal ein Versuch, mal eine Anle
 mal einfach ein Gedanke oder eine Erkenntnis.
 
 Meinen Code und meine Projekte findest du auf meinem
-[GitHub-Profil](https://github.com/TechnikWeber).
+[GitHub-Profil](https://github.com/TechnikWeber), beruflich bin ich auf
+[LinkedIn](https://www.linkedin.com/in/philippweber75/) zu finden.
