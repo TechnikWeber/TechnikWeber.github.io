@@ -5,11 +5,10 @@ date: 2026-08-26 19:30:00 +0200
 tags: [Elektronik, Messtechnik]
 ---
 
-Drei Module lagen vergangenes Wochenende auf meinem Tisch, alle beworben mit
-**5 V** und **5 A**. Ob exakt 5,00 V herauskommen, war mir dabei egal – 4,7 V
-täten es auch. Mich interessierte, ob stimmt, was in der Artikelbeschreibung
-steht. Zwei davon sind **UBECs**, also reine Abwärtswandler; das dritte ist ein
-**Buck-Boost-Wandler** und kann auch hinaufregeln.
+Drei Module, alle beworben mit **5 V** und **5 A**. Exakte 5,00 V erwarte ich
+nicht, 4,7 V täten es auch – mich interessierte nur, ob stimmt, was in der
+Artikelbeschreibung steht. Zwei sind **UBECs**, also reine Abwärtswandler, das
+dritte ein **Buck-Boost-Wandler**.
 
 ## Das Prüfverfahren
 
@@ -26,7 +25,7 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
          alt="Hobbywing UBEC im silbernen Blechgehäuse mit angelöteten
               Leitungen und einem grünen Ferritringkern im Ausgangskabel">
   </a>
-  <figcaption>„5V/6V 3A … MAX 5A“. Als einziges im Blechgehäuse, mit
+  <figcaption>„5V/6V 3A … MAX 5A“. Einziges im Blechgehäuse, mit
   Ferritringkern im Kabel.</figcaption>
 </figure>
 
@@ -38,9 +37,8 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
               Schottky-Dioden SS34, einer Drossel mit Aufdruck 150 und einem
               blauen Jumper auf einer Stiftleiste">
   </a>
-  <figcaption>Dasselbe Modul geöffnet. In der Mitte der
-  <strong>MP1593DN</strong>, daneben zwei Schottky-Dioden SS34 und eine
-  15-µH-Drossel. Der blaue Jumper links schaltet zwischen 5 V und 6 V
+  <figcaption>Geöffnet: in der Mitte der <strong>MP1593DN</strong>, daneben
+  zwei SS34 und eine 15-µH-Drossel. Der blaue Jumper schaltet 5 V/6 V
   um.</figcaption>
 </figure>
 
@@ -60,10 +58,10 @@ Litze und Steckern stecken noch einmal 0,1 bis 0,2 Ω.
 \* hält nur Sekunden, dann Abschaltung wegen Übertemperatur
 {: .legende}
 
-Weitere Angaben, die ich nicht nachgeprüft habe: vollständige Abschirmung und
-„niedrigstes RF-Rauschen“, Restwelligkeit unter 50 mV<sub>pp</sub> bei 2 A und
-12 V, 51 × 16,6 × 8,5 mm, 11,5 g. Die AliExpress-Seite nennt abweichend
-43 × 17 × 7 mm und 11 g.
+Ungeprüft: Abschirmung, „niedrigstes RF-Rauschen“, Welligkeit unter
+50 mV<sub>pp</sub> bei 2 A und 12 V. Bei den Maßen widerspricht sich der
+Verkäufer: 51 × 16,6 × 8,5 mm laut Beschreibung, 43 × 17 × 7 mm auf der
+AliExpress-Seite.
 
 Ab 7,4 V Eingang und bis etwa 2 A ist das ein ordentlicher Regler. Warum nicht
 mehr, steht auf dem Chip: Ein **MP1593DN** von Monolithic Power Systems liefert
@@ -80,8 +78,8 @@ zuschlägt. „MAX 5A“ steht also auf dem Gehäuse, aber in keinem Datenblatt.
               Elkos, Schaltregler-IC mit der Aufschrift LM2596S und
               Speicherdrossel mit Aufkleber UBEC 5A">
   </a>
-  <figcaption>Nackte Reglerplatine, Aufkleber „UBEC 5A“. Auf dem IC steht gut
-  lesbar <strong>LM2596S</strong>.</figcaption>
+  <figcaption>Aufkleber „UBEC 5A“, auf dem IC steht
+  <strong>LM2596S</strong>.</figcaption>
 </figure>
 
 | Aus der Artikelbeschreibung | Gemessen |
@@ -101,10 +99,8 @@ zuschlägt. „MAX 5A“ steht also auf dem Gehäuse, aber in keinem Datenblatt.
 ✕ kein Ausgang, das Modul läuft gar nicht erst an · – nicht gemessen
 {: .legende}
 
-Ungeprüft bleiben auch hier die Abschirmung und das „niedrigste HF-Rauschen“;
-eine Zahl zur Welligkeit nennt der Verkäufer nicht. Als Maße gibt er
-43 × 21 × 1 mm bei 11 g an – nachgemessen trägt das Modul 10 mm auf, das
-Zehnfache.
+Ungeprüft: Abschirmung und „niedrigstes HF-Rauschen“, eine Zahl zur Welligkeit
+fehlt. Angegeben sind 43 × 21 × 1 mm – nachgemessen trägt das Modul 10 mm auf.
 
 Der Aufdruck auf dem IC erklärt das Ganze: Ein **LM2596S** ist laut Datenblatt
 ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
@@ -114,12 +110,13 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
 <figure class="abb klein">
   <a href="/assets/2026-08-26-dc-dc-wandler-im-test/03-buck-boost-modul.jpg">
     <img src="/assets/2026-08-26-dc-dc-wandler-im-test/03-buck-boost-modul.jpg"
-         alt="Blaue Platine mit geschirmter Speicherdrossel, unbeschriftetem
-              QFN-Chip, zwei Elkos und Lötpads für IN plus, IN minus, OUT plus,
-              OUT minus und EN">
+         alt="Blaue Platine mit geschirmter Speicherdrossel, blankem QFN-Chip
+              ohne Beschriftung, zwei Elkos und Lötpads für IN plus, IN minus,
+              OUT plus, OUT minus und EN">
   </a>
-  <figcaption>Buck-Boost-Modul mit Enable-Eingang. Der QFN in der Mitte ist
-  blank: die Beschriftung ist abgeschliffen.</figcaption>
+  <figcaption>Buck-Boost-Modul mit Enable-Eingang. Der Steuerchip ist
+  abgelasert und nicht mehr zu lesen; auf der Rückseite der Platine steht
+  <strong>CR-3050B</strong>.</figcaption>
 </figure>
 
 | Aus der Artikelbeschreibung | Gemessen |
@@ -141,9 +138,9 @@ ein 3-A-Schaltregler. Auf dem Aufkleber daneben steht „UBEC 5A“.
 · – nicht gemessen
 {: .legende}
 
-Nicht nachgeprüft: „geringe Welligkeit“ (ohne Zahl), Kurzschluss- und
-Übertemperaturschutz, TVS-Diode am Eingang, Betrieb von −40 bis +125 °C. Maße
-nennt der Verkäufer keine – nachgemessen sind es 31 × 22 × 7 mm.
+Ungeprüft: „geringe Welligkeit“ (ohne Zahl), Kurzschluss- und
+Übertemperaturschutz, TVS-Diode, −40 bis +125 °C. Maße nennt der Verkäufer
+keine – nachgemessen 31 × 22 × 7 mm.
 
 Die Beschreibung schränkt selbst ein: Die 5 A gelten im Boost-Betrieb für den
 *Eingangs*strom, nicht für den Ausgang. Genau am unteren Ende wird es eng – bei

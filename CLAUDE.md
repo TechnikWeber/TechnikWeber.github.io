@@ -6,6 +6,13 @@ Repo: https://github.com/TechnikWeber/TechnikWeber.github.io
 Sprache im Blog und in der Kommunikation: **Deutsch**.
 Philipp ist Funkamateur, Rufzeichen **DL4PW**.
 
+## Schreibstil
+
+**Kurz und auf den Punkt, nicht ausschweifend.** Gilt für Beiträge,
+Anleitungen und Erklärungen gleichermaßen – Einleitung, Fließtext,
+Bildunterschriften und Erläuterungen unter Tabellen. Nichts wiederholen, was
+Bild oder Tabelle schon zeigt. Ausdrücklich so gewünscht.
+
 ## Commits
 
 **Niemals `Co-Authored-By: Claude` an Commits anhängen.** Philipp möchte
