@@ -1,7 +1,7 @@
 ---
 layout: beitrag
 title: "Strahlungskabel – die Antenne, die 500 Meter lang ist"
-date: 2026-08-28 11:00:00 +0200
+date: 2026-08-28 08:30:00 +0200
 tags: [Amateurfunk]
 ---
 
