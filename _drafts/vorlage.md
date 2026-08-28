@@ -34,7 +34,7 @@ Hier den Beitrag schreiben.
 
       tags: [Amateurfunk]
       tags: [Elektronik]
-      tags: [Elektronik, RaspberryPi]
+      tags: [Elektronik, "Raspberry Pi"]     <- mehrere Woerter in "..."
 
   Es gibt zwei Sorten Tags. Erstens das Thema, davon bewusst wenige:
 
@@ -42,7 +42,7 @@ Hier den Beitrag schreiben.
 
   Zweitens die Plattform, falls im Beitrag eine bestimmte vorkommt:
 
-      RaspberryPi · Arduino · ESP32
+      Raspberry Pi · Arduino · ESP32
 
   Damit lassen sich alle Pi-Beiträge auf einen Blick finden, egal ob es
   um Funk oder um Elektronik ging. Sonst keine Spezial-Schubladen wie

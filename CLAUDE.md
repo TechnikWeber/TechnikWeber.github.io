@@ -39,10 +39,10 @@ fertigen Beitrag bauen. Ablauf:
      stillschweigend nicht mit (häufigste Fehlerquelle)
    - `tags:` setzen – zwei Sorten: ein **Thema** (Amateurfunk ·
      Elektronik · Politik · Allgemeines) und, wenn eine bestimmte
-     Plattform vorkommt, deren Tag (**RaspberryPi · Arduino · ESP32**).
+     Plattform vorkommt, deren Tag (**„Raspberry Pi“ · Arduino · ESP32**).
      Sonst keine Spezial-Schubladen wie „Messtechnik“.
-     Groß-/Kleinschreibung zählt, `RaspberryPi` in genau dieser
-     Schreibweise. Details in `_drafts/vorlage.md`
+     Groß-/Kleinschreibung zählt; mehrteilige Tags in Anführungszeichen:
+     `tags: [Elektronik, "Raspberry Pi"]`. Details in `_drafts/vorlage.md`
 4. Bilder aufbereiten nach `assets/JJJJ-MM-TT-slug/`:
    - verkleinern: `magick original.jpg -resize 1600x -quality 82 01-name.jpg`
    - sprechende Namen, `01-`, `02-` … voranstellen

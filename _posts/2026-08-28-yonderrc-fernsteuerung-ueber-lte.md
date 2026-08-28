@@ -2,7 +2,7 @@
 layout: beitrag
 title: "YonderRC – Fernsteuern über IP"
 date: 2026-08-28 08:00:00 +0200
-tags: [Elektronik, RaspberryPi]
+tags: [Elektronik, "Raspberry Pi"]
 ---
 
 Eine normale RC-Fernsteuerung endet dort, wo ihre Reichweite endet. **YonderRC**
