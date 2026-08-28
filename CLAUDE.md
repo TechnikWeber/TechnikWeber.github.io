@@ -37,8 +37,11 @@ fertigen Beitrag bauen. Ablauf:
      plus der Tag-Zeile am Ende, die auf /themen/ zurückverlinkt
    - Datum **muss in der Vergangenheit liegen**, sonst baut Jekyll ihn
      stillschweigend nicht mit (häufigste Fehlerquelle)
-   - `tags:` setzen – Liste bewährter Tags steht in `_drafts/vorlage.md`,
-     Groß-/Kleinschreibung zählt
+   - `tags:` setzen – bewusst wenige, breite Tags: **Amateurfunk ·
+     Elektronik · Politik · Allgemeines**. Keine Spezial-Schubladen wie
+     „Messtechnik“; ein Tag pro Beitrag ist der Normalfall, zwei die
+     Ausnahme. Groß-/Kleinschreibung zählt. Details in
+     `_drafts/vorlage.md`
 4. Bilder aufbereiten nach `assets/JJJJ-MM-TT-slug/`:
    - verkleinern: `magick original.jpg -resize 1600x -quality 82 01-name.jpg`
    - sprechende Namen, `01-`, `02-` … voranstellen

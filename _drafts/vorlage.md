@@ -33,21 +33,22 @@ Hier den Beitrag schreiben.
   Beitragslayout plus diese Zeile. Bitte so stehen lassen.
 
       tags: [Amateurfunk]
-      tags: [Amateurfunk, Antennenbau]
-      tags: [Elektronik, "Raspberry Pi"]     <- mehrere Wörter in "..."
+      tags: [Elektronik]
+      tags: [Elektronik, Amateurfunk]
 
-  Bewährte Tags (bitte genau so weiterverwenden):
+  Es soll bewusst nur wenige, breite Tags geben:
 
-      Amateurfunk · Antennenbau · Elektronik · Embedded · Löten
-      Messtechnik · PCB-Design · Python · C# · Werkstatt · Alltag
+      Amateurfunk · Elektronik · Politik · Allgemeines
+
+  Also keine Spezial-Schubladen wie "Messtechnik" oder "PCB-Design".
+  Ein Tag pro Beitrag ist der Normalfall, zwei die Ausnahme. Passt
+  nichts, kommt der Beitrag unter "Allgemeines" – ein neuer Tag nur
+  dann, wenn dauerhaft mehrere Beiträge hineingehören.
 
   WICHTIG – Groß-/Kleinschreibung zählt: "Amateurfunk" und "amateurfunk"
   landen in zwei getrennten Schubladen. Der Tag erscheint auf /themen/
   exakt so, wie er hier geschrieben steht. Also lieber einmal oben in
   der Liste nachsehen als neu tippen.
-
-  Zwei bis vier Tags pro Beitrag sind ein guter Schnitt. Ein Tag, den
-  nur ein einziger Beitrag benutzt, bringt niemandem etwas.
 
 
   ── CATEGORIES ────────────────────────────────────────────────────

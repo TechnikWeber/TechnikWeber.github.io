@@ -2,7 +2,7 @@
 layout: beitrag
 title: "Drei DC-DC-Wandler am Prüfstand – nur einer hält, was draufsteht"
 date: 2026-08-26 19:30:00 +0200
-tags: [Elektronik, Messtechnik]
+tags: [Elektronik]
 ---
 
 Drei Module, alle beworben mit **5 V** und **5 A**. Exakte 5,00 V erwarte ich
