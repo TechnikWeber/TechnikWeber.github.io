@@ -34,16 +34,22 @@ Hier den Beitrag schreiben.
 
       tags: [Amateurfunk]
       tags: [Elektronik]
-      tags: [Elektronik, Amateurfunk]
+      tags: [Elektronik, RaspberryPi]
 
-  Es soll bewusst nur wenige, breite Tags geben:
+  Es gibt zwei Sorten Tags. Erstens das Thema, davon bewusst wenige:
 
       Amateurfunk · Elektronik · Politik · Allgemeines
 
-  Also keine Spezial-Schubladen wie "Messtechnik" oder "PCB-Design".
-  Ein Tag pro Beitrag ist der Normalfall, zwei die Ausnahme. Passt
-  nichts, kommt der Beitrag unter "Allgemeines" – ein neuer Tag nur
-  dann, wenn dauerhaft mehrere Beiträge hineingehören.
+  Zweitens die Plattform, falls im Beitrag eine bestimmte vorkommt:
+
+      RaspberryPi · Arduino · ESP32
+
+  Damit lassen sich alle Pi-Beiträge auf einen Blick finden, egal ob es
+  um Funk oder um Elektronik ging. Sonst keine Spezial-Schubladen wie
+  "Messtechnik" oder "PCB-Design". Ein Thema pro Beitrag, dazu höchstens
+  eine Plattform. Passt kein Thema, kommt der Beitrag unter
+  "Allgemeines" – ein neuer Tag nur dann, wenn dauerhaft mehrere
+  Beiträge hineingehören.
 
   WICHTIG – Groß-/Kleinschreibung zählt: "Amateurfunk" und "amateurfunk"
   landen in zwei getrennten Schubladen. Der Tag erscheint auf /themen/
