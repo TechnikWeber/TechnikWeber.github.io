@@ -18,4 +18,5 @@ mal einfach ein Gedanke oder eine Erkenntnis.
 
 Meinen Code und meine Projekte findest du auf meinem
 [GitHub-Profil](https://github.com/TechnikWeber), beruflich bin ich auf
-[LinkedIn](https://www.linkedin.com/in/philippweber75/) zu finden.
+[LinkedIn](https://www.linkedin.com/in/philippweber75/) und
+[Xing](https://www.xing.com/profile/Philipp_Weber074131/) zu finden.
