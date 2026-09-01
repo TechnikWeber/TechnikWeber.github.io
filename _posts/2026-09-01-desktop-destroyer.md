@@ -2,7 +2,7 @@
 layout: beitrag
 title: "Desktop Destroyer – welches Kind aus den 90ern kennt das noch?"
 date: 2026-09-01 11:00:00 +0200
-tags: [Allgemeines]
+tags: [Allgemeines, Linux]
 ---
 
 Hammer, Kettensäge und Flammenwerfer auf dem eigenen Desktop – der Zeitvertreib
