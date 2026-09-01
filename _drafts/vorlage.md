@@ -38,11 +38,11 @@ Hier den Beitrag schreiben.
 
   Es gibt zwei Sorten Tags. Erstens das Thema, davon bewusst wenige:
 
-      Amateurfunk · Elektronik · Politik · Allgemeines
+      Amateurfunk · Elektronik · Politik · Glaube · Allgemeines
 
   Zweitens die Plattform, falls im Beitrag eine bestimmte vorkommt:
 
-      Raspberry Pi · Arduino · ESP32
+      Raspberry Pi · Arduino · ESP32 · Linux
 
   Damit lassen sich alle Pi-Beiträge auf einen Blick finden, egal ob es
   um Funk oder um Elektronik ging. Sonst keine Spezial-Schubladen wie

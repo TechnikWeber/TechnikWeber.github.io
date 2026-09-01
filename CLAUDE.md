@@ -38,8 +38,9 @@ fertigen Beitrag bauen. Ablauf:
    - Datum **muss in der Vergangenheit liegen**, sonst baut Jekyll ihn
      stillschweigend nicht mit (häufigste Fehlerquelle)
    - `tags:` setzen – zwei Sorten: ein **Thema** (Amateurfunk ·
-     Elektronik · Politik · Allgemeines) und, wenn eine bestimmte
-     Plattform vorkommt, deren Tag (**„Raspberry Pi“ · Arduino · ESP32**).
+     Elektronik · Politik · Glaube · Allgemeines) und, wenn eine bestimmte
+     Plattform vorkommt, deren Tag (**„Raspberry Pi“ · Arduino · ESP32 ·
+     Linux**).
      Sonst keine Spezial-Schubladen wie „Messtechnik“.
      Groß-/Kleinschreibung zählt; mehrteilige Tags in Anführungszeichen:
      `tags: [Elektronik, "Raspberry Pi"]`. Details in `_drafts/vorlage.md`
