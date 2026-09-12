@@ -220,13 +220,19 @@ Rest sind sieben Bildschirme:
 5. **Netzwerk.** Der wichtigste Bildschirm:
    - *Hostname* muss einen Punkt enthalten, z. B. `pve.heim.lan`
    - *IP-Adresse* **fest** vergeben, außerhalb des DHCP-Bereichs des Routers,
-     z. B. `192.168.1.50/24`
-   - *Gateway* und *DNS* ist die Adresse des Routers, meist `192.168.1.1`
+     z. B. `192.168.178.10/24`. Die FritzBox verteilt ab Werk erst ab `.20`,
+     alles darunter ist also frei für feste Adressen
+   - *Gateway* und *DNS* ist die Adresse des Routers, bei der FritzBox
+     `192.168.178.1`
 6. **Zusammenfassung** – prüfen, *Install*.
 7. **Neustart** – und den Stick ziehen, sonst startet der Installer erneut.
 
 Die feste IP ist kein Schönheitsfehler, sondern Pflicht: Wechselt die Adresse,
 ist die Oberfläche weg und die Gäste verlieren ihren Anschluss.
+
+Die Adressen `192.168.178.x` sind der Standard der FritzBox, weil die hier im
+Netz hängt. Bei anderen Routern lautet er oft `192.168.0.x` oder
+`192.168.1.x` – dann die ersten drei Zahlen überall entsprechend ersetzen.
 
 ## Schritt 4 – Der erste Login
 
@@ -234,7 +240,7 @@ Nach dem Neustart zeigt der Bildschirm nur noch eine Adresse. Ab jetzt bleibt
 der Rechner zu – bedient wird er vom Sofa aus im Browser:
 
 ```
-https://192.168.1.50:8006
+https://192.168.178.10:8006
 ```
 
 Der Browser warnt vor dem Zertifikat. Das ist in Ordnung, Proxmox stellt sich
@@ -278,17 +284,17 @@ bekommt ihre eigene IP im Heimnetz und ist direkt erreichbar.
 <figure class="abb">
   <div class="rahmen">
     <svg viewBox="0 0 580 280" role="img"
-         aria-label="Netzwerkplan: Der Router mit 192.168.1.1 ist per
-                     LAN-Kabel mit dem Proxmox-Host 192.168.1.50 verbunden. Im
+         aria-label="Netzwerkplan: Der Router mit 192.168.178.1 ist per
+                     LAN-Kabel mit dem Proxmox-Host 192.168.178.10 verbunden. Im
                      Host liegt die Brücke vmbr0, an der drei Gäste hängen:
-                     Pi-hole mit .51, Paperless mit .52 und ein
-                     Minecraft-Server mit .53.">
+                     Paperless mit .11, ein Minecraft-Server mit .12 und
+                     Pi-hole mit .19.">
       <g font-family="system-ui, sans-serif" font-size="12" fill="#555">
 
         <rect x="200" y="14" width="180" height="38" rx="5"
               fill="#f0efec" stroke="#8a8a85"/>
         <text x="290" y="38" text-anchor="middle" font-weight="600"
-              fill="#333">Router · 192.168.1.1</text>
+              fill="#333">Router · 192.168.178.1</text>
 
         <line x1="290" y1="52" x2="290" y2="88" stroke="#8a8a85"
               stroke-width="2"/>
@@ -296,7 +302,7 @@ bekommt ihre eigene IP im Heimnetz und ist direkt erreichbar.
 
         <rect x="20" y="88" width="540" height="176" rx="6"
               fill="#fbfaf8" stroke="#8a8a85"/>
-        <text x="36" y="108" font-weight="600" fill="#333">Proxmox-Host · 192.168.1.50</text>
+        <text x="36" y="108" font-weight="600" fill="#333">Proxmox-Host · 192.168.178.10</text>
 
         <rect x="40" y="120" width="500" height="32" rx="4"
               fill="#f6efe2" stroke="#b98a3c"/>
@@ -311,20 +317,20 @@ bekommt ihre eigene IP im Heimnetz und ist direkt erreichbar.
         <g>
           <rect x="42" y="186" width="156" height="58" rx="5"
                 fill="#fff" stroke="#333"/>
-          <text x="120" y="209" text-anchor="middle" fill="#333">Pi-hole · CT</text>
-          <text x="120" y="228" text-anchor="middle">192.168.1.51</text>
+          <text x="120" y="209" text-anchor="middle" fill="#333">Paperless · CT</text>
+          <text x="120" y="228" text-anchor="middle">192.168.178.11</text>
         </g>
         <g>
           <rect x="212" y="186" width="156" height="58" rx="5"
                 fill="#fff" stroke="#333"/>
-          <text x="290" y="209" text-anchor="middle" fill="#333">Paperless · CT</text>
-          <text x="290" y="228" text-anchor="middle">192.168.1.52</text>
+          <text x="290" y="209" text-anchor="middle" fill="#333">Minecraft · VM</text>
+          <text x="290" y="228" text-anchor="middle">192.168.178.12</text>
         </g>
         <g>
           <rect x="382" y="186" width="156" height="58" rx="5"
                 fill="#fff" stroke="#333"/>
-          <text x="460" y="209" text-anchor="middle" fill="#333">Minecraft · VM</text>
-          <text x="460" y="228" text-anchor="middle">192.168.1.53</text>
+          <text x="460" y="209" text-anchor="middle" fill="#333">Pi-hole · CT</text>
+          <text x="460" y="228" text-anchor="middle">192.168.178.19</text>
         </g>
       </g>
     </svg>
@@ -351,7 +357,7 @@ Dann oben rechts **Create CT**:
 - *CPU*: 1 Kern
 - *Memory*: 512 MB
 - *Network*: Bridge `vmbr0`, bei IPv4 entweder `DHCP` oder fest
-  `192.168.1.60/24` mit Gateway `192.168.1.1`
+  `192.168.178.13/24` mit Gateway `192.168.178.1`
 - *DNS*: leer lassen, dann gilt die Einstellung des Hosts
 
 **Finish**, dann links den Container anklicken, **Start**, **Console**. Nach

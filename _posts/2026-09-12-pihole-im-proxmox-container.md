@@ -15,9 +15,11 @@ Das läuft in einem Container auf der Proxmox-Installation aus dem
 [vorigen Beitrag](/2026/proxmox-ein-alter-rechner-viele-server/). Ein Container
 statt eines Raspberry Pi, so wie dort beschrieben.
 
-Die Adressen hier sind der FritzBox-Standard `192.168.178.x`. Im
-Proxmox-Beitrag stand beispielhaft `192.168.1.x` – wer das übernommen hat,
-ersetzt im Folgenden entsprechend.
+Die Adressen hier sind der Standard der FritzBox: Der Router ist die `.1`, per
+DHCP verteilt er ab Werk erst ab `.20`. Alles darunter ist frei für feste
+Adressen – Pi-hole bekommt deshalb die `.19`, direkt unterhalb des Bereichs.
+Bei anderen Routern lauten die ersten drei Zahlen oft `192.168.0` oder
+`192.168.1`, dann überall entsprechend ersetzen.
 
 ## Wie das im Netz aussieht
 
@@ -29,7 +31,7 @@ danach direkt beim Pi-hole an.
   <div class="rahmen">
     <svg viewBox="0 0 580 300" role="img"
          aria-label="Ablauf einer Namensauflösung: Die FritzBox teilt den
-                     Geräten per DHCP mit, dass 192.168.178.5 der DNS-Server
+                     Geräten per DHCP mit, dass 192.168.178.19 der DNS-Server
                      ist. Laptop, Handy und Fernseher fragen deshalb direkt
                      beim Pi-hole an. Erlaubte Anfragen reicht Pi-hole an Quad9
                      weiter, geblockte beantwortet es selbst mit 0.0.0.0.">
@@ -42,7 +44,7 @@ danach direkt beim Pi-hole an.
 
         <path d="M196 32H96v58" stroke="#8a8a85" stroke-width="1.4" fill="none"
               stroke-dasharray="4 3" marker-end="url(#pf)"/>
-        <text x="104" y="66">per DHCP: „DNS ist die .5“</text>
+        <text x="104" y="66">per DHCP: „DNS ist die .19“</text>
 
         <g>
           <rect x="26" y="96" width="140" height="34" rx="4"
@@ -65,7 +67,7 @@ danach direkt beim Pi-hole an.
         <rect x="216" y="126" width="148" height="62" rx="5"
               fill="#f6efe2" stroke="#b98a3c"/>
         <text x="290" y="150" text-anchor="middle" font-weight="600"
-              fill="#333">Pi-hole · .5</text>
+              fill="#333">Pi-hole · .19</text>
         <text x="290" y="172" text-anchor="middle">prüft jeden Namen</text>
 
         <path d="M364 146h40v-34h22" stroke="#8a8a85" stroke-width="1.4"
@@ -103,19 +105,28 @@ danach direkt beim Pi-hole an.
   draußen.</figcaption>
 </figure>
 
-## Zwei Entscheidungen vorweg
+## Warum Debian und nicht Ubuntu
 
-**Kein Docker.** Der LXC *ist* schon der Container. Docker darin bedeutet
-`nesting=1`, eine weitere Netzwerkschicht vor Port 53 und `pihole`-Befehle nur
-noch über `docker exec`. Der einzige echte Vorteil wäre ein sauberes Rollback
-über Image-Tags – und das erledigt das Proxmox-Backup besser.
-
-**Debian statt Ubuntu.** Ubuntu belegt Port 53 mit `systemd-resolved`, den man
-erst abschalten muss. Debian 13 bringt das Problem nicht mit.
+Pi-hole braucht Port 53 für sich. Ubuntu belegt den mit `systemd-resolved`, das
+erst abgeschaltet werden will – Debian 13 bringt das Problem nicht mit. Sonst
+sind beide gleichermaßen geeignet.
 
 ## Schritt 1 – Template holen
 
-Auf dem **Proxmox-Host** (nicht im Container), in der Shell:
+Eine Vorlage ist das fertige Grundsystem, aus dem der Container entsteht. In
+der Proxmox-Oberfläche:
+
+1. Links den Knoten `pve` aufklappen und auf **local (pve)** klicken
+2. Im Menü daneben **CT Templates**
+3. Oben auf **Templates** – es öffnet sich die Liste der verfügbaren Vorlagen
+4. In der Spalte *Package* `debian-13-standard` suchen, Zeile markieren,
+   **Download**
+
+Das Fenster zeigt den Fortschritt und darf danach geschlossen werden. Ist die
+Liste leer oder veraltet, hilft **Refresh** darüber.
+
+<details markdown="1">
+<summary>Dasselbe in der Shell</summary>
 
 ```bash
 pveam update
@@ -133,31 +144,57 @@ pveam download local debian-13-standard_13.1-2_amd64.tar.zst
 Die Versionsnummer im Dateinamen ändert sich – immer die aus der Ausgabe
 nehmen, nicht die hier abgetippte.
 
+</details>
+
 ## Schritt 2 – Container anlegen
 
-Ebenfalls auf dem Host. `110` ist die Container-Nummer, frei wählbar:
+Oben rechts **Create CT**. Der Assistent hat sieben Reiter, weiter geht es
+jeweils mit **Next**:
+
+| Reiter | Eingabe |
+|---|---|
+| General | CT ID `110`, Hostname `pihole`, Passwort setzen |
+| Template | Storage `local`, Template die eben geladene Vorlage |
+| Disks | Storage `local-lvm`, Disk size `8` GiB |
+| CPU | Cores `2` |
+| Memory | Memory `2048` MiB, Swap `512` MiB |
+| Network | siehe unten |
+| DNS | DNS servers `192.168.178.1` |
+
+Im Reiter **General** bleibt der Haken bei *Unprivileged container* gesetzt und
+*Nesting* ebenfalls – das ist die Voreinstellung und für Debian 13 richtig.
+
+Der Reiter **Network** ist der, auf den es ankommt:
+
+| Feld | Wert |
+|---|---|
+| Bridge | `vmbr0` |
+| IPv4 | **Static**, nicht DHCP |
+| IPv4/CIDR | `192.168.178.19/24` |
+| Gateway (IPv4) | `192.168.178.1` |
+
+Nach **Finish** fehlt noch ein Handgriff, den der Assistent nicht anbietet:
+Container links anklicken, **Options → Start at boot** auf **Yes**. Ohne das
+steht nach einem Neustart des Hosts das halbe Netz ohne Namensauflösung da.
+
+Dann **Start**, und über **Console** anmelden als `root`.
+
+<details markdown="1">
+<summary>Dasselbe in der Shell</summary>
+
+`110` ist die Container-Nummer, frei wählbar:
 
 ```bash
 pct create 110 local:vztmpl/debian-13-standard_13.1-2_amd64.tar.zst \
   --hostname pihole \
   --cores 2 --memory 2048 --swap 512 \
   --rootfs local-lvm:8 \
-  --net0 name=eth0,bridge=vmbr0,ip=192.168.178.5/24,gw=192.168.178.1 \
+  --net0 name=eth0,bridge=vmbr0,ip=192.168.178.19/24,gw=192.168.178.1 \
   --nameserver 192.168.178.1 \
   --features nesting=1 \
   --onboot 1 --unprivileged 1 \
   --password
 ```
-
-Vier Angaben sind keine Geschmacksfrage:
-
-- **Feste IP**, kein DHCP. Ein DNS-Server, dessen Adresse wandert, ist keiner.
-- **`--onboot 1`**, sonst steht nach einem Neustart des Hosts das halbe Netz
-  ohne Namensauflösung da.
-- **`--nameserver`** ist nur der Start-DNS für die Installation. Pi-hole
-  schreibt sich das später selbst um.
-- **`--unprivileged 1`** ist richtig, solange die FritzBox DHCP macht. Nur wenn
-  Pi-hole auch DHCP übernehmen soll, bräuchte es mehr Rechte.
 
 Starten und hineinwechseln:
 
@@ -166,7 +203,18 @@ pct start 110
 pct enter 110
 ```
 
-Ab hier sind alle Befehle **im Container**.
+</details>
+
+Vier Angaben sind dabei keine Geschmacksfrage:
+
+- **Feste IP**, kein DHCP. Ein DNS-Server, dessen Adresse wandert, ist keiner.
+- **Start at boot**, sonst hängt das Netz nach jedem Host-Neustart.
+- **DNS server** ist nur der Start-DNS für die Installation. Pi-hole schreibt
+  sich das später selbst um.
+- **Unprivileged** ist richtig, solange die FritzBox DHCP macht. Nur wenn
+  Pi-hole auch DHCP übernehmen soll, bräuchte es mehr Rechte.
+
+Ab hier sind alle Befehle **im Container**, also in dessen Console.
 
 ## Schritt 3 – System vorbereiten
 
@@ -200,15 +248,15 @@ Danach das Passwort für die Oberfläche setzen:
 pihole setpassword
 ```
 
-Die Oberfläche liegt unter `http://192.168.178.5/admin`.
+Die Oberfläche liegt unter `http://192.168.178.19/admin`.
 
 ## Schritt 5 – Erst testen, dann umstellen
 
 Von einem anderen Rechner aus, **bevor** die FritzBox angefasst wird:
 
 ```bash
-nslookup heise.de 192.168.178.5
-nslookup doubleclick.net 192.168.178.5
+nslookup heise.de 192.168.178.19
+nslookup doubleclick.net 192.168.178.19
 ```
 
 Der erste Name muss eine richtige Adresse liefern, der zweite `0.0.0.0`. Wenn
@@ -250,7 +298,7 @@ Die **Blocklisten** aktualisieren sich bereits von allein: Der Installer legt
 ## Schritt 7 – FritzBox umstellen
 
 **Heimnetz → Netzwerk → Netzwerkeinstellungen → IPv4-Einstellungen**, dort das
-Feld *Lokaler DNS-Server* auf `192.168.178.5` setzen.
+Feld *Lokaler DNS-Server* auf `192.168.178.19` setzen.
 
 Damit bekommt jedes Gerät Pi-hole als DNS, die FritzBox selbst behält ihren
 eigenen Weg nach draußen. Das ist wichtig: Fällt Pi-hole aus, kommt man über
@@ -325,7 +373,7 @@ Client-Statistik:
   lassen sich dann nicht mehr ausnehmen.</figcaption>
 </figure>
 
-Noch prüfen, dass `192.168.178.5` außerhalb des DHCP-Bereichs liegt oder fest
+Noch prüfen, dass `192.168.178.19` außerhalb des DHCP-Bereichs liegt oder fest
 zugeordnet ist. Die Geräte übernehmen die neue Adresse erst mit der nächsten
 DHCP-Erneuerung – WLAN einmal aus und an, oder `ipconfig /renew`.
 
@@ -364,7 +412,11 @@ Die Basis reicht für die meisten Haushalte:
 | Liste | URL |
 |---|---|
 | HaGeZi Multi PRO | `…/hagezi/dns-blocklists/main/adblock/pro.txt` |
-| HaGeZi Threat Intelligence | `…/hagezi/dns-blocklists/main/adblock/tif.txt` |
+| HaGeZi Threat Intelligence (medium) | `…/hagezi/dns-blocklists/main/adblock/tif.medium.txt` |
+
+Von *Threat Intelligence* die **medium**-Variante: Sie enthält nur die
+wichtigsten Quellen. Die volle Liste ist für einen Haushalt überdimensioniert
+und fällt häufiger fälschlich zu.
 
 Sinnvolle Ergänzungen, wenn mehr sein darf:
 
@@ -379,7 +431,7 @@ Vollständig zum Kopieren:
 
 ```
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
-https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt
 https://phishing.army/download/phishing_army_blocklist_extended.txt
