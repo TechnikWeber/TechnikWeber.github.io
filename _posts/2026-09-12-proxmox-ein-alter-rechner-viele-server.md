@@ -142,6 +142,25 @@ Mini-PC hat sich im ersten Jahr bezahlt.
 Die Systemplatte wird bei der Installation **komplett gelöscht**. Nichts
 draufliegen lassen, was noch gebraucht wird.
 
+## Der Stapel Raspberry Pis im Regal
+
+In der Bastler-Community sieht man das Muster ständig: ein Pi für Pi-hole,
+einer für die Heimautomatisierung, einer für den Dateiserver, einer für das
+Ding, dessen Zweck man selbst vergessen hat. Vier Netzteile, vier SD-Karten,
+vier Kabel zum Switch – und jedes Mal, wenn eine SD-Karte stirbt, wird ein
+Dienst neu aufgesetzt.
+
+Auf einem Proxmox-Kasten sind das vier Container. Ein Netzteil, ein Kabel, eine
+Oberfläche, ein Backup-Auftrag, der alle vier gemeinsam sichert. Wer neu anfängt
+oder gerade wieder einen Pi kaufen wollte, fährt mit einem gebrauchten Mini-PC
+meistens besser: Ein Thin Client mit 16 GB RAM kostet auf dem Gebrauchtmarkt
+etwa so viel wie zwei Pis samt Zubehör und trägt ein Dutzend Dienste statt
+einem.
+
+Zwei Gründe bleiben trotzdem für den Pi: **GPIO-Pins**, wenn etwas an die
+Stiftleiste soll, und **Standorte**, an denen 5 Watt und lautloser Betrieb den
+Ausschlag geben. Alles andere kann der Kasten im Keller mitmachen.
+
 ## Schritt 1 – USB-Stick vorbereiten
 
 Das ISO gibt es kostenlos bei
