@@ -456,6 +456,32 @@ Nach dem Hinzufügen **Tools → Update Gravity** oder `pihole -g`.
 Der Arbeitsablauf, den man sich merken sollte: Wenn etwas nicht geht, Query Log
 öffnen, Domain suchen, per Knopfdruck erlauben.
 
+## Ein Tag im Betrieb
+
+So sieht es bei mir aus, einen Tag nach der Einrichtung mit genau den oben
+genannten Listen:
+
+<figure class="abb">
+  <a href="/assets/2026-09-12-pihole-im-proxmox-container/01-dashboard.jpg">
+    <img src="/assets/2026-09-12-pihole-im-proxmox-container/01-dashboard.jpg"
+         alt="Pi-hole-Dashboard mit vier Kennzahlen: 27.296 Anfragen gesamt,
+              12.362 davon geblockt, 45,3 Prozent Blockrate, 987.386 Domains
+              auf den Listen bei 14 aktiven Geräten. Darunter das
+              Balkendiagramm der Anfragen über 24 Stunden mit einer Spitze
+              gegen 22 Uhr.">
+  </a>
+  <figcaption>Ein Tag, 14 Geräte: fast jede zweite Anfrage endet im Nichts.</figcaption>
+</figure>
+
+**27.296 Anfragen in 24 Stunden, 12.362 davon geblockt – 45,3 Prozent.** Das
+ist mehr, als ich erwartet hatte, und zeigt zugleich, dass die Quote wenig über
+die Qualität der Listen sagt: Sie hängt vor allem daran, welche Geräte im Netz
+hängen. Ein Smart-TV und ein paar Handys mit Apps treiben sie nach oben,
+während ein reiner Arbeitsrechner kaum auffällt.
+
+Die Spitze gegen 22 Uhr ist übrigens kein Mensch, sondern Geräte, die nachts
+aufräumen und dabei ihre Telemetrie loswerden wollen.
+
 ## Drei Stolpersteine
 
 - **Pi-hole nicht als DNS des Proxmox-Hosts eintragen.** Sonst startet der Host,
