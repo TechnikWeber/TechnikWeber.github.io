@@ -37,6 +37,14 @@ Für JS8Call gibt es einen Großbuchstaben-Modus, und wer keine Tarnung braucht,
 schaltet auf **Numbers** oder **Base32** um: dieselbe Verschlüsselung, aber
 vier- bis sechsmal kürzer.
 
+**Rechtlicher Hinweis:** Im Amateurfunk ist verschlüsselter oder
+verschleierter Funkverkehr nicht zulässig – der Inhalt einer Aussendung muss
+offen und für jeden nachvollziehbar sein. In Deutschland untersagt die
+Amateurfunkverordnung das Verschleiern von Aussendungen ausdrücklich. Andere
+Länder regeln das jeweils selbst, deshalb vorher die eigenen Bestimmungen
+prüfen. Auf den Amateurfunkbändern gehört StegoComm damit nicht aufs Band; für
+Chat, Mail oder andere Wege gilt die Einschränkung nicht.
+
 Ein Proof of Concept, kein auditiertes Sicherheitswerkzeug.
 
 Code: [github.com/TechnikWeber/StegoComm](https://github.com/TechnikWeber/StegoComm)
