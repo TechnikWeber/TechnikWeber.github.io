@@ -14,9 +14,10 @@ als ein kombinierter Chip mit Antennenumschalter. Gesendet und empfangen wird
 trotzdem abwechselnd auf derselben Frequenz, also **Simplex**. Duplex hieße
 gleichzeitig senden und empfangen.
 
-> **Nur ein Experiment.** Mit geänderter Antenne erlischt die Zulassung als
-> Funkgerät (SRD), legal betreiben lässt sich die Bridge so nicht. Auch die
-> Amateurfunklizenz reicht nicht – Steckdosen schalten ist kein Amateurfunk. Der Umbau lief nur zu Testzwecken.
+> **Nur ein Experiment.** Die Bridge funkt im ISM-Band, und dort gelten
+> strenge Regeln: höchstens 10 mW Strahlungsleistung, nur zugelassene Geräte
+> mit Originalantenne. Mit dem Umbau ist beides dahin – daran ändert auch eine
+> Amateurfunklizenz nichts.
 
 <figure class="abb">
   <a href="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/01-rf-bridge-geschlossen.jpg">
