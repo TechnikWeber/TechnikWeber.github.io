@@ -1,18 +1,22 @@
 ---
 layout: beitrag
-title: "Sonoff RF Bridge: 17,3 cm Draht, viermal Reichweite"
+title: "Sonoff RF Bridge: 17,3 cm Draht, doppelte Reichweite"
 date: 2026-09-12 21:00:00 +0200
-tags: [Elektronik]
+tags: [Amateurfunk, Elektronik]
 ---
 
 Die Sonoff RF Bridge setzt 433-MHz-Funksignale ins WLAN um – mit ihren
 winzigen Spiralantennen aber nur über kurze Strecken. Also runter damit und
 durch zwei gestreckte Drähte ersetzt.
 
+Zwei Antennen, weil Sender und Empfänger getrennte Bausteine sind – billiger
+als ein kombinierter Chip mit Antennenumschalter. Gesendet und empfangen wird
+trotzdem abwechselnd auf derselben Frequenz, also **Simplex**. Duplex hieße
+gleichzeitig senden und empfangen.
+
 > **Nur ein Experiment.** Mit geänderter Antenne erlischt die Zulassung als
-> Funkgerät (SRD), legal betreiben lässt sich die Bridge so nicht. Auch das
-> Amateurfunkrufzeichen hilft nicht – Steckdosen schalten ist kein
-> Amateurfunk. Der Umbau lief nur zu Testzwecken.
+> Funkgerät (SRD), legal betreiben lässt sich die Bridge so nicht. Auch die
+> Amateurfunklizenz reicht nicht – Steckdosen schalten ist kein Amateurfunk. Der Umbau lief nur zu Testzwecken.
 
 <figure class="abb">
   <a href="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/01-rf-bridge-geschlossen.jpg">
@@ -21,7 +25,7 @@ durch zwei gestreckte Drähte ersetzt.
               Gehäuse ragen oben ein grüner und ein weißer Draht senkrecht nach
               oben">
   </a>
-  <figcaption>Zusammengebaut: zwei Drähte statt interner Antennen.</figcaption>
+  <figcaption>Zusammengebaut: zwei Drähte durch zwei gebohrte Löcher im Gehäuse.</figcaption>
 </figure>
 
 <figure class="abb">
@@ -48,4 +52,4 @@ besser als die aufgewickelte Spirale, die vor allem klein sein soll.
 
 ## Ergebnis
 
-Im Test kamen Signale **fast viermal so weit** wie mit den Originalantennen.
+Im Test kamen Signale **doppelt so weit** wie mit den Originalantennen.
