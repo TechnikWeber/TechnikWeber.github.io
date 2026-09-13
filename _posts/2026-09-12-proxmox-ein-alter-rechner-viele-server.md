@@ -323,7 +323,7 @@ bekommt ihre eigene IP im Heimnetz und ist direkt erreichbar.
         <g>
           <rect x="212" y="186" width="156" height="58" rx="5"
                 fill="#fff" stroke="#333"/>
-          <text x="290" y="209" text-anchor="middle" fill="#333">Minecraft · VM</text>
+          <text x="290" y="209" text-anchor="middle" fill="#333">Minecraft · CT</text>
           <text x="290" y="228" text-anchor="middle">192.168.178.12</text>
         </g>
         <g>
@@ -407,6 +407,9 @@ nächsten Beiträgen – geplant sind **Pi-hole** als Werbefilter fürs ganze
 Heimnetz, **Paperless** als Ablage für Papierkram und ein **Minecraft-Server**
 für die Familie. Alle drei landen in je einem eigenen Container auf genau
 dieser Installation.
+
+Bereits erschienen: [Pi-hole im Container](/2026/pihole-im-proxmox-container/) ·
+[Minecraft-Server im Container](/2026/minecraft-server-im-proxmox-container/)
 
 Handbuch und Quelle für alles Weitere:
 [pve.proxmox.com/pve-docs](https://pve.proxmox.com/pve-docs/) ·

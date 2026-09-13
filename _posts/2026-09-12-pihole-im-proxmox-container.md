@@ -501,9 +501,9 @@ Der Container läuft, die erste Woche mit dem Dashboard ist erfahrungsgemäß di
 interessanteste – man sieht zum ersten Mal, was die Geräte im Hintergrund so
 alles fragen.
 
-Als Nächstes in dieser Reihe: **Paperless** für den Papierkram und ein
-**Minecraft-Server** für die Familie, beide wieder als Container auf derselben
-Installation.
+Als Nächstes in dieser Reihe: **Paperless** für den Papierkram. Der
+[Minecraft-Server](/2026/minecraft-server-im-proxmox-container/) für die
+Familie läuft schon als Container auf derselben Installation.
 
 Handbuch: [docs.pi-hole.net](https://docs.pi-hole.net) ·
 Listen: [hagezi/dns-blocklists](https://github.com/hagezi/dns-blocklists)
