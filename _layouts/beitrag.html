@@ -99,6 +99,12 @@ layout: post
      Bildschirm. Codebloecke (pre) scrollen weiterhin seitlich.       */
   .post-content :not(pre) > code { overflow-wrap: anywhere; }
 
+  /* Lange deutsche Woerter ("Standardinstallation") machen eine Tabelle
+     sonst breiter als das Handy. Silbentrennung laesst die Spalten
+     schmaler werden; braucht lang="de" im <html>, ist gesetzt.        */
+  .post-content td,
+  .post-content th { hyphens: auto; -webkit-hyphens: auto; }
+
   /* ── Warnhinweis bei Strom ────────────────────────────────────────
      Ganz oben im Beitrag das Include hinweis-strom.html einbinden.
      Der Text steht nur in _includes/hinweis-strom.html.             */
