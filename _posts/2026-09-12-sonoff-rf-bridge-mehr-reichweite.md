@@ -56,3 +56,21 @@ besser als die aufgewickelte Spirale, die vor allem klein sein soll.
 ## Ergebnis
 
 Im Test kamen Signale **doppelt so weit** wie mit den Originalantennen.
+
+## Im Einsatz mit Tasmota
+
+Auf der Bridge läuft **Tasmota** statt der Sonoff-Firmware. Damit schalte ich
+meine 433-MHz-Geräte per Knopf im Browser – Funksteckdosen gingen genauso, bei
+mir sind es Rollläden, Markisen und das Garagentor.
+
+<figure class="abb klein">
+  <a href="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/03-tasmota-oberflaeche.png">
+    <img src="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/03-tasmota-oberflaeche.png"
+         alt="Tasmota-Weboberfläche der Sonoff Bridge auf dem Handy: blaue
+              Knöpfe für Markise links und rechts rein und raus, Rolladen
+              runter und hoch, Garage sowie freie Knöpfe 8 bis 16, darunter
+              Configuration, Information, Firmware Upgrade, Console und
+              Restart">
+  </a>
+  <figcaption>Tasmota auf dem Handy: ein Knopf pro Funkbefehl.</figcaption>
+</figure>
