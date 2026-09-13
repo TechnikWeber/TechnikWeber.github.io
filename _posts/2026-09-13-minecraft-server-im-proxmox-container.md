@@ -159,7 +159,8 @@ startet er ihn neu. Die Kunst liegt darin, **wann er schweigt**:
   länger als eine halbe Minute. Der Watchdog wartet aufs Log statt auf die Uhr
   und schlägt keinen falschen Alarm.
 
-Gemeldet wird über [ntfy](https://ntfy.sh) direkt aufs Handy. Jede Nachricht
+Gemeldet wird über [ntfy](/2026/ntfy-push-nachrichten-aufs-handy/) direkt aufs
+Handy – ohne Konto, mit einer Zeile `curl` im Script. Jede Nachricht
 sagt, was passiert ist und was zu tun ist – im Normalfall: nichts. So sieht die
 seltene schlechte Nachricht aus:
 
