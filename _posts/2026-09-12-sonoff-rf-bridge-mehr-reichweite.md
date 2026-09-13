@@ -5,6 +5,8 @@ date: 2026-09-12 21:00:00 +0200
 tags: [Amateurfunk, Elektronik]
 ---
 
+{% include hinweis-strom.html %}
+
 Die Sonoff RF Bridge setzt 433-MHz-Funksignale ins WLAN um – mit ihren
 winzigen Spiralantennen aber nur über kurze Strecken. Also runter damit und
 durch zwei gestreckte Drähte ersetzt.

@@ -5,6 +5,8 @@ date: 2026-08-26 19:30:00 +0200
 tags: [Elektronik]
 ---
 
+{% include hinweis-strom.html %}
+
 Drei Module, alle beworben mit **5 V** und **5 A**. Exakte 5,00 V erwarte ich
 nicht, 4,7 V täten es auch – mich interessierte nur, ob stimmt, was in der
 Artikelbeschreibung steht. Zwei sind **UBECs**, also reine Abwärtswandler, das

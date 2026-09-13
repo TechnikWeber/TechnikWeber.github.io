@@ -53,6 +53,14 @@ fertigen Beitrag bauen. Ablauf:
 6. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur
    der Beitrag liegen, an dem gerade gearbeitet wird
 
+## Warnhinweis bei Strom
+
+Beiträge mit Experimenten an Strom und Elektronik beginnen direkt nach dem
+Front Matter mit `{% include hinweis-strom.html %}`. Der Text steht nur in
+`_includes/hinweis-strom.html` und bleibt überall gleich – nie im Beitrag
+abwandeln. Baut auf dem Abschnitt „Arbeiten an elektrischen Anlagen“ im
+Impressum auf und verlinkt dorthin.
+
 ## Ordner
 
 ```

@@ -94,6 +94,24 @@ layout: post
     color: #828282;
   }
 
+  /* Lange Pfade und URLs in `code` duerfen umbrechen – sonst schiebt z. B.
+     eine Tabellenzelle die ganze Seite auf dem Handy breiter als den
+     Bildschirm. Codebloecke (pre) scrollen weiterhin seitlich.       */
+  .post-content :not(pre) > code { overflow-wrap: anywhere; }
+
+  /* ── Warnhinweis bei Strom ────────────────────────────────────────
+     Ganz oben im Beitrag das Include hinweis-strom.html einbinden.
+     Der Text steht nur in _includes/hinweis-strom.html.             */
+  .post-content .hinweis-strom {
+    margin: 0 0 1.8em;
+    padding: .8em 1em;
+    background: #fbf1e9;
+    border-left: 4px solid #b3541e;
+    border-radius: 4px;
+    font-size: .9em;
+    line-height: 1.5;
+  }
+
 </style>
 
 {{ content }}

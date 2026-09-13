@@ -65,6 +65,18 @@ Hier den Beitrag schreiben.
   einfach nur Tags benutzen.
 
 
+  ── WARNHINWEIS BEI STROM ─────────────────────────────────────────
+
+  Geht es um Experimente mit Strom, kommt als ALLERERSTE Zeile unter
+  den Kopf (nach dem zweiten ---):
+
+      {% include hinweis-strom.html %}
+
+  Das setzt den immer gleichen Kasten "Vorsicht, Strom kann töten"
+  mit Link auf den Haftungshinweis im Impressum ein. Den Text nicht im
+  Beitrag abändern – nur in _includes/hinweis-strom.html.
+
+
   ── BILDER: WOHIN UND WIE BENENNEN ────────────────────────────────
 
   REGEL: Pro Beitrag ein eigener Ordner unter assets/, benannt exakt
