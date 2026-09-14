@@ -11,7 +11,7 @@ Text aus Buchstaben und Leerzeichen – das übersteht jede Funk- oder
 Chat-Strecke. Die Datei `cover_studio.html` macht das komplett im Browser,
 ohne Installation und ohne Server.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-06-stegocomm/01-cover-studio.jpg">
     <img src="/assets/2026-09-06-stegocomm/01-cover-studio.jpg"
          alt="Cover Studio im Browser: links Nachricht, Schlüsselfeld und

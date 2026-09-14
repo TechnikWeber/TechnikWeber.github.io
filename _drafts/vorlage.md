@@ -126,13 +126,19 @@ Hier den Beitrag schreiben.
       git add assets/2026-09-14-antenne-fuer-2m/
 
 
-  ── BILD MIT BILDUNTERSCHRIFT ─────────────────────────────────────
+  ── BILD MIT BILDUNTERSCHRIFT (Standard für Fotos) ────────────────
 
-      <figure>
-        <img src="/assets/2026-09-14-antenne-fuer-2m/03-swr-messung.jpg"
-             alt="SWR-Messung am Antennenanalysator">
+      <figure class="abb klein">
+        <a href="/assets/2026-09-14-antenne-fuer-2m/03-swr-messung.jpg">
+          <img src="/assets/2026-09-14-antenne-fuer-2m/03-swr-messung.jpg"
+               alt="SWR-Messung am Antennenanalysator">
+        </a>
         <figcaption>SWR bei 145,5 MHz – nah genug an 1:1.</figcaption>
       </figure>
+
+  Fotos und Screenshots immer so: "abb klein" macht sie schmaler und
+  mittig, in allen Beiträgen gleich; ein Klick öffnet das Bild groß.
+  "Abb. 1", "Abb. 2" … setzt der Browser selbst davor.
 
 
   ── BILD ALS LINK / KLEINER DARGESTELLT ───────────────────────────

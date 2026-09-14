@@ -5,7 +5,7 @@ layout: post
   /* ── Bilder und Diagramme mit Rahmen und Bildunterschrift ──────────
      Benutzung im Beitrag:
 
-       <figure class="abb">
+       <figure class="abb klein">
          <a href="/assets/BEITRAG/01-bild.jpg">
            <img src="/assets/BEITRAG/01-bild.jpg" alt="Alternativtext">
          </a>
@@ -20,9 +20,11 @@ layout: post
 
   .abb { margin: 2.2em 0; }
 
-  /* Ein Foto muss nicht die volle Textbreite fuellen. Mit
-       <figure class="abb klein">  steht es schmaler und mittig – ein
-     Klick oeffnet es weiterhin in voller Groesse.                    */
+  /* Fotos und Screenshots IMMER mit  <figure class="abb klein">  –
+     schmaler und mittig, in allen Beitraegen gleich. Ein Klick oeffnet
+     das Bild in voller Groesse. Nur Schaubilder (<div class="rahmen">
+     mit Inline-SVG) nehmen die volle Breite, sonst wird ihre Schrift
+     unlesbar klein.                                                   */
   .abb.klein {
     max-width: 440px;
     margin-left: auto;

@@ -461,7 +461,7 @@ Der Arbeitsablauf, den man sich merken sollte: Wenn etwas nicht geht, Query Log
 So sieht es bei mir aus, einen Tag nach der Einrichtung mit genau den oben
 genannten Listen:
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-12-pihole-im-proxmox-container/01-dashboard.jpg">
     <img src="/assets/2026-09-12-pihole-im-proxmox-container/01-dashboard.jpg"
          alt="Pi-hole-Dashboard mit vier Kennzahlen: 27.296 Anfragen gesamt,

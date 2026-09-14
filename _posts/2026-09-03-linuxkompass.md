@@ -10,7 +10,7 @@ Umstiegs, und die üblichen Antworten sind entweder Geschmackssache oder eine
 Rangliste ohne Begründung. **LinuxKompass** fragt stattdessen nach Hardware,
 Arbeitsweise und Geduld und erklärt jede Empfehlung.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-03-linuxkompass/01-startseite.jpg">
     <img src="/assets/2026-09-03-linuxkompass/01-startseite.jpg"
          alt="Startseite von LinuxKompass mit der Überschrift „Welches Linux
@@ -24,7 +24,7 @@ Drei kurze Fragen schätzen vorab ein, wie tief es gehen soll: 12 Fragen für
 Einsteiger, 23 für Fortgeschrittene, 37 im Profimodus. Der Modus lässt sich
 mitten im Fragebogen wechseln, ohne Antworten zu verlieren.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-03-linuxkompass/02-fragebogen.jpg">
     <img src="/assets/2026-09-03-linuxkompass/02-fragebogen.jpg"
          alt="Fragebogen: „Wofür wirst du den Rechner hauptsächlich benutzen?“
@@ -39,7 +39,7 @@ welche Bewertungsdimension wie viele Punkte beigesteuert hat. Ausgeschlossene
 Distributionen stehen gesondert, jeweils mit der Anforderung, an der sie
 gescheitert sind.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-03-linuxkompass/03-ergebnis.jpg">
     <img src="/assets/2026-09-03-linuxkompass/03-ergebnis.jpg"
          alt="Ergebnisseite: Linux Mint mit 81 von 100 Punkten, darunter die

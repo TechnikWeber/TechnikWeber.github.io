@@ -48,6 +48,10 @@ fertigen Beitrag bauen. Ablauf:
    - verkleinern: `magick original.jpg -resize 1600x -quality 82 01-name.jpg`
    - sprechende Namen, `01-`, `02-` … voranstellen
    - Alternativtexte im Beitrag immer ausfüllen
+   - Fotos und Screenshots **immer** als `<figure class="abb klein">` mit
+     Link aufs Bild einbinden – schmal und mittig, überall gleich.
+     Ausdrücklich so gewünscht. Nur Inline-SVG-Schaubilder
+     (`<div class="rahmen">`) bekommen die volle Breite
 5. Beitrag committen und pushen (ohne Rückfrage, siehe oben). Nicht auf den
    GitHub-Pages-Build warten – der läuft nach jedem Push automatisch
 6. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur

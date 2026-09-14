@@ -10,7 +10,7 @@ ersetzt sie durch IP: Video, Steuerung und Konfiguration laufen über WLAN oder
 LTE, bedient wird im Browser – am PC oder am Handy. Ein Raspberry Pi im Fahrzeug
 macht daraus die Servosignale.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-08-28-yonderrc-fernsteuerung-ueber-lte/01-bodenstation-fpv-osd.png">
     <img src="/assets/2026-08-28-yonderrc-fernsteuerung-ueber-lte/01-bodenstation-fpv-osd.png"
          alt="Bodenstation von YonderRC im Browser: oben die Verbindungszeile zum

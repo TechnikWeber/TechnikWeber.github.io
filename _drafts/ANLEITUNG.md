@@ -106,11 +106,20 @@ assets/2026-09-14-antenne-fuer-2m/01-material.jpg
 assets/2026-09-14-antenne-fuer-2m/02-aufbau-strahler.jpg
 ```
 
-Einbinden mit führendem Schrägstrich:
+Einbinden mit führendem Schrägstrich – Fotos und Screenshots immer so, dann
+sind sie in allen Beiträgen gleich schmal und mittig, ein Klick öffnet sie groß:
 
-```markdown
-![Fertige Antenne am Mast](/assets/2026-09-14-antenne-fuer-2m/04-fertig-am-mast.jpg)
+```html
+<figure class="abb klein">
+  <a href="/assets/2026-09-14-antenne-fuer-2m/04-fertig-am-mast.jpg">
+    <img src="/assets/2026-09-14-antenne-fuer-2m/04-fertig-am-mast.jpg"
+         alt="Fertige Antenne am Mast">
+  </a>
+  <figcaption>Fertig am Mast.</figcaption>
+</figure>
 ```
+
+Nur Schaubilder (Inline-SVG im `<div class="rahmen">`) nehmen die volle Breite.
 
 Vor dem Committen auf ca. 1600 px verkleinern – was einmal drin ist, bleibt für
 immer in der Historie:
