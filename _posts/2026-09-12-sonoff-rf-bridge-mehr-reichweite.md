@@ -21,7 +21,7 @@ gleichzeitig senden und empfangen.
 > mit Originalantenne. Mit dem Umbau ist beides dahin – daran ändert auch eine
 > Amateurfunklizenz nichts.
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/01-rf-bridge-geschlossen.jpg">
     <img src="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/01-rf-bridge-geschlossen.jpg"
          alt="Schwarze Sonoff RF Bridge auf einem Karoblock am Fenster, aus dem
@@ -31,7 +31,7 @@ gleichzeitig senden und empfangen.
   <figcaption>Zusammengebaut: zwei Drähte durch zwei gebohrte Löcher im Gehäuse.</figcaption>
 </figure>
 
-<figure class="abb">
+<figure class="abb klein">
   <a href="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/02-rf-bridge-geoeffnet-drahtantenne.jpg">
     <img src="/assets/2026-09-12-sonoff-rf-bridge-mehr-reichweite/02-rf-bridge-geoeffnet-drahtantenne.jpg"
          alt="Geöffnete RF Bridge: grüne Platine mit leuchtender Anzeige,
