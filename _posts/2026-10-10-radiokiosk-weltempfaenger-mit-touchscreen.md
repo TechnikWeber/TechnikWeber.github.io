@@ -6,9 +6,9 @@ tags: [Amateurfunk, "Raspberry Pi"]
 ---
 
 Ein Raspberry Pi, ein Touch-Display und ein RTL-SDR-Stick: **RadioKiosk**
-macht daraus ein Radio für alles – Webradio, DAB+, UKW, Kurzwelle, Amateurfunk
-und eine Flugzeugkarte in einer Oberfläche, die sich mit dem Finger bedienen
-lässt.
+macht daraus ein Radio für alles – Webradio, DAB+, UKW, Kurzwelle, Amateurfunk,
+Flugzeugkarte, Podcasts und einiges mehr in einer Oberfläche, die sich mit dem
+Finger bedienen lässt.
 
 <figure class="abb klein">
   <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/01-radiokiosk-auf-dem-raspberry-pi.jpg">
@@ -29,36 +29,42 @@ nächsten startet.
 
 ## Die Kacheln
 
-- **Webradio:** Sendersuche über radio-browser.info, mit Senderlogos
-- **DAB+:** Suchlauf, Lauftext und die Bilder, die die Sender mitschicken
-- **UKW:** Stereo, Sendername und Radiotext (RDS), Suchlauf, Wasserfall
+- **Hören:** Webradio, DAB+ mit Lauftext und Senderbildern, UKW mit Stereo,
+  RDS und Wasserfall, Podcasts mit Vorschlägen aus den aktuellen Charts
 - **Empfänger:** freies Abstimmen in FM, AM und Seitenband – Kurzwelle,
-  Amateurfunk, PMR446, Freenet, CB; auf Kurzwelle steht dabei, wer gerade sendet
-- **Flugzeuge:** Live-Karte der Maschinen in der Umgebung (ADS-B)
-- **Dazu:** Bluetooth, Wetter, Wecker, Sleep-Timer, Aufnahme und Favoriten
-  quer über alle Quellen
+  Amateurfunk, PMR446, Freenet, CB
+- **Mitlesen:** Flugzeuge (ADS-B) und Schiffe (AIS) auf der Karte,
+  Funk-Thermometer und Wetterstationen der Umgebung auf 433 MHz
+- **Für Funkamateure:** Funkwetter mit Bandbedingungen und MUF, DX-Cluster und
+  POTA, ein QSO-Log mit ADIF-Export und eine Funk-Analyse, die einen Bereich
+  über eine gewählte Zeit beobachtet und berichtet, was auf Sendung war
+- **Dazu:** Nachrichten per RSS, Wetter mit Mondphase, Galerie, Timer,
+  Wecker, Aufnahme und Favoriten quer über alle Quellen
 
 <figure class="abb klein">
   <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/02-ukw-mit-wasserfall.jpg">
     <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/02-ukw-mit-wasserfall.jpg"
-         alt="UKW-Ansicht auf 103,40 MHz mit Spektrum und Wasserfall, darunter
-              Tasten zum Abstimmen und der Radiotext des Senders">
+         alt="UKW-Ansicht auf 88,30 MHz mit Spektrum und Wasserfall, darunter
+              Tasten zum Abstimmen; in der unteren Leiste der Sendername SWR1 BW">
   </a>
-  <figcaption>UKW mit Wasserfall und Radiotext.</figcaption>
+  <figcaption>UKW mit Wasserfall und Sendername.</figcaption>
 </figure>
 
 UKW und der freie Empfänger laufen über einen eigenen Empfänger in Python mit
 NumPy: Er demoduliert, dekodiert RDS und zeichnet den Wasserfall, ohne den
-Stick beim Umstimmen neu zu starten. DAB+ und ADS-B übernehmen bewährte
-Programme wie `welle-cli` und `readsb`.
+Stick beim Umstimmen neu zu starten. DAB+, ADS-B, AIS und die Funksensoren
+übernehmen bewährte Programme wie `welle-cli`, `readsb`, `rtl_ais` und
+`rtl_433`. Der Ruhebildschirm zeigt wahlweise die Uhr, eine Diashow, die
+neuesten Nachrichten oder den DX-Cluster.
 
 <figure class="abb klein">
-  <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/03-flugzeugkarte.jpg">
-    <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/03-flugzeugkarte.jpg"
-         alt="Karte von Südwestdeutschland mit einem Flugzeug in 37000 Fuß,
-              rechts die Liste der empfangenen Maschinen">
+  <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/03-funkaktivitaet-dx-cluster.jpg">
+    <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/03-funkaktivitaet-dx-cluster.jpg"
+         alt="Kachel Funkaktivität mit den Reitern DX-Cluster und POTA, einem
+              Bandfilter und einer Liste aktueller Meldungen mit Rufzeichen,
+              Frequenz und Kommentar">
   </a>
-  <figcaption>Flugzeuge über Süddeutschland, direkt vom Stick.</figcaption>
+  <figcaption>DX-Cluster: ein Tipp stimmt den Empfänger dorthin ab.</figcaption>
 </figure>
 
 ## Ausprobieren
@@ -70,9 +76,10 @@ curl -fsSL https://raw.githubusercontent.com/TechnikWeber/RadioKiosk/main/instal
 ```
 
 Mit `--kiosk` startet die Oberfläche nach jeder Anmeldung im Vollbild. Ohne
-Stick läuft das Webradio trotzdem; Kurzwelle braucht einen Stick, der unter
-24 MHz abstimmt, und eine lange Drahtantenne. Das Projekt steht bei Version
-0.10 – gebaut ist alles, aber noch nicht auf jeder Hardware ausprobiert.
+Stick läuft alles weiter, was keinen braucht; Kurzwelle braucht einen Stick,
+der unter 24 MHz abstimmt, und eine lange Drahtantenne. Das Projekt steht bei
+Version 0.16 – gebaut ist alles, aber noch nicht auf jeder Hardware
+ausprobiert.
 
 Code und Anleitung:
 [github.com/TechnikWeber/RadioKiosk](https://github.com/TechnikWeber/RadioKiosk)
