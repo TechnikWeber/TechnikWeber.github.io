@@ -40,6 +40,8 @@ nächsten startet.
   über eine gewählte Zeit beobachtet und berichtet, was auf Sendung war
 - **Dazu:** Nachrichten per RSS, Wetter mit Mondphase, Galerie, Timer,
   Wecker, Aufnahme und Favoriten quer über alle Quellen
+- **Seit dem Update unten:** Kalender, Notizen, Erinnerungen, Smart Home,
+  Musik, Hörbücher und Online-Medien
 
 <figure class="abb klein">
   <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/02-ukw-mit-wasserfall.jpg">
@@ -75,11 +77,58 @@ Eine Zeile installiert alles, auf Fedora, Debian, Ubuntu und Raspberry Pi OS:
 curl -fsSL https://raw.githubusercontent.com/TechnikWeber/RadioKiosk/main/install.sh | bash
 ```
 
-Mit `--kiosk` startet die Oberfläche nach jeder Anmeldung im Vollbild. Ohne
-Stick läuft alles weiter, was keinen braucht; Kurzwelle braucht einen Stick,
-der unter 24 MHz abstimmt, und eine lange Drahtantenne. Das Projekt steht bei
-Version 0.16 – gebaut ist alles, aber noch nicht auf jeder Hardware
-ausprobiert.
+Mit `--kiosk` startet die Oberfläche nach jeder Anmeldung im Vollbild, mit
+`--ham` kommen die Funk-Kacheln und ihre Programme dazu. Ohne Stick läuft
+alles weiter, was keinen braucht; Kurzwelle braucht einen Stick, der unter
+24 MHz abstimmt, und eine lange Drahtantenne. Gebaut ist alles, aber noch
+nicht auf jeder Hardware ausprobiert.
 
 Code und Anleitung:
 [github.com/TechnikWeber/RadioKiosk](https://github.com/TechnikWeber/RadioKiosk)
+
+## Update vom 11. Oktober 2026
+
+Aus dem Weltempfänger ist mehr geworden: Version 0.24 ist auch Küchenradio und
+digitaler Bilderrahmen, und sie läuft ohne Touchscreen genauso auf einem
+Laptop.
+
+Der Raspberry Pi vom Foto oben steht inzwischen in der Küche, ohne Stick und
+mit ausgeblendeten Funk-Kacheln:
+
+<figure class="abb klein">
+  <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/04-kuechenradio.jpg">
+    <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/04-kuechenradio.jpg"
+         alt="Startbildschirm mit Favoritenzeile und zwölf Kacheln: Webradio,
+              Podcasts, Musik, Hörbücher, Online-Medien, Bluetooth,
+              Nachrichten, Wetter, Wecker, Timer, Notizen und Erinnerungen;
+              in der Kopfzeile das Wetter, rechts Uhrzeit und Datum">
+  </a>
+  <figcaption>Der Pi als Küchenradio.</figcaption>
+</figure>
+
+Die Vollversion mit allen Kacheln steht neben dem Funkgerät:
+
+<figure class="abb klein">
+  <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/05-alle-kacheln.jpg">
+    <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/05-alle-kacheln.jpg"
+         alt="Startbildschirm mit 28 Kacheln in fünf Reihen: zuerst alles zum
+              Hören, dann Nachrichten, Wetter, Kalender, Galerie, Smart Home,
+              Wecker, Timer, Notizen und Erinnerungen, zuletzt die
+              Funk-Kacheln von Flugzeuge bis SDR++">
+  </a>
+  <figcaption>Alle Kacheln, mit <code>--ham</code> installiert.</figcaption>
+</figure>
+
+Neu seit dem Beitrag:
+
+- **Bilderrahmen:** Die Galerie füllt freie Ränder mit dem unscharfen Bild,
+  schwenkt über beschnittene Bilder und wechselt mit Überblenden, Wischen
+  oder Blättern. Bilder lassen sich vom Handy hochladen.
+- **Alltag:** Kalender über iCal-Adressen, Notizen, Erinnerungen, Wecker mit
+  wählbarem Ton und amtliche Warnungen von DWD und NINA.
+- **Hören:** eigene Musik, Hörbücher, Online-Medien über yt-dlp, Pause und
+  Stummschaltung.
+- **Smart Home:** Schalter und Werte über HTTP, etwa Webhooks von Home
+  Assistant; umgekehrt lässt sich RadioKiosk von außen steuern.
+- **Updates:** ein Knopf in den Einstellungen, auf Wunsch nachts von selbst,
+  mit Rückfall auf die alte Version, wenn die neue nicht startet.
