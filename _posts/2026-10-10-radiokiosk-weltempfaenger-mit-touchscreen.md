@@ -132,3 +132,27 @@ Neu seit dem Beitrag:
   Assistant; umgekehrt lässt sich RadioKiosk von außen steuern.
 - **Updates:** ein Knopf in den Einstellungen, auf Wunsch nachts von selbst,
   mit Rückfall auf die alte Version, wenn die neue nicht startet.
+
+## Update vom 13. Oktober 2026
+
+Version 0.25 macht den Ruhebildschirm schöner: Hinter Wetter, Nachrichten und
+Bibelvers ziehen statt Schwarz drei weiche Lichter, gefärbt nach Tageszeit und
+Wetter.
+
+<figure class="abb klein">
+  <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/06-ruhebildschirm-wetter.jpg">
+    <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/06-ruhebildschirm-wetter.jpg"
+         alt="Ruhebildschirm mit dem Wetter: oben die Temperatur und vier Tage
+              Vorhersage, darunter groß die Uhrzeit, daneben Datum, Wetterzeile
+              und der laufende Sender; der Hintergrund leuchtet in warmen
+              Abendfarben">
+  </a>
+  <figcaption>Ruhebildschirm mit Wetter, abends.</figcaption>
+</figure>
+
+Neu seit dem letzten Update:
+
+- **Wetter im Ruhebildschirm:** das aktuelle Wetter groß, darunter die
+  nächsten Tage. Wie lange jede Anzeige bleibt, lässt sich einzeln einstellen.
+- **Videos in der Galerie:** Ein hochgeladenes Video läuft als kurzer, stummer
+  Clip zwischen den Bildern.
