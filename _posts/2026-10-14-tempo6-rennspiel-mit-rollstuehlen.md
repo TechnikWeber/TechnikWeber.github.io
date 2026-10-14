@@ -9,7 +9,7 @@ Elektrorollstühle und Seniorenmobile, ab Werk auf 6 km/h gedrosselt – was,
 wenn man die Drossel rausnimmt? **Tempo6** ist ein kleines Rennspiel genau
 dazu, direkt im Browser, am Rechner oder quer gehaltenen Handy.
 
-**[Jetzt spielen: technikweber.github.io/Tempo6](https://technikweber.github.io/Tempo6/)**
+**[Jetzt spielen: technikweber.github.io/Tempo6](https://technikweber.github.io/Tempo6/)** · [Quellcode auf GitHub](https://github.com/TechnikWeber/Tempo6)
 
 <figure class="abb klein">
   <a href="/assets/2026-10-14-tempo6-rennspiel-mit-rollstuehlen/01-startbildschirm.jpg">
