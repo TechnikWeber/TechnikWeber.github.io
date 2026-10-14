@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Tempo6</title>
+    <script type="module" crossorigin src="./assets/index-Dol5lSZC.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B70O0D0J.css">
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+
+    <div id="menu"></div>
+    <div id="garage" hidden></div>
+
+    <div id="hud" hidden>
+      <div class="panel" id="speedo">
+        <div><span id="speed">0,0</span><small>km/h</small></div>
+        <div class="bar"><i id="speed-bar"></i></div>
+        <div class="dim">max. <b id="top">6</b> km/h · <span id="vehicle"></span></div>
+        <div id="damage-row" hidden><span>🔧</span><div class="bar"><i id="damage-bar"></i></div><small id="damage-text"></small></div>
+        <div id="boost-row" hidden><span>⚡</span><div class="bar"><i id="boost-bar"></i></div><kbd>⇧</kbd></div>
+      </div>
+
+      <div class="panel" id="laps">
+        <div><span id="lap-label">Runde</span> <b id="lap-time">–</b></div>
+        <div class="dim"><span id="lap-sub">Bestzeit</span> <b id="lap-best">–</b></div>
+      </div>
+
+      <div class="panel" id="shop">
+        <div class="money">🔩 <b id="money">0 Schrauben</b></div>
+        <div id="pending" hidden></div>
+        <div class="dim">Stufe <span id="stage-no">0</span>: <span id="stage"></span></div>
+        <button id="tune"></button>
+        <button id="buy-boost" hidden></button>
+      </div>
+
+      <div id="toast"></div>
+      <div id="banner"></div>
+      <div id="stunt"></div>
+      <div id="lights" hidden><i></i><i></i><i></i></div>
+      <div id="flipped" hidden>Umgekippt! <kbd>R</kbd> zum Aufrichten</div>
+      <div id="wrecked" hidden>Totalschaden! <kbd>⌫</kbd> Level neu</div>
+
+      <div class="panel dim" id="help">
+        <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> fahren · <kbd>Leertaste</kbd> Handbremse · <kbd>⇧ Umschalt</kbd> Boost · <kbd>T</kbd> tunen ·
+        <kbd>R</kbd> aufrichten · <kbd>⌫</kbd> Level neu · <kbd>Esc</kbd> Menü ·
+        <kbd>G</kbd> Schatten · <kbd>M</kbd> Ton · <kbd>F2</kbd> Werkstatt
+      </div>
+    </div>
+
+    <div id="touch" hidden>
+      <div id="touch-steer"><i></i></div>
+      <button id="touch-menu">☰</button>
+      <button id="touch-up">↻</button>
+      <button id="touch-brake">■</button>
+      <button id="touch-boost">⚡</button>
+      <button id="touch-back">▼</button>
+      <button id="touch-gas">▲</button>
+    </div>
+
+  </body>
+</html>
