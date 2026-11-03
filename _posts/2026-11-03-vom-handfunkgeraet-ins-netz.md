@@ -160,9 +160,10 @@ derselben Frequenz mitschreiben – ganz ohne PC.
   <figcaption>TESTC-1 ist nur über das Relais TESTB-1 erreichbar.</figcaption>
 </figure>
 
-**Relais:** Eine Station kann für andere wiederholen. Baken laufen dann über
-bis zu zwei Relais, und die Stationen merken sich den Weg zueinander. So
-erreicht A die Station C, die es selbst nicht hört.
+**Relais:** Jede Station wiederholt für andere – standardmäßig an,
+abschaltbar, und nur, wenn ein Nachbar das Paket noch nicht haben kann. Baken
+laufen über bis zu zwei Relais, und die Stationen merken sich den Weg
+zueinander. So erreicht A die Station C, die es selbst nicht hört.
 
 <figure class="abb klein">
   <a href="/assets/2026-11-03-vom-handfunkgeraet-ins-netz/06-vorstellungsseite.png">
@@ -177,7 +178,9 @@ Jede Station hat eine kleine **Vorstellungsseite** auf ihrer Funkadresse. Eine
 man freigibt – auf Wunsch nur für bestimmte Rufzeichen. Wer abgewiesen wird,
 erfährt es sofort. Eine **Portweiterleitung** macht genau einen Dienst aus
 dem Heimnetz erreichbar, etwa SSH. Und wer Internet hat, kann es als
-**Gateway** teilen; Zugang anfragen geht über den Chat.
+**Gateway** teilen; Zugang anfragen geht über den Chat. Zum Fehlersuchen zeigt
+der Reiter **Mithören** jedes Paket auf dem Kanal, auch fremde – wie bei
+offener Rauschsperre –, und `-pcap` schreibt alles für Wireshark mit.
 
 <figure class="abb klein">
   <a href="/assets/2026-11-03-vom-handfunkgeraet-ins-netz/07-axlink-einstellungen.png">
