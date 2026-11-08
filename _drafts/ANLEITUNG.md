@@ -55,6 +55,29 @@ git commit -m "Beitrag überarbeitet: Mein Thema"
 git push
 ```
 
+## Update zu einem Beitrag
+
+Wenn sich später etwas tut: den alten Text stehen lassen und **am Ende** einen
+neuen Abschnitt anhängen. Die Zeile darunter zieht eine durchgehende Linie
+über die volle Breite als Trenner; die `#update-…`-Marke ist die Sprungadresse.
+
+```markdown
+## Update vom 08.11.2026
+{: .update #update-2026-11-08}
+
+Was sich getan hat, kurz. Bilder wie immer als <figure class="abb klein">.
+```
+
+Dazu oben unter der Einleitung eine Zeile, damit man das Update findet:
+
+```markdown
+*Update 08.11.2026: Worum es geht – [zum Update](#update-2026-11-08).*
+```
+
+Mehrere Updates untereinander, das neueste zuletzt; oben gilt die Zeile fürs
+neueste. Bilder kommen in den Bildordner des Beitrags, die Nummern laufen weiter.
+Beispiel: der Beitrag „Vom Handfunkgerät ins Netz“.
+
 ## Beitrag löschen
 
 ```bash

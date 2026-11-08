@@ -10,6 +10,8 @@ die zusammengehören: ein **APRS-Messenger** direkt im Funkgerät, eine
 **KISS-TNC-App**, die das Funkgerät zum Modem macht, und **AXLink**, das am PC
 daraus einen Netzwerkadapter baut – mit Chat, Relais und Internet-Gateway.
 
+*Update 08.11.2026: Der Messenger läuft auf zwei UV-K1 – [zum Update](#update-2026-11-08).*
+
 <figure class="abb">
   <div class="rahmen">
     <svg viewBox="0 0 580 270" role="img"
@@ -220,3 +222,19 @@ stehen die Tests noch aus – zwei UV-K1 sind unterwegs.
 Mit 1200 Baud teilen sich alle Stationen rund 100 Byte pro Sekunde – eine
 Webseite von ein paar Kilobyte braucht also ihre Zeit. Für Nachrichten,
 Vorstellungsseiten und kleine Dienste reicht es.
+
+## Update vom 08.11.2026
+{: .update #update-2026-11-08}
+
+Die zwei UV-K1 sind da. Beim ersten Test mit dem Messenger gingen
+Nachrichten und Bestätigungen zwischen beiden Geräten hin und her, auch mit
+Dual Watch. Der eine Fehler, der dabei auffiel – Rauschen hielt den Kanal
+belegt –, ist behoben. Strom, Digipeater und APRS-IS teste ich als Nächstes.
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-03-vom-handfunkgeraet-ins-netz/09-zwei-uv-k1-im-test.jpg">
+    <img src="/assets/2026-11-03-vom-handfunkgeraet-ins-netz/09-zwei-uv-k1-im-test.jpg"
+         alt="Zwei UV-K1 nebeneinander auf dem Tisch: links der Chat mit DL4PW-8 mit den Nachrichten Hi, T2 und Test, rechts das Postfach mit einer neuen Nachricht von DL4PW-7">
+  </a>
+  <figcaption>Links der Chat mit DL4PW-8, rechts neue Post von DL4PW-7.</figcaption>
+</figure>

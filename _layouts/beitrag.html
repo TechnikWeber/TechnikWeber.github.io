@@ -120,6 +120,20 @@ layout: post
     line-height: 1.5;
   }
 
+  /* ── Updates zu einem Beitrag ─────────────────────────────────────
+     Neuer Abschnitt am ENDE des Beitrags, der alte Text bleibt stehen:
+
+       ## Update vom 08.11.2026
+       {: .update #update-2026-11-08}
+
+     Gibt eine durchgehende Linie ueber die volle Breite als Trenner.
+     Mehrere Updates einfach untereinander, das neueste zuletzt.     */
+  .post-content h2.update {
+    margin-top: 2.6em;
+    padding-top: 1.1em;
+    border-top: 2px solid #424242;
+  }
+
 </style>
 
 {{ content }}

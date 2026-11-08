@@ -57,6 +57,17 @@ fertigen Beitrag bauen. Ablauf:
 6. **`_eingang/` leeren** (README.md dort behalten) – dort soll immer nur
    der Beitrag liegen, an dem gerade gearbeitet wird
 
+## Updates zu Beiträgen
+
+Neues zu einem alten Beitrag kommt als Update, der alte Text bleibt stehen:
+am **Ende** ein Abschnitt `## Update vom TT.MM.JJJJ` mit der Zeile
+`{: .update #update-JJJJ-MM-TT}` darunter (durchgehende 2-px-Linie, Stil in
+`_layouts/beitrag.html`), oben unter der Einleitung eine kursive Zeile
+`*Update TT.MM.JJJJ: … – [zum Update](#update-JJJJ-MM-TT).*` (bei mehreren
+Updates nur fürs neueste). Bilder in den Ordner des Beitrags, Nummern
+fortlaufend. Das Beitragsdatum bleibt. Muster: `2026-11-03-vom-handfunkgeraet-ins-netz.md`.
+Ausdrücklich so gewünscht.
+
 ## Warnhinweis bei Strom
 
 Beiträge mit Experimenten an Strom und Elektronik beginnen direkt nach dem
