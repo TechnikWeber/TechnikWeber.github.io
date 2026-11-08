@@ -82,6 +82,10 @@ Das **Datum des Beitrags bleibt**, auch nach einem Update. Es steckt im
 Dateinamen, im Bildordner und in allen Bildpfaden – und der Beitrag wurde ja
 damals geschrieben. Dass es Neues gibt, sieht man an der Update-Zeile oben.
 
+Ist das Neue richtig groß und soll oben auf der Startseite stehen, gibt es
+stattdessen einen **neuen Beitrag** mit Verweis auf den alten – und im alten
+ein kurzes Update mit Link auf den neuen.
+
 ## Beitrag löschen
 
 ```bash

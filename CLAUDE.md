@@ -71,6 +71,12 @@ ausgeben, obwohl der Großteil älter ist, und ihn im Feed doppelt melden. Dass
 es Neues gibt, zeigt die Update-Zeile oben. Muster: `2026-11-03-vom-handfunkgeraet-ins-netz.md`.
 Ausdrücklich so gewünscht.
 
+**Großes Neues → eigener Beitrag statt Update.** Ist die Neuigkeit so groß,
+dass sie oben auf der Startseite stehen soll, kommt ein neuer Beitrag mit
+eigenem Datum, der früh auf den alten verlinkt; der alte bekommt dann ein
+kurzes Update mit Link auf den neuen. Nie das Datum des alten Beitrags
+vorziehen. Ausdrücklich so gewünscht.
+
 ## Warnhinweis bei Strom
 
 Beiträge mit Experimenten an Strom und Elektronik beginnen direkt nach dem
