@@ -65,7 +65,10 @@ am **Ende** ein Abschnitt `## Update vom TT.MM.JJJJ` mit der Zeile
 `_layouts/beitrag.html`), oben unter der Einleitung eine kursive Zeile
 `*Update TT.MM.JJJJ: … – [zum Update](#update-JJJJ-MM-TT).*` (bei mehreren
 Updates nur fürs neueste). Bilder in den Ordner des Beitrags, Nummern
-fortlaufend. Das Beitragsdatum bleibt. Muster: `2026-11-03-vom-handfunkgeraet-ins-netz.md`.
+fortlaufend. **Das Beitragsdatum bleibt** – das Datum steht im Dateinamen, im
+Bildordner und in allen Bildpfaden; ein neues Datum würde den Beitrag als neu
+ausgeben, obwohl der Großteil älter ist, und ihn im Feed doppelt melden. Dass
+es Neues gibt, zeigt die Update-Zeile oben. Muster: `2026-11-03-vom-handfunkgeraet-ins-netz.md`.
 Ausdrücklich so gewünscht.
 
 ## Warnhinweis bei Strom

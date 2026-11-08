@@ -78,6 +78,10 @@ Mehrere Updates untereinander, das neueste zuletzt; oben gilt die Zeile fürs
 neueste. Bilder kommen in den Bildordner des Beitrags, die Nummern laufen weiter.
 Beispiel: der Beitrag „Vom Handfunkgerät ins Netz“.
 
+Das **Datum des Beitrags bleibt**, auch nach einem Update. Es steckt im
+Dateinamen, im Bildordner und in allen Bildpfaden – und der Beitrag wurde ja
+damals geschrieben. Dass es Neues gibt, sieht man an der Update-Zeile oben.
+
 ## Beitrag löschen
 
 ```bash
