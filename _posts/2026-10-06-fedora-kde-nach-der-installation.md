@@ -9,6 +9,8 @@ Fedora liefert aus rechtlichen Gründen keine patentbehafteten Codecs und keine
 proprietären Treiber mit. Nach der Installation fehlen deshalb ein paar
 Handgriffe – hier in der Reihenfolge, in der sie Sinn ergeben.
 
+*Update 11.11.2026: Zwei Befehle haken unter Fedora 45, und es gibt die Liste jetzt als Programm – [zum Update](#update-2026-11-11).*
+
 ## Vorweg: warum Fedora KDE und nicht Linux Mint?
 
 Linux Mint ist die übliche Einsteiger-Empfehlung, und das zu Recht: Codecs
@@ -178,3 +180,18 @@ Versionsnummer und gelten ebenso für Fedora 45, das für den 20. Oktober
 angekündigt ist. In den ersten Tagen nach einer neuen Version hinkt RPM Fusion
 manchmal hinterher – bei „nichts gefunden" einfach zwei Tage später noch
 einmal versuchen.
+
+## Update vom 11.11.2026
+{: .update #update-2026-11-11}
+
+Unter Fedora 45 haken zwei Befehle:
+
+- **`sudo dnf update @core`** (Schritt 3) endet mit dnf5 meist mit *„No match
+  for argument: core“*. Stattdessen:
+  `sudo dnf install rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data`
+- **Microsoft-Schriften:** rpm lehnt das `msttcore-fonts-installer`-Paket ab,
+  weil es keine Prüfsummen hat. Gleich große freie Schriften:
+  `sudo dnf install liberation-sans-fonts liberation-serif-fonts liberation-mono-fonts google-carlito-fonts google-crosextra-caladea-fonts`
+
+Die ganze Liste gibt es jetzt als Programm zum Abhaken:
+[Fedora einrichten und aktuell halten: DnfSetup und DnfPilot]({% post_url 2026-11-11-fedora-einrichten-und-aktuell-halten %}).
