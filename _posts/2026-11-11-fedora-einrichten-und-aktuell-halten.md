@@ -51,10 +51,12 @@ aufklappbaren Details und Neustart-Knopf. Das Menü **Reparieren** enthält die
 üblichen Rettungsgriffe, etwa ein hängendes Offline-Update von Discover
 abbrechen.
 
-Außerdem meldet DnfPilot neue Fedora-Versionen. Discover kann das unter
-Fedora mit dnf5 nicht: Das PackageKit-Backend kennt die Abfrage gar nicht.
-Fedora 45 ist seit dem 20. Oktober da, Discover meldete trotzdem „alles
-aktuell“.
+Außerdem meldet DnfPilot neue Fedora-Versionen, und zwar ab dem Tag der
+Veröffentlichung. Discover liest das aus den AppStream-Daten von Fedora, und
+dort stand Fedora 45 nach dem Release am 3. November noch über eine Woche als
+Entwicklerversion. Discover meldete deshalb „alles aktuell“. Die Korrektur ist
+als Update unterwegs
+([Bug 2568647](https://bugzilla.redhat.com/show_bug.cgi?id=2568647)).
 
 ## Herunterladen
 
