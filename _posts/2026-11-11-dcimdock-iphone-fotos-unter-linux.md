@@ -12,6 +12,8 @@ Löschen wieder bei `IMG_0001` angefangen, überschreibt es ältere Fotos
 gleichen Namens. Daraus ist **DCIMDock** geworden: ein kleines Fenster, das
 nur Neues kopiert und nie etwas überschreibt.
 
+*Update 12.11.2026: Jetzt beta, auch für Windows und mit Auswahl, was kopiert wird – [zum Update](#update-2026-11-12).*
+
 <figure class="abb klein">
   <a href="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/01-dcimdock.png">
     <img src="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/01-dcimdock.png"
@@ -86,3 +88,40 @@ und openSUSE. Das AppImage am besten mit
 Getestet habe ich mit meinem alten Backup (3.342 Fotos und Videos) als
 Quelle. Mit einem angeschlossenen iPhone ist es noch nicht gelaufen, deshalb
 steht es auf *alpha*. Rückmeldungen gern über die Issues auf GitHub.
+
+## Update vom 12.11.2026
+{: .update #update-2026-11-12}
+
+**Beta.** Mit meinem iPhone läuft DCIMDock unter Linux jetzt einwandfrei,
+deshalb steht es ab Version 0.2.0 auf *beta*.
+
+**Windows.** Es gibt eine `.exe` (eine Datei, ohne Installation). Dort liest
+DCIMDock die Fotos direkt über Apples Dateiprotokoll, ohne etwas einzuhängen.
+Voraussetzung ist Apples Treiber aus der App *Apple-Geräte* im Microsoft Store
+oder aus iTunes. Fenster und Regeln sind dieselben. Weil die Datei nicht
+signiert ist, warnt SmartScreen einmal: *Weitere Informationen* → *Trotzdem
+ausführen*. Mit einem echten iPhone unter Windows ist es noch nicht getestet,
+Rückmeldungen sind willkommen.
+
+**Auswahl, was kopiert wird** (ab 0.3.0, Linux und Windows). Unter
+*Kopieren: Auswählen …*:
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/03-auswahl.png">
+    <img src="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/03-auswahl.png"
+         alt="Dialog Was kopiert wird: Zeitraum Von 01.06.26 bis 31.08.26 nach Aufnahmedatum, angehakt sind Fotos, Videos, Screenshots und Live-Photo-Videos, Bearbeitungen ist abgewählt">
+  </a>
+  <figcaption>Nur der Sommer, ohne Bearbeitungen.</figcaption>
+</figure>
+
+- **Zeitraum:** letzte 7, 30 oder 90 Tage, dieses oder letztes Jahr oder
+  von – bis, nach Aufnahmedatum oder Dateidatum.
+- **Arten:** Fotos, Videos und Screenshots einzeln, dazu mit oder ohne das
+  Video der Live Photos und die Bearbeitungen.
+
+Ein Live Photo wird dabei nie auseinandergerissen. Was weggelassen wird,
+bleibt auf dem iPhone, das Fenster zählt es als *nicht ausgewählt*. Ein
+späterer Durchgang ohne Auswahl holt es nach. *Alles neu kopieren* beachtet
+die Auswahl und benennt den neuen Ordner danach.
+
+[Zum Download auf GitHub](https://github.com/TechnikWeber/DCIMDock/releases/latest)
