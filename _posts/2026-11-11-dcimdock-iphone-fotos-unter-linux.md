@@ -12,7 +12,7 @@ Löschen wieder bei `IMG_0001` angefangen, überschreibt es ältere Fotos
 gleichen Namens. Daraus ist **DCIMDock** geworden: ein kleines Fenster, das
 nur Neues kopiert und nie etwas überschreibt.
 
-*Update 12.11.2026: Jetzt beta, auch für Windows und mit Auswahl, was kopiert wird – [zum Update](#update-2026-11-12).*
+*Update 12.11.2026: Jetzt beta, auch für Windows, mit Auswahl, automatischer Sicherung, JPEG-Kopie und Fotos-Mediathek – [zum Update](#update-2026-11-12).*
 
 <figure class="abb klein">
   <a href="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/01-dcimdock.png">
@@ -123,5 +123,32 @@ Ein Live Photo wird dabei nie auseinandergerissen. Was weggelassen wird,
 bleibt auf dem iPhone, das Fenster zählt es als *nicht ausgewählt*. Ein
 späterer Durchgang ohne Auswahl holt es nach. *Alles neu kopieren* beachtet
 die Auswahl und benennt den neuen Ordner danach.
+
+**Einstellungen** (ab 0.4.0, unter *Mehr → Einstellungen …*):
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/04-einstellungen.png">
+    <img src="/assets/2026-11-11-dcimdock-iphone-fotos-unter-linux/04-einstellungen.png"
+         alt="Dialog Einstellungen mit den Gruppen Dateien (nach Aufnahmezeit benennen, zusätzlich JPEG speichern), Automatisch (beim Anstecken sichern, bei der Anmeldung starten), Sonstiges (nach neuen Versionen suchen) und Beta-Funktionen (Fotos-Mediathek lesen)">
+  </a>
+  <figcaption>Alles optional, ab Werk aus.</figcaption>
+</figure>
+
+- **Automatisch sichern:** iPhone anstecken, DCIMDock sichert im
+  Hintergrund und meldet sich neben der Uhr. Auf Wunsch startet es bei der
+  Anmeldung gleich dort.
+- **Nach Aufnahmezeit benennen:** `2026-11-03_14-22-05_IMG_0001.HEIC`, so
+  sortiert jedes Programm nach Zeit.
+- **JPEG neben HEIC:** `IMG_0001.heic` bleibt, `IMG_0001.jpg` kommt dazu,
+  mit Aufnahmedatum und GPS. Für Programme ohne HEIC.
+- **Update-Hinweis,** wenn es eine neue Version gibt.
+
+**Fotos-Mediathek (Beta, ab 0.5.0).** DCIMDock liest eine Kopie der
+Datenbank der Fotos-App. Damit lässt es *Zuletzt gelöscht* weg – diese
+Fotos liegen bis zum endgültigen Löschen noch auf dem iPhone –, warnt vor
+Fotos, die nur in der iCloud liegen, und kann nach Favoriten und Alben
+auswählen. Apple ändert diese Datenbank mit iOS-Versionen, deshalb ist es
+eine Beta-Funktion und standardmäßig aus. Klappt das Lesen nicht, arbeitet
+DCIMDock wie bisher.
 
 [Zum Download auf GitHub](https://github.com/TechnikWeber/DCIMDock/releases/latest)
