@@ -2,13 +2,15 @@
 layout: beitrag
 title: "YonderRC – Fernsteuern über IP"
 date: 2026-08-28 08:00:00 +0200
-tags: [Elektronik, "Raspberry Pi"]
+tags: [Elektronik, "Raspberry Pi", Linux, Windows]
 ---
 
 Eine normale RC-Fernsteuerung endet dort, wo ihre Reichweite endet. **YonderRC**
 ersetzt sie durch IP: Video, Steuerung und Konfiguration laufen über WLAN oder
 LTE, bedient wird im Browser – am PC oder am Handy. Ein Raspberry Pi im Fahrzeug
 macht daraus die Servosignale.
+
+*Update 13.11.2026: Die Bodenstation gibt es auch als Desktop-App für Windows und Linux – [zum Update](#update-2026-11-13).*
 
 <figure class="abb klein">
   <a href="/assets/2026-08-28-yonderrc-fernsteuerung-ueber-lte/01-bodenstation-fpv-osd.png">
@@ -59,3 +61,25 @@ das Handy per Captive Portal direkt auf die Seite.
 
 Code, Teileliste und Verkabelung:
 [github.com/TechnikWeber/YonderRC](https://github.com/TechnikWeber/YonderRC)
+
+## Update vom 13.11.2026
+{: .update #update-2026-11-13}
+
+**Desktop-App.** Die Bodenstation gibt es auch als eigenes Programm für
+Windows und Linux. Sie kann dasselbe wie im Browser, liest Gamepads und
+andere Controller aber direkt über SDL. Das lohnt sich, wenn der Browser den
+Controller nicht erkennt oder wenn er rütteln soll.
+
+| System | Datei |
+|---|---|
+| Windows | `…-windows-setup.exe` zum Installieren oder `…-windows-portable.exe` ohne Installation |
+| Linux x64 | `…-linux-x86_64.AppImage`, für Debian/Ubuntu `…-linux-amd64.deb` |
+| Linux ARM64 (Pi 4/5 mit Desktop, ARM-Laptops) | `…-linux-arm64.AppImage` oder `…-linux-arm64.deb` |
+
+Alles liegt im
+[neuesten Release](https://github.com/TechnikWeber/YonderRC/releases/latest).
+Die Dateien sind **nicht signiert**. Unter Windows warnt deshalb SmartScreen:
+*Weitere Informationen › Trotzdem ausführen*. Ist die intelligente
+App-Steuerung an, blockiert Windows sie ganz. Dann bleibt der Browser. Die
+AppImage wird automatisch gebaut und ist auf einem echten Linux-Desktop noch
+nicht getestet.
