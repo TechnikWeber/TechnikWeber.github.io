@@ -2,7 +2,7 @@
 layout: beitrag
 title: "EtherDigits: Mein eigener Zahlensender"
 date: 2026-11-13 07:40:00 +0100
-tags: [Amateurfunk, Linux, Windows]
+tags: [Amateurfunk, Linux, Windows, "Raspberry Pi"]
 ---
 
 Wer nachts über die Kurzwelle dreht, hört sie manchmal: eine Melodie, dann eine
