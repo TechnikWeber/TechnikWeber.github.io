@@ -10,7 +10,7 @@ tags: [Elektronik]
 Ein kurzes rotes Blinken alle paar Sekunden – so sieht eine scharf geschaltete
 Alarmanlage aus. **FAD** (Fake-Alarm-Device) macht genau das und sonst nichts:
 eine runde Platine mit einem ATtiny13A, einer LED und einer CR2032. Die reicht
-rechnerisch drei Jahre, realistisch eineinhalb bis zwei. Inzwischen läuft es bei
+rechnerisch rund fünf Jahre, realistisch zwei bis drei. Inzwischen läuft es bei
 mir ausgiebig getestet und klappt.
 
 <figure class="abb klein">
@@ -26,7 +26,8 @@ mir ausgiebig getestet und klappt.
 Der ATtiny schläft fast immer (etwa 5 µA) und wird vom Watchdog geweckt. Dann
 schaltet er die LED für ein paar Millisekunden ein und schläft weiter. ADC,
 Timer und Eingänge sind abgeschaltet, Brown-out-Erkennung auch – die allein
-würde 20 µA fressen. Im Mittel sind es rund 8 µA.
+würde 20 µA fressen. Im Mittel sind es rund 5 µA. Der Reset-Pull-up zählt
+nicht mit: An beiden Enden liegt VCC, also fließt nichts.
 
 <figure class="abb klein">
   <a href="/assets/2026-11-13-fad-falsche-alarmanlage-mit-knopfzelle/02-platine-batterie-seite.png">
@@ -67,7 +68,7 @@ die geschätzte Laufzeit.
 <figure class="abb klein">
   <a href="/assets/2026-11-13-fad-falsche-alarmanlage-mit-knopfzelle/03-web-flasher.png">
     <img src="/assets/2026-11-13-fad-falsche-alarmanlage-mit-knopfzelle/03-web-flasher.png"
-         alt="Web-Flasher, Abschnitt Blinkmuster: Firmware Einstellbar V3, Vorlagen wie Alarmanlage oder Doppelblitz, Felder für Leuchtdauer 3 ms, Pause 5 s und Blitze pro Blinken, darunter Vorschau mit Zyklus 5,01 s, Mittel 8,3 µA und CR2032 etwa 3 Jahre theoretisch">
+         alt="Web-Flasher, Abschnitt Blinkmuster: Firmware Einstellbar V3, Vorlagen wie Alarmanlage oder Doppelblitz, Felder für Leuchtdauer 3 ms, Pause 5 s und Blitze pro Blinken, darunter Vorschau mit Zyklus 5,01 s, Mittel 5,3 µA und CR2032 etwa 4,7 Jahre theoretisch">
   </a>
   <figcaption>Blinkmuster mit Vorschau und Laufzeitschätzung.</figcaption>
 </figure>
