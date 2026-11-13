@@ -42,7 +42,7 @@ Hier den Beitrag schreiben.
 
   Zweitens die Plattform, falls im Beitrag eine bestimmte vorkommt:
 
-      Raspberry Pi · Arduino · ESP32 · Linux
+      Raspberry Pi · Arduino · ESP32 · Linux · Windows
 
   Damit lassen sich alle Pi-Beiträge auf einen Blick finden, egal ob es
   um Funk oder um Elektronik ging. Sonst keine Spezial-Schubladen wie

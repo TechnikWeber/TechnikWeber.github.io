@@ -2,7 +2,7 @@
 layout: beitrag
 title: "DCIMDock: iPhone-Fotos am PC sichern"
 date: 2026-11-11 22:00:00 +0100
-tags: [Allgemeines, Linux]
+tags: [Allgemeines, Linux, Windows]
 ---
 
 Meine iPhone-Fotos kamen bisher per Spickzettel auf den Rechner:

@@ -2,7 +2,7 @@
 layout: beitrag
 title: "Mein Werkzeug für Akku-Langzeittests"
 date: 2026-11-13 08:20:00 +0100
-tags: [Elektronik]
+tags: [Elektronik, Windows]
 ---
 
 {% include hinweis-strom.html %}
