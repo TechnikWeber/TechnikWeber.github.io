@@ -40,7 +40,7 @@ fertigen Beitrag bauen. Ablauf:
    - `tags:` setzen – zwei Sorten: ein **Thema** (Amateurfunk ·
      Elektronik · Politik · Glaube · Allgemeines) und, wenn eine bestimmte
      Plattform vorkommt, deren Tag (**„Raspberry Pi“ · Arduino · ESP32 ·
-     Linux · Windows**).
+     Linux · Windows · macOS**).
      Sonst keine Spezial-Schubladen wie „Messtechnik“.
      Groß-/Kleinschreibung zählt; mehrteilige Tags in Anführungszeichen:
      `tags: [Elektronik, "Raspberry Pi"]`. Details in `_drafts/vorlage.md`

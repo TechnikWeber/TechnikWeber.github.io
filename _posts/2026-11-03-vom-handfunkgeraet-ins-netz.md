@@ -2,7 +2,7 @@
 layout: beitrag
 title: "Vom Handfunkgerät ins Netz: APRS-Messenger, TNC-App und AXLink"
 date: 2026-11-03 06:00:00 +0100
-tags: [Amateurfunk, Linux, Windows]
+tags: [Amateurfunk, Linux, Windows, macOS]
 ---
 
 Drei Projekte rund um das Quansheng UV-K1 / UV-K5 V3 mit der F4HWN-Firmware,
