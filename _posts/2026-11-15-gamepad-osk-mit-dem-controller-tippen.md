@@ -11,7 +11,7 @@ Bildschirmtastatur, die auf eine Tastenkombination hin erscheint und komplett
 mit dem Controller bedient wird. Ich habe sie für mich angepasst, mein Fork
 ist öffentlich.
 
-*Update 15.11.2026: Einstellungsfenster, Autostart per Klick, A/B tauschen – [zum Update](#update-2026-11-15).*
+*Update 15.11.2026: Einstellungsfenster, Mausmodus, Transparenz, eigene Belegung – [zum Update](#update-2026-11-15).*
 
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/01-hell-deutsch.png">
@@ -95,7 +95,7 @@ Bedienbar mit Controller, Maus oder Tastatur, oben eine Vorschau.
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png">
     <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png"
-         alt="Einstellungsfenster: oben die Vorschau der hellen Tastatur mit Belegungsleiste, darunter zwei Spalten mit Beim Anmelden starten, Design, Tastaturlayout, Controller-Beschriftung, A und B tauschen, Ein-/Ausblenden mit, Maus, Mausgeschwindigkeit, Belegung anzeigen, Position und Größe, unten Schließen und Speichern">
+         alt="Einstellungsfenster mit den Reitern Allgemein und Belegung: oben die Vorschau der hellen Tastatur mit Belegungsleiste, darunter zwei Spalten mit Beim Anmelden starten, Design, Tastaturlayout, Controller-Beschriftung, Ein-/Ausblenden mit, Nur Maus mit, Maus, Mausgeschwindigkeit, Transparenz, Belegung anzeigen, Position und Größe, unten Schließen und Speichern">
   </a>
   <figcaption>Alles an einem Ort, mit Vorschau.</figcaption>
 </figure>
@@ -105,5 +105,24 @@ Bedienbar mit Controller, Maus oder Tastatur, oben eine Vorschau.
 - **Eigenes 8BitDo-Profil:** Beim Ultimate 2C liegt A unten und B rechts,
   nicht wie oben im ersten Bild.
 - **Speichern** startet die Tastatur neu, Änderungen gelten sofort.
+
+**Mausmodus** (ab 2.4.0). Mit **Home + +** (allgemein Guide + Start) bleibt
+die Tastatur weg, unten in der Mitte sitzt nur ein kleines Maus-Symbol. Der
+Stick bewegt den Zeiger, A klickt, LB ist der Rechtsklick, der andere Stick
+scrollt, B beendet.
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/05-mausmodus.png">
+    <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/05-mausmodus.png"
+         alt="Kleine abgerundete Leiste am unteren Bildschirmrand mit blauem Maus-Symbol und A Klick, LB Rechtsklick, R-Stick Scrollen, B Beenden">
+  </a>
+  <figcaption>Statt der Tastatur nur ein kleines Symbol.</figcaption>
+</figure>
+
+- **Transparenz** per Schieberegler, jetzt auch unter Wayland. Klicks gehen
+  durch die Tastatur hindurch auf das Fenster dahinter.
+- **Belegung frei wählbar:** Auf der zweiten Seite der Einstellungen kommt
+  jede Funktion auf die Taste, die man möchte.
+- **Mausgeschwindigkeit** startet jetzt bei 18.
 
 Aktualisieren geht mit demselben Befehl wie die Installation.
