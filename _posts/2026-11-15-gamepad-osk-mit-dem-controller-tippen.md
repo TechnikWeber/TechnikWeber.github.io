@@ -11,6 +11,8 @@ Bildschirmtastatur, die auf eine Tastenkombination hin erscheint und komplett
 mit dem Controller bedient wird. Ich habe sie für mich angepasst, mein Fork
 ist öffentlich.
 
+*Update 15.11.2026: Einstellungsfenster, Autostart per Klick, A/B tauschen – [zum Update](#update-2026-11-15).*
+
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/01-hell-deutsch.png">
     <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/01-hell-deutsch.png"
@@ -82,3 +84,26 @@ Controller ihr, danach wieder dem Spiel.
 
 [Mein Fork auf GitHub](https://github.com/TechnikWeber/gamepad-osk) ·
 [Das Original von 0x90shell](https://github.com/0x90shell/gamepad-osk)
+
+## Update vom 15.11.2026
+{: .update #update-2026-11-15}
+
+**Einstellungsfenster** (ab 2.3.0). Im Startmenü unter *gamepad-osk
+Einstellungen* oder über die Taste *Einstell.* auf der Tastatur selbst.
+Bedienbar mit Controller, Maus oder Tastatur, oben eine Vorschau.
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png">
+    <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png"
+         alt="Einstellungsfenster: oben die Vorschau der hellen Tastatur mit Belegungsleiste, darunter zwei Spalten mit Beim Anmelden starten, Design, Tastaturlayout, Controller-Beschriftung, A und B tauschen, Ein-/Ausblenden mit, Maus, Mausgeschwindigkeit, Belegung anzeigen, Position und Größe, unten Schließen und Speichern">
+  </a>
+  <figcaption>Alles an einem Ort, mit Vorschau.</figcaption>
+</figure>
+
+- **Beim Anmelden starten:** ein Schalter statt Konsolenbefehl.
+- **A und B tauschen** für Controller, bei denen es sich falsch herum anfühlt.
+- **Eigenes 8BitDo-Profil:** Beim Ultimate 2C liegt A unten und B rechts,
+  nicht wie oben im ersten Bild.
+- **Speichern** startet die Tastatur neu, Änderungen gelten sofort.
+
+Aktualisieren geht mit demselben Befehl wie die Installation.
