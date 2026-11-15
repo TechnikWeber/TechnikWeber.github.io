@@ -11,7 +11,7 @@ Bildschirmtastatur, die auf eine Tastenkombination hin erscheint und komplett
 mit dem Controller bedient wird. Ich habe sie für mich angepasst, mein Fork
 ist öffentlich.
 
-*Update 15.11.2026: Einstellungsfenster, Mausmodus, Transparenz, eigene Belegung, Buttons auf den Tasten – [zum Update](#update-2026-11-15).*
+*Update 15.11.2026: Einstellungsfenster, Mausmodus, Transparenz, eigene Belegung, Buttons auf den Tasten, Controller-Test – [zum Update](#update-2026-11-15).*
 
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/01-hell-deutsch.png">
@@ -136,6 +136,19 @@ scrollt, B beendet.
          alt="Helle deutsche Tastatur, kleine Abzeichen in den Tastenecken: X auf der Löschtaste, RT auf Enter, LT auf beiden Shift-Tasten, RS auf Caps und Y auf der Leertaste">
   </a>
   <figcaption>Kleine Abzeichen zeigen den zuständigen Knopf.</figcaption>
+</figure>
+
+**Controller-Test** (ab 2.6.0). Die Seite *Test* in den Einstellungen zeigt
+einen Controller, auf dem jeder gedrückte Knopf aufleuchtet, daneben, was er
+in gamepad-osk tut. So sieht man sofort, ob A und B vertauscht sind – oder
+dass das 8BitDo-Logo *Home* heißt.
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/07-controller-test.png">
+    <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/07-controller-test.png"
+         alt="Einstellungsseite Test: unten ein schematischer Controller mit LT, LB, RT, RB, Minus, Home, Plus, Steuerkreuz, X Y A B und zwei Stick-Kreisen, rechts daneben Zuletzt gedrückt">
+  </a>
+  <figcaption>Drücken, aufleuchten sehen, fertig.</figcaption>
 </figure>
 
 Aktualisieren geht mit demselben Befehl wie die Installation.
