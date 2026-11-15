@@ -11,7 +11,7 @@ Bildschirmtastatur, die auf eine Tastenkombination hin erscheint und komplett
 mit dem Controller bedient wird. Ich habe sie für mich angepasst, mein Fork
 ist öffentlich.
 
-*Update 15.11.2026: Einstellungsfenster, Mausmodus, Transparenz, eigene Belegung – [zum Update](#update-2026-11-15).*
+*Update 15.11.2026: Einstellungsfenster, Mausmodus, Transparenz, eigene Belegung, Buttons auf den Tasten – [zum Update](#update-2026-11-15).*
 
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/01-hell-deutsch.png">
@@ -123,6 +123,19 @@ scrollt, B beendet.
   durch die Tastatur hindurch auf das Fenster dahinter.
 - **Belegung frei wählbar:** Auf der zweiten Seite der Einstellungen kommt
   jede Funktion auf die Taste, die man möchte.
-- **Mausgeschwindigkeit** startet jetzt bei 18.
+- **Mausgeschwindigkeit** startet jetzt bei 20 und ist im Mausmodus genauso
+  schnell wie bei offener Tastatur (ab 2.5.0, vorher war sie dort viel zu
+  schnell).
+- **Buttons auf den Tasten** (ab 2.5.0): Enter, Leertaste, Löschen, Shift und
+  Caps zeigen in der Ecke, welcher Controller-Knopf sie auslöst. Abschaltbar
+  in den Einstellungen.
+
+<figure class="abb klein">
+  <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/06-buttons-auf-tasten.png">
+    <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/06-buttons-auf-tasten.png"
+         alt="Helle deutsche Tastatur, kleine Abzeichen in den Tastenecken: X auf der Löschtaste, RT auf Enter, LT auf beiden Shift-Tasten, RS auf Caps und Y auf der Leertaste">
+  </a>
+  <figcaption>Kleine Abzeichen zeigen den zuständigen Knopf.</figcaption>
+</figure>
 
 Aktualisieren geht mit demselben Befehl wie die Installation.
