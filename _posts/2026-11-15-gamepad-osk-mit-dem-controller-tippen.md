@@ -151,4 +151,9 @@ dass das 8BitDo-Logo *Home* heißt.
   <figcaption>Drücken, aufleuchten sehen, fertig.</figcaption>
 </figure>
 
+**Ubuntu 24.04, Linux Mint 22, Debian 12 und Bazzite:** Dort fehlt SDL3 als
+Paket bzw. ist das System schreibgeschützt. Der Installer nimmt dann
+automatisch eine Fassung, die SDL3 gleich mitbringt – ohne Root-Rechte und
+ohne Neustart.
+
 Aktualisieren geht mit demselben Befehl wie die Installation.
