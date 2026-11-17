@@ -95,7 +95,7 @@ Bedienbar mit Controller, Maus oder Tastatur, oben eine Vorschau.
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png">
     <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/04-einstellungen.png"
-         alt="Einstellungsfenster mit den Reitern Allgemein und Belegung: oben die Vorschau der hellen Tastatur mit Belegungsleiste, darunter zwei Spalten mit Beim Anmelden starten, Design, Tastaturlayout, Controller-Beschriftung, Ein-/Ausblenden mit, Nur Maus mit, Maus, Mausgeschwindigkeit, Transparenz, Belegung anzeigen, Position und Größe, unten Schließen und Speichern">
+         alt="Einstellungsfenster mit den Reitern Allgemein und Belegung: oben die Vorschau der hellen Tastatur mit Belegungsleiste, darunter zwei Spalten mit Beim Anmelden starten, Design, Tastaturlayout, Controller-Beschriftung, Ein-/Ausblenden mit, Nur Maus mit, Maus, Mausgeschwindigkeit, Feinsteuerung Maus, Feinsteuerung Scrollen, Transparenz, Belegung anzeigen, Position und Größe, unten Schließen und Speichern">
   </a>
   <figcaption>Alles an einem Ort, mit Vorschau.</figcaption>
 </figure>
@@ -114,7 +114,7 @@ scrollt, B beendet.
 <figure class="abb klein">
   <a href="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/05-mausmodus.png">
     <img src="/assets/2026-11-15-gamepad-osk-mit-dem-controller-tippen/05-mausmodus.png"
-         alt="Kleine abgerundete Leiste am unteren Bildschirmrand mit blauem Maus-Symbol und A Klick, LB Rechtsklick, R-Stick Scrollen, B Beenden">
+         alt="Kleine abgerundete Leiste am unteren Bildschirmrand mit blauem Maus-Symbol und A Klick, LB Rechtsklick, L-Stick Scrollen, B Beenden">
   </a>
   <figcaption>Statt der Tastatur nur ein kleines Symbol.</figcaption>
 </figure>
