@@ -1,6 +1,6 @@
 ---
 layout: beitrag
-title: "MobTag: Lebensanzeige über Mobs, nur wenn man kämpft"
+title: "MobTag: Lebensanzeige über Mobs für Minecraft-Crossplay-Server"
 date: 2026-11-17 14:00:00 +0100
 tags: [Allgemeines]
 ---
@@ -33,6 +33,9 @@ ein paar Einstellungen pro Spieler erweitert:
   anschaut, gedacht für Bosskämpfe. Standardmäßig aus.
 - **Aufgeräumte Config:** Bei Updates bleiben alle Erklärungen in der
   `config.yml` erhalten.
+
+Jeder Spieler öffnet das Menü mit `/mobtag` im Chat. Ein Klick auf einen
+Eintrag schaltet weiter, ein Rechtsklick zurück. Die Wahl bleibt gespeichert.
 
 <figure class="abb klein">
   <a href="/assets/2026-11-17-mobtag-lebensanzeige-ueber-mobs/02-menue.png">
