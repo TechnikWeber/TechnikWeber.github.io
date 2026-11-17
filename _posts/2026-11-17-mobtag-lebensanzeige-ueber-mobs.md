@@ -29,6 +29,8 @@ ein paar Einstellungen pro Spieler erweitert:
 - **Wann:** immer, nur beim Anschauen oder nur bei Mobs, die man gerade
   getroffen hat. Letzteres ist bei uns Standard: Bei vielen Tieren auf der
   Weide war alles andere zu unruhig.
+- **Dauer:** Nach dem letzten Treffer bleibt die Anzeige 5, 10, 15 oder
+  30 Sekunden stehen.
 - **Zielanzeige:** auf Wunsch eine Bossleiste oben mit dem Mob, den man
   anschaut, gedacht für Bosskämpfe. Standardmäßig aus.
 - **Aufgeräumte Config:** Bei Updates bleiben alle Erklärungen in der
