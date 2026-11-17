@@ -30,7 +30,7 @@ ein paar Einstellungen pro Spieler erweitert:
   getroffen hat. Letzteres ist bei uns Standard: Bei vielen Tieren auf der
   Weide war alles andere zu unruhig.
 - **Dauer:** Nach dem letzten Treffer bleibt die Anzeige 5, 10, 15 oder
-  30 Sekunden stehen.
+  30 Sekunden stehen, 10 Minuten oder bis der Mob stirbt.
 - **Zielanzeige:** auf Wunsch eine Bossleiste oben mit dem Mob, den man
   anschaut, gedacht für Bosskämpfe. Standardmäßig aus.
 - **Aufgeräumte Config:** Bei Updates bleiben alle Erklärungen in der
