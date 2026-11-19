@@ -10,7 +10,7 @@ die zusammengehören: ein **APRS-Messenger** direkt im Funkgerät, eine
 **KISS-TNC-App**, die das Funkgerät zum Modem macht, und **AXLink**, das am PC
 daraus einen Netzwerkadapter baut – mit Chat, Relais und Internet-Gateway.
 
-*Update 08.11.2026: Der Messenger läuft auf zwei UV-K1 – [zum Update](#update-2026-11-08).*
+*Update 19.11.2026: Der Messenger ist auf F4HWN v7 nachgezogen, die Apps laufen jetzt mit – [zum Update](#update-2026-11-19).*
 
 <figure class="abb">
   <div class="rahmen">
@@ -238,3 +238,25 @@ belegt –, ist behoben. Strom, Digipeater und APRS-IS teste ich als Nächstes.
   </a>
   <figcaption>Links der Chat mit DL4PW-8, rechts neue Post von DL4PW-7.</figcaption>
 </figure>
+
+## Update vom 19.11.2026
+{: .update #update-2026-11-19}
+
+Der Messenger ist auf F4HWN v7 nachgezogen (v0.4.0-beta.1). Die Apps aus
+Teil 2, die es bisher nur in der Labs-Firmware gab, laufen jetzt auch auf
+dem Messenger: KISS TNC, APRS RX/TX/DIGI, SSTV, Radiosonden, CW-Tools,
+Spiele. Installiert werden sie mit UV Studio unter *Apps*, gestartet am
+Funkgerät mit **F** und **7**. Solange eine App läuft, pausiert der
+Messenger; danach macht er von selbst weiter.
+
+Verloren geht dafür fast nichts: Nur Spektrumanalysator (dafür gibt es die
+App Spectrum3D), RF Log, QR-Codes und Logo-Bildschirmschoner mussten Platz
+machen. APRS bleibt fest in der Firmware und läuft im Hintergrund, ganz ohne
+App.
+
+Auf dem Funkgerät lief die v7-Version noch nicht – es ist eine Beta,
+Rückmeldungen gern über die
+[Issues](https://github.com/TechnikWeber/uv-k1-k5v3-aprs-firmware/issues).
+Geflasht wird wie gehabt über den
+[Web-Flasher](https://technikweber.github.io/uv-k1-k5v3-aprs-firmware/); das
+Kabel bleibt dran, bis UV Studio auch die Texte aufgespielt hat.
