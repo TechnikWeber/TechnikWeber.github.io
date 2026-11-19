@@ -10,7 +10,7 @@ ersetzt sie durch IP: Video, Steuerung und Konfiguration laufen über WLAN oder
 LTE, bedient wird im Browser – am PC oder am Handy. Ein Raspberry Pi im Fahrzeug
 macht daraus die Servosignale.
 
-*Update 13.11.2026: Die Bodenstation gibt es auch als Desktop-App für Windows und Linux – [zum Update](#update-2026-11-13).*
+*Update 13.11.2026: Die Bodenstation gibt es auch als Desktop-App für Windows und Linux, und aus YonderRC ist YonderGate entstanden – [zum Update](#update-2026-11-13).*
 
 <figure class="abb klein">
   <a href="/assets/2026-08-28-yonderrc-fernsteuerung-ueber-lte/01-bodenstation-fpv-osd.png">
@@ -83,3 +83,8 @@ Die Dateien sind **nicht signiert**. Unter Windows warnt deshalb SmartScreen:
 App-Steuerung an, blockiert Windows sie ganz. Dann bleibt der Browser. Die
 AppImage wird automatisch gebaut und ist auf einem echten Linux-Desktop noch
 nicht getestet.
+
+**YonderGate.** Aus YonderRC ist
+[YonderGate]({% post_url 2026-11-13-yondergate-grundstueck-online %})
+entstanden: ein Raspberry Pi mit LTE-Stick, der ein Grundstück ohne
+Internetanschluss ins eigene Netz holt.
