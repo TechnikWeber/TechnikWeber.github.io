@@ -186,6 +186,25 @@ Hier den Beitrag schreiben.
       </video>
 
 
+  ── UPDATE ZU EINEM BEITRAG ───────────────────────────────────────
+
+  Kommt später etwas dazu: den alten Text stehen lassen und AM ENDE
+  einen Abschnitt anhängen, das neueste Update immer zuletzt:
+
+      ## Update vom 19.11.2026
+      {: .update #update-2026-11-19}
+
+      Was sich getan hat, kurz.
+
+  Die Zeile mit .update zieht eine Trennlinie und setzt die Sprungmarke.
+  Dazu IMMER oben unter die Einleitung eine Zeile, damit man das Update
+  findet – bei mehreren Updates nur eine, fürs neueste:
+
+      *Update 19.11.2026: Worum es geht – [zum Update](#update-2026-11-19).*
+
+  Das Datum im Kopf bleibt das alte. Mehr dazu in _drafts/ANLEITUNG.md.
+
+
   ── WENN CLAUDE DEN BEITRAG SCHREIBEN SOLL ────────────────────────
 
   Dann braucht es diese Vorlage hier gar nicht. Stattdessen:

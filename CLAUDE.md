@@ -77,6 +77,28 @@ eigenem Datum, der früh auf den alten verlinkt; der alte bekommt dann ein
 kurzes Update mit Link auf den neuen. Nie das Datum des alten Beitrags
 vorziehen. Ausdrücklich so gewünscht.
 
+## Updates zu Beiträgen
+
+Kommt später etwas dazu, bleibt der alte Text stehen (Beispiel und Details:
+`_drafts/ANLEITUNG.md`, Abschnitt „Update zu einem Beitrag“):
+
+1. Am Ende einen Abschnitt anhängen, das neueste Update zuletzt:
+
+   ```markdown
+   ## Update vom TT.MM.JJJJ
+   {: .update #update-JJJJ-MM-TT}
+   ```
+
+2. **Immer oben unter der Einleitung eine Zeile, die zum Update springt** –
+   bei mehreren Updates nur eine, fürs neueste. Ausdrücklich so gewünscht:
+
+   ```markdown
+   *Update TT.MM.JJJJ: Worum es geht – [zum Update](#update-JJJJ-MM-TT).*
+   ```
+
+3. Datum, Dateiname und Bildordner des Beitrags bleiben; neue Bilder kommen
+   in denselben Ordner, die Nummern laufen weiter.
+
 ## Warnhinweis bei Strom
 
 Beiträge mit Experimenten an Strom und Elektronik beginnen direkt nach dem
