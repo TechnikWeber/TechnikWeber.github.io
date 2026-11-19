@@ -10,7 +10,7 @@ die zusammengehören: ein **APRS-Messenger** direkt im Funkgerät, eine
 **KISS-TNC-App**, die das Funkgerät zum Modem macht, und **AXLink**, das am PC
 daraus einen Netzwerkadapter baut – mit Chat, Relais und Internet-Gateway.
 
-*Update 19.11.2026: Der Messenger ist auf F4HWN v7 nachgezogen, die Apps laufen jetzt mit – [zum Update](#update-2026-11-19).*
+*Update 19.11.2026: Der Messenger ist auf F4HWN v7 nachgezogen; jetzt laufen die Apps mit, auch AXLink TNC – [zum Update](#update-2026-11-19).*
 
 <figure class="abb">
   <div class="rahmen">
@@ -249,12 +249,19 @@ Spiele. Installiert werden sie mit UV Studio unter *Apps*, gestartet am
 Funkgerät mit **F** und **7**. Solange eine App läuft, pausiert der
 Messenger; danach macht er von selbst weiter.
 
+Damit kommen alle drei Teile auf ein Gerät:
+[AXLink TNC](https://github.com/TechnikWeber/AXLink-TNC) ist eine dieser Apps
+und passt unverändert auf v7. Mit
+[AXLink](https://github.com/TechnikWeber/AXLink) am PC wird das Funkgerät mit
+der Messenger-Firmware zum Netzwerkadapter, abwechselnd mit dem Messenger.
+Platz ist für 64 Apps im externen Flash.
+
 Verloren geht dafür fast nichts: Nur Spektrumanalysator (dafür gibt es die
 App Spectrum3D), RF Log, QR-Codes und Logo-Bildschirmschoner mussten Platz
 machen. APRS bleibt fest in der Firmware und läuft im Hintergrund, ganz ohne
 App.
 
-Auf dem Funkgerät lief die v7-Version noch nicht – es ist eine Beta,
+Auf dem Funkgerät lief das alles noch nicht – es ist eine Beta,
 Rückmeldungen gern über die
 [Issues](https://github.com/TechnikWeber/uv-k1-k5v3-aprs-firmware/issues).
 Geflasht wird wie gehabt über den
