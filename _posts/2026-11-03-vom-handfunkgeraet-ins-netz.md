@@ -254,7 +254,9 @@ Damit kommen alle drei Teile auf ein Gerät:
 und passt unverändert auf v7. Mit
 [AXLink](https://github.com/TechnikWeber/AXLink) am PC wird das Funkgerät mit
 der Messenger-Firmware zum Netzwerkadapter, abwechselnd mit dem Messenger.
-Platz ist für 64 Apps im externen Flash.
+Platz ist für 64 Apps im externen Flash. Wie man alles zusammen einrichtet,
+steht Schritt für Schritt im
+[Handbuch](https://github.com/TechnikWeber/uv-k1-k5v3-aprs-firmware/blob/messenger/App/messenger/README.md#ip-over-the-radio-with-axlink).
 
 Verloren geht dafür fast nichts: Nur Spektrumanalysator (dafür gibt es die
 App Spectrum3D), RF Log, QR-Codes und Logo-Bildschirmschoner mussten Platz
