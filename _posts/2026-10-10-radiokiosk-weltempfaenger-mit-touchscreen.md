@@ -10,6 +10,8 @@ macht daraus ein Radio für alles – Webradio, DAB+, UKW, Kurzwelle, Amateurfun
 Flugzeugkarte, Podcasts und einiges mehr in einer Oberfläche, die sich mit dem
 Finger bedienen lässt.
 
+*Update 13.10.2026: Version 0.25 mit schönerem Ruhebildschirm, seit 0.24 auch Küchenradio und Bilderrahmen – [zum Update](#update-2026-10-13).*
+
 <figure class="abb klein">
   <a href="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/01-radiokiosk-auf-dem-raspberry-pi.jpg">
     <img src="/assets/2026-10-10-radiokiosk-weltempfaenger-mit-touchscreen/01-radiokiosk-auf-dem-raspberry-pi.jpg"
@@ -86,7 +88,8 @@ nicht auf jeder Hardware ausprobiert.
 Code und Anleitung:
 [github.com/TechnikWeber/RadioKiosk](https://github.com/TechnikWeber/RadioKiosk)
 
-## Update vom 11. Oktober 2026
+## Update vom 11.10.2026
+{: .update #update-2026-10-11}
 
 Aus dem Weltempfänger ist mehr geworden: Version 0.24 ist auch Küchenradio und
 digitaler Bilderrahmen, und sie läuft ohne Touchscreen genauso auf einem
@@ -133,7 +136,8 @@ Neu seit dem Beitrag:
 - **Updates:** ein Knopf in den Einstellungen, auf Wunsch nachts von selbst,
   mit Rückfall auf die alte Version, wenn die neue nicht startet.
 
-## Update vom 13. Oktober 2026
+## Update vom 13.10.2026
+{: .update #update-2026-10-13}
 
 Version 0.25 macht den Ruhebildschirm schöner: Hinter Wetter, Nachrichten und
 Bibelvers ziehen statt Schwarz drei weiche Lichter, gefärbt nach Tageszeit und
