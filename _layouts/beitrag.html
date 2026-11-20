@@ -63,12 +63,13 @@ layout: post
     color: #424242;
   }
 
-  /* Ein Diagramm im Rahmen wuerde auf dem Handy unlesbar klein
-     skalieren – dort behaelt es seine Breite und laesst sich stattdessen
-     seitlich schieben.                                               */
+  /* Auf dem Handy wird ein Diagramm einfach kleiner, statt seitlich zu
+     scrollen – Rahmen und Skizze bleiben immer innerhalb des Bildschirms.
+     Ausdruecklich so gewuenscht.                                      */
+  .abb > .rahmen { max-width: 100%; box-sizing: border-box; overflow: hidden; }
+  .abb > .rahmen svg { max-width: 100%; }
   @media screen and (max-width: 640px) {
-    .abb > .rahmen { overflow-x: auto; }
-    .abb > .rahmen svg { width: 580px; max-width: none; }
+    .abb > .rahmen { padding: 4px; }
   }
 
   /* ── Messwert-Tabellen ────────────────────────────────────────────
